@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <meta name="viewport" content="width=375, maximum-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	@import "header.html"
+	<section class="login">
+		<div class="container">
+			<div class="login-flex">
+				<div class="login-left">
+					<div class="login-first">
+						<form action="" class="login-form">
+							<div class="login-form-row">
+								<span class="login-form-title">שם משתמש</span>
+								<input type="text" class="login-form-input" required>
+							</div>
+							<div class="login-form-row">
+								<span class="login-form-title">סיסמה</span>
+								<input type="password" class="login-form-input" required>
+							</div>
+							<label class="login-form-label">
+								<span class="login-form-span">לזכור סיסמה</span>
+								<input type="checkbox" class="login-form-checkbox">
+								<span class="login-form-check">
+									<svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 3.5L5.5 8L12 1.5" stroke="#059FF9" stroke-width="2"/>
+									</svg>
+								</span>
+							</label>
+							<button type="submit" class="login-form-btn">הצטרף עכשיו</button>
+						</form>
+						<div class="login-bottom">
+							<a href="#" class="login-bottom-btn login-bottom-pass">שכחת את הסיסמא</a>
+							<a href="#" class="login-bottom-btn login-bottom-cabinet">לאיזור אישי</a>
+						</div>
+					</div>
+				</div>
+				<div class="login-right">
+					<div class="login-right-block">
+						<img src="img/login.jpg" alt="" class="login-right-img">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@import "footer.html"
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

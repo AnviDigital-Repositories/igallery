@@ -1,0 +1,262 @@
+.gallery
+  padding: 40px 0 110px
+  overflow: hidden
+  &-title
+    font-weight: 300
+    font-size: 64px
+    letter-spacing: 0.05em
+    color: #000000
+    direction: rtl
+  &-info
+    display: flex
+    justify-content: space-between
+    margin-top: 10px
+  &-type
+    display: flex
+    align-items: center
+    &-link
+      font-size: 18px
+      text-align: center
+      color: #000000
+      border: 1px solid transparent
+      padding: 0 15px
+      margin-right: 15px
+      &.active
+        border: 1px solid #E8E8E8
+    &-title
+      font-weight: bold
+      font-size: 18px
+      color: #000000
+      margin-left: 15px
+  &-btn
+    font-weight: 300
+    font-size: 18px
+    color: #000000
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    padding: 5px 43px 5px 15px
+    background: #FFffff url(../img/filter.svg) no-repeat right 18px center
+    background-size: 19px 12px
+    transition: all .5s ease
+    &:hover, &.active
+      background-color: rgba(0, 0, 0, 0.07)
+      border: 1px solid #FFffff
+  &-flex
+    display: flex
+    margin-top: 30px
+    position: relative
+    justify-content: space-between
+    align-items: flex-start
+  &-main
+    //width: 100%
+    width: 1290px
+    //transition: width .5s ease
+    &.active
+      width: 950px
+  &-item
+    width: calc(33.33% - 20px)
+    margin-bottom: 40px
+    &-like
+      .svg-hover
+        opacity: 0
+        &:hover
+          opacity: 1
+      &.active
+        .svg-hover
+          opacity: 1
+    &-img
+      width: 100%
+    &-about
+      margin-top: -5px
+    &-block
+      position: relative
+      box-shadow: 0 0 20px 10px transparent
+      transition: box-shadow .5s ease
+      cursor: pointer
+      &:hover
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2)
+        .gallery-item-info
+          opacity: 1
+          pointer-events: auto
+    &-info
+      position: absolute
+      top: 0
+      left: 0
+      background: #FFffff
+      text-align: center
+      width: 100%
+      display: flex
+      flex-direction: column
+      height: 220px
+      padding: 20px
+      align-items: center
+      justify-content: center
+      opacity: 0
+      pointer-events: none
+      transition: opacity .5s ease
+      max-height: 60%
+    &-title
+      font-size: 18px
+      color: #000000
+      margin-bottom: 20px
+    &-text
+      font-size: 12px
+      line-height: 1.33
+      color: #B1B1B1
+    &-bottom
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      margin-top: 20px
+    &-name
+      font-size: 18px
+      color: #000000
+    &-description
+      font-weight: 300
+      font-size: 16px
+      color: #000000
+    &-delete
+      margin-left: 12px
+      display: inline-block
+  &-filter
+    flex-shrink: 0
+    //margin-left: 30px
+    //height: 100vh
+    overflow: auto
+    width: 0
+    &::-webkit-scrollbar
+      width: 0
+    //transition: width .5s ease
+    &.active
+      width: 300px
+  &-form
+    overflow: hidden
+    overflow-y: auto
+    max-height: 100vh
+    &::-webkit-scrollbar
+      width: 0
+    &-reset
+      font-weight: 300
+      font-size: 18px
+      text-align: center
+      letter-spacing: 0.1em
+      color: #000000
+      display: block
+      height: 50px
+      border: 1px solid #000000
+      width: 100%
+      cursor: pointer
+      transition: all .5s ease
+      margin-bottom: 40px
+      &:hover
+        color: #FFFFFF
+        background: #4C4C4C
+    &-top
+      display: flex
+      justify-content: space-between
+      cursor: pointer
+      margin-bottom: 15px
+    &-name
+      font-weight: 600
+      font-size: 16px
+      letter-spacing: 0.1em
+      color: #000000
+    &-arrow
+      transform: rotate(180deg)
+      transition: all .5s ease
+    &-btn
+      background: #059FF9
+      display: block
+      height: 50px
+      line-height: 50px
+      font-weight: 300
+      font-size: 18px
+      text-align: center
+      letter-spacing: 0.1em
+      color: #FFFFFF
+      width: 100%
+      cursor: pointer
+      transition: background-color .5s ease
+      margin-bottom: 20px
+      &:hover
+        background-color: rgba(5, 159, 249, 0.31)
+    &-row
+      margin-bottom: 60px
+      .login-form-label
+        margin: 20px 0
+        padding: 0
+    &-drop
+      max-height: 180px
+      display: none
+      &-scroll
+        max-height: 180px
+        overflow: auto
+
+
+.ui-slider-horizontal
+  height: 1px
+.ui-widget-content
+  background: #E9E9E9
+.ui-slider
+  position: relative
+  width: 280px
+  margin: 0 auto
+.range-container
+  background: #E9E9E9
+  margin-bottom: 30px
+.ui-widget-header
+  background: #059FF9
+.ui-slider .ui-slider-range
+  position: absolute
+  z-index: 1
+  display: block
+  border: none
+  overflow: hidden
+.ui-slider-horizontal .ui-slider-range
+  top: 0
+  height: 100%
+.ui-slider .ui-slider-handle
+  position: absolute
+  width: 0
+  height: 0
+  border: 10px solid transparent
+  border-left: 10px solid #059FF9
+  outline: none
+  z-index: 2
+  cursor: pointer
+  transform: translateY(-50%)
+  margin-left: -10px
+  &:last-child
+    border: 10px solid transparent
+    border-right: 10px solid #059FF9
+.filter
+  &-count
+    display: flex
+    border: 1px solid #E7E7E7
+    margin-bottom: 30px
+    &-item
+      width: 50%
+      height: 40px
+      line-height: 40px
+      &_first
+        border-right: 1px solid #E7E7E7
+    &-input
+      display: block
+      width: 100%
+      height: 100%
+      border: 0
+      outline: none
+      padding: 0 25px
+      direction: rtl
+      font-weight: 300
+      font-size: 14px
+      color: #000000
+.mCSB_inside>.mCSB_container
+  margin: 0 0 0 10px
+.mCSB_scrollTools
+  left: 0
+.mCSB_scrollTools .mCSB_draggerRail
+  background: #E2E2E2
+  width: 1px
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+  background: #000000!important
+  width: 2px

@@ -1,0 +1,287 @@
+.purchase
+  padding: 55px 0 195px
+  &-main
+    max-width: 900px
+    padding: 0 25px
+    margin: 0 auto
+  &-block
+    border: 12px solid #F6F6F6
+    padding: 40px 100px 60px
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    transition: all .5s ease
+    &:nth-child(3)
+      padding-bottom: 25px
+      .purchase-form-subtitle
+        font-size: 26px
+        letter-spacing: 0.05em
+        color: #000000
+        font-weight: normal
+        border: none
+        margin-bottom: 15px
+      .register-payment-label
+        width: calc(50% - 15px)
+        padding-right: 30px
+      .login-form-row
+        flex-direction: row
+        justify-content: space-between
+    .package-check
+      left: 27px
+      top: calc(100% - -6px)
+    &.valid
+      border: 12px solid rgba(158, 209, 232, 0.2)
+      .package-check-circle:before
+        opacity: 1
+      .package-check-circle
+        background: #059FF9
+      .purchase-back
+        background: rgba(158, 209, 232, 0.2) url(../img/arrow-line.svg) no-repeat left 25px center
+  &-back
+    padding: 0 35px 0 80px
+    background: #F6F6F6 url(../img/arrow-line.svg) no-repeat left 25px center
+    position: absolute
+    left: -12px
+    top: -62px
+    font-size: 16px
+    color: #000000
+    height: 50px
+    line-height: 50px
+    transition: background .5s ease
+  &-title
+    font-weight: 300
+    font-size: 34px
+    text-align: center
+    letter-spacing: 0.05em
+    color: #000000
+    margin-bottom: 70px
+  &-content
+    max-width: 410px
+    width: 100%
+    text-align: right
+    &_fluid
+      max-width: 100%
+  &-form
+    &_second
+      display: none
+      .login-form-title
+        text-align: left
+      .login-form-input
+        direction: ltr
+    .login-form-label
+      padding-right: 0
+      margin-bottom: 0
+    &-item
+      margin-bottom: 55px
+      &:last-child
+        margin-bottom: 0
+    &-subtitle
+      font-weight: bold
+      font-size: 18px
+      text-align: center
+      color: #000000
+      border-bottom: 1px solid #DFDFDF
+      padding-bottom: 22px
+      margin-bottom: 22px
+    &-info
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row-reverse
+      margin-top: 30px
+      &-label
+        margin-left: 10px
+        background: #EFEFEF
+        font-size: 14px
+        padding: 0 13px
+        margin-bottom: 15px
+        height: 30px
+        line-height: 30px
+    &-row
+      &_select
+        .nselect.nsOrange .nselect__head
+          height: 60px
+          border: 1px solid #DADADA
+          background: #ffffff
+          width: 100%
+          padding: 0 25px
+          display: flex
+          align-items: center
+          direction: rtl
+        .nselect.nsOrange .nselect__head:after
+          border-width: 8px 6px 0
+          border-color: #C3C3C3 transparent transparent
+          top: calc(50% - 2px)
+          left: 20px
+          right: inherit
+        .nselect.nsOrange._checked .nselect__head
+          color: #000000
+          background: #ffffff
+        .nselect.nsOrange .nselect__inner:before
+          display: none
+        .nselect.nsOrange .nselect__inner
+          top: 100%
+          width: 100%
+    &-block
+      display: flex
+      .nselect.nsOrange._checked .nselect__head:after
+        border-color: #000 transparent transparent
+      .nselect
+        width: 105px
+        flex-shrink: 0
+      .nselect.nsOrange .nselect__head
+        width: 100%
+        height: 100%
+        background: #FBFBFB
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 1px solid #DADADA
+        border-right: none
+        font-size: 14px
+        color: #000000
+      .nselect .nselect__head span
+        direction: ltr
+      .nselect.nsOrange .nselect__head:after
+        top: calc(50% - 2px)
+        right: 30px
+      .nselect.nsOrange .nselect__inner:before
+        display: none
+      .nselect.nsOrange .nselect__list li span
+        direction: ltr
+      .nselect.nsOrange .nselect__inner
+        top: 100%
+        width: 100%
+      .login-form-input
+        direction: ltr
+    &-flex
+      display: flex
+      justify-content: space-between
+      margin: 35px 0 5px
+      .register-payment-label
+        width: calc(50% - 15px)
+        border: 1px solid #DADADA
+        height: 60px
+        padding: 0 20px
+        &.active
+          border: 1px solid #059FF9;
+      .register-payment-text
+        font-weight: 300
+        font-size: 14px
+        color: #000000
+      .register-payment-check
+        margin-left: 15px
+    &-text
+      font-weight: 300
+      font-size: 12px
+      color: #000000
+    &-link
+      font-size: 12px
+      color: #000000
+      text-decoration: underline
+    &-change
+      border-top: 1px solid #DFDFDF
+      margin: 30px 0 20px
+      padding-top: 15px
+      .register-payment-label
+        border: none
+        background: #ffffff
+        padding: 0
+        margin: 0
+        height: 60px
+      .register-payment-text
+        font-size: 14px
+        letter-spacing: inherit
+      .register-payment-check
+        margin-left: 15px
+    &-group
+      display: flex
+      .purchase-form-row
+        &:first-child
+          width: 80px
+          flex-shrink: 0
+          margin-right: 30px
+  &-info
+    max-width: 410px
+    margin: 65px auto 50px
+    &-row
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 0 80px
+      &:last-child
+        border-top: 1px solid #EBEBEB
+        margin-top: 15px
+        padding-top: 18px
+        .purchase-info-price
+          font-weight: bold
+    &-text
+      font-weight: 300
+      font-size: 18px
+      color: #000000
+    &-price
+      font-size: 26px
+  &-btn
+    max-width: 250px
+    margin: 40px auto 0
+    display: block
+    &_second
+      background: #C4AD75
+      margin-top: 70px
+      &:hover
+        background: rgba(196, 173, 117, 0.4)
+  &-popup
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    opacity: 0
+    pointer-events: none
+    z-index: 4
+    background: rgba(0, 0, 0, 0.5)
+    transition: opacity .5s ease
+    &.active
+      opacity: 1
+      pointer-events: auto
+    &-content
+      width: 475px
+      background: #ffffff
+      padding: 70px 20px 110px
+      display: flex
+      align-items: center
+      flex-direction: column
+      position: relative
+    &-close
+      position: absolute
+      left: 22px
+      top: 22px
+      width: 22px
+      height: 22px
+      border-radius: 50%
+      background: #E9E9E9
+      display: flex
+      align-items: center
+      justify-content: center
+    &-text
+      font-size: 34px
+      text-align: center
+      letter-spacing: 0.05em
+      color: #000000
+      margin-top: 30px
+
+.nselect
+  .mCSB_container
+    margin-left: 0
+
+
+
+
+
+
+
+
+

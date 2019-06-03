@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <meta name="viewport" content="width=375, maximum-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	@import "header.html"
+	<main class="contact">
+		<div class="contact-container">
+			<h4 class="contact-title">תיצור איתנו קשר</h4>
+			<div class="contact-flex">
+				<div class="contact-left">
+					<p class="contact-left-text">או להשתמש בטופס יצירת הקשר המהיר שלנו</p>
+					<form action="" class="contact-form">
+						<div class="login-form-row">
+							<span class="login-form-title">שם </span>
+							<input type="text" class="login-form-input" required>
+						</div>
+						<div class="login-form-row">
+							<span class="login-form-title">אימייל</span>
+							<input type="email" class="login-form-input" required>
+						</div>
+						<div class="login-form-row">
+							<span class="login-form-title">פרטים</span>
+							<textarea class="login-form-input login-form-textarea"></textarea>
+						</div>
+						<button type="submit" class="login-second-btn contact-form-btn">שלח</button>
+					</form>
+				</div>
+				<div class="contact-right">
+                    <div class="contact-right-item">
+                        <p class="contact-right-title">ןופלט תחיש ונל ןת</p>
+                        <a href="tel:03-9997087" class="contact-right-phone">03-9997087</a>
+                    </div>
+                    <div class="contact-right-item">
+                        <p class="contact-right-title">שלח לנו מייל</p>
+                        <div class="contact-right-row">
+                            <a href="" class="contact-right-mail">management@igallery.co.il</a>
+                            <p class="contact-right-name">הנהלה</p>
+                        </div>
+                        <div class="contact-right-row">
+                            <a href="" class="contact-right-mail">artist@igallery.co.il</a>
+                            <p class="contact-right-name">אמנים</p>
+                        </div>
+                        <div class="contact-right-row">
+                            <a href="" class="contact-right-mail">customer@igallery.co.il</a>
+                            <p class="contact-right-name">לקחות</p>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	@import "footer.html"
+	@import "registration.html"
+	@import "registration-artist.html"
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

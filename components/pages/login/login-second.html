@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <meta name="viewport" content="width=375, maximum-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	@import "header.html"
+	<section class="login">
+		<div class="container">
+			<div class="login-flex">
+				<div class="login-left">
+					<div class="login-second">
+						<h4 class="login-second-title">שחזור סיסמה</h4>
+						<div class="login-step">
+							<div class="login-step-item">2</div>
+							<div class="login-step-line"></div>
+							<div class="login-step-item active">1</div>
+						</div>
+						<p class="login-second-text">הזן את הדוא"ל שלך כדי לקבל קישור לאיפוס הסיסמה</p>
+						<form action="" class="login-second-form first-step active">
+							<div class="login-form-row first-step">
+								<span class="login-form-title">סיסמה</span>
+								<input type="password" class="login-form-input" required>
+							</div>
+							<button type="submit" class="login-second-btn login-second-btn_first">הבא</button>
+						</form>
+						<form action="" class="login-second-form second-step">
+							<div class="login-form-row second-step">
+								<span class="login-form-title">סיסמה חדשה</span>
+								<input type="password" class="login-form-input" required>
+							</div>
+							<button type="submit" class="login-second-btn login-second-btn_second">הבא</button>
+						</form>
+					</div>
+				</div>
+				<div class="login-right">
+					<div class="login-right-block">
+						<img src="img/login.jpg" alt="" class="login-right-img">
+					</div>
+					<p class="login-right-name">by Author name</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@import "footer.html"
+	@import "registration.html"
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

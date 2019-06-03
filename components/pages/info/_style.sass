@@ -1,0 +1,88 @@
+.info
+  padding: 70px 0 130px
+  &-title
+    font-weight: 300
+    font-size: 64px
+    text-align: center
+    letter-spacing: 0.05em
+    color: #000000
+    margin-bottom: 55px
+  &-flex
+    display: flex
+  &-left
+    width: 770px
+    background: #F9F9F9
+    text-align: center
+    padding: 70px 190px 70px 110px
+    &-title
+      font-weight: 300
+      font-size: 26px
+      text-align: center
+      letter-spacing: 0.05em
+      color: #000000
+  &-text
+    margin-top: 25px
+    p
+      font-weight: 300
+      font-size: 12px
+      line-height: 1.33
+      color: #000000
+      margin-bottom: 18px
+      &:last-child
+        margin-bottom: 0
+  &-right
+    width: 300px
+    display: flex
+    justify-content: flex-end
+    position: relative
+    top: -45px
+    &-slider, &-photo
+      width: 410px
+      flex-shrink: 0
+    &-block
+      position: absolute
+      width: 100%
+      left: 0
+      bottom: -45px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding-left: 40px
+      font-weight: 300
+      font-size: 18px
+      color: #000000
+    .swiper-button-next, .swiper-button-prev
+        width: 40px
+        height: 7px
+        background: none
+        position: static
+        margin: 0
+        transform: scale(1, -1)
+        outline: none
+        flex-shrink: 0
+    .swiper-button-next
+      transform: scale(-1, -1)
+    .swiper-pagination
+      position: static
+    &-info
+      display: flex
+      align-items: center
+      justify-content: center
+  &-item
+    padding: 60px 0
+    &:nth-child(odd)
+      .info-flex
+        flex-direction: row-reverse
+      .info-left
+        padding: 70px 110px 70px 190px
+      .info-right
+        justify-content: flex-start
+    &_fluid:nth-child(odd), &_fluid:nth-child(even)
+      padding: 30px 0
+      .info-left
+        width: 100%
+        padding: 70px 110px 70px 110px
+
+
+
+

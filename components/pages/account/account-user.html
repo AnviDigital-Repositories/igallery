@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <meta name="viewport" content="width=375, maximum-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	@import "header.html"
+	<main class="account">
+		<div class="container">
+			<h4 class="account-title">החשבון שלי</h4>
+			<div class="account-flex">
+				<div class="account-left">
+					<div class="account-left-item account-first active">
+						<div class="account-first-top">
+							<p class="account-first-text">ברוכים הבאים לחשבון שלך</p>
+							<p class="account-first-text">Name Surname</p>
+						</div>
+						<div class="account-first-bottom">
+							<div class="account-first-info">
+								<p class="account-first-info-text">הנחה</p>
+								<p class="account-first-info-number">10%</p>
+								<p class="account-first-info-text">יש לך</p>
+							</div>
+						</div>
+						<img src="img/account-bg.jpg" alt="" class="account-first-img">
+					</div>
+					<div class="account-left-item account-second">
+						<h6 class="account-left-subtitle">
+							דף משתמש
+							<svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path class="stroke" d="M1 23V22C1 17.0294 5.02944 13 10 13V13C14.9706 13 19 17.0294 19 22V23" stroke="black" stroke-width="0.9"/>
+								<circle class="stroke" cx="10" cy="5" r="4.5" stroke="black"/>
+							</svg>
+						</h6>
+						<form action="" class="account-second-form">
+							<div class="login-form-row account-second-row">
+								<span class="login-form-title">שם פרטי</span>
+								<input type="text" class="login-form-input" required placeholder="טקסט">
+							</div>
+							<div class="login-form-row account-second-row">
+								<span class="login-form-title">שם משפחה</span>
+								<input type="text" class="login-form-input" required placeholder="טקסט">
+							</div>
+							<div class="login-form-row account-second-row">
+								<span class="login-form-title">מייל</span>
+								<input type="email" class="login-form-input" required placeholder="טקסט">
+							</div>
+							<div class="account-second-line"></div>
+							<div class="login-form-row account-second-row">
+								<span class="login-form-title">סיסמה ישנה</span>
+								<input type="password" class="login-form-input" required>
+							</div>
+							<div class="login-form-row account-second-row">
+								<span class="login-form-title">סיסמה חדשה</span>
+								<input type="password" class="login-form-input" required>
+							</div>
+							<button type="submit" class="account-second-btn">לשמור</button>
+						</form>
+					</div>
+					<div class="account-left-item account-third">
+						<h6 class="account-left-subtitle">
+							הזמנות
+							<svg width="34" height="31" viewBox="0 0 34 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path class="fill" d="M13.6945 27.5593C13.6945 26.0848 12.4993 24.8896 11.0251 24.8896C9.55067 24.8896 8.35547 26.0848 8.35547 27.559C8.35547 29.0335 9.55067 30.2287 11.0251 30.2287C12.4985 30.2271 13.6929 29.033 13.6945 27.5593ZM9.30233 27.5593C9.30233 26.6077 10.0735 25.8365 11.0251 25.8365C11.9765 25.8365 12.7476 26.6077 12.7476 27.559C12.7476 28.5106 11.9765 29.2818 11.0251 29.2818C10.074 29.2808 9.30338 28.5101 9.30233 27.5593Z" fill="black"/>
+								<path class="fill" d="M20.9096 30.2287C22.3841 30.2289 23.5793 29.0337 23.5793 27.5593C23.5795 26.0848 22.3843 24.8896 20.9099 24.8896C19.4354 24.8896 18.2402 26.0848 18.2402 27.5593C18.2421 29.0327 19.436 30.2268 20.9096 30.2287ZM20.9096 25.8365C21.861 25.8365 22.6324 26.6077 22.6324 27.559C22.6327 28.5104 21.8612 29.2818 20.9099 29.2818C19.9585 29.2818 19.1871 28.5106 19.1871 27.5593C19.1882 26.6085 19.9588 25.8378 20.9096 25.8365Z" fill="black"/>
+								<path class="fill" d="M0.473427 4.68906H3.36128C4.31157 4.68537 5.12184 5.37728 5.26662 6.31674L7.55265 20.7571C7.76849 22.1573 8.97636 23.1889 10.3932 23.1834H24.5236C24.7849 23.1834 24.9971 22.9712 24.9971 22.7099C24.9971 22.4484 24.7849 22.2365 24.5236 22.2365H10.3932C9.44292 22.2402 8.63265 21.548 8.48788 20.6089L8.09925 18.1537H22.5713C23.7966 18.1532 24.8872 17.377 25.2887 16.2196L27.9737 8.47041C28.0242 8.32563 28.0012 8.16553 27.9124 8.04057C27.8234 7.91587 27.6797 7.84164 27.5264 7.84164H6.46656L6.20185 6.16852C5.986 4.76832 4.77813 3.73666 3.36128 3.74221H0.473427C0.21188 3.74221 0 3.95435 0 4.21564C0 4.47718 0.21188 4.68906 0.473427 4.68906ZM26.8612 8.78875L24.3942 15.9095C24.1247 16.6859 23.3932 17.2066 22.5713 17.2069H7.94919L6.61636 8.78849L26.8612 8.78875Z" fill="black"/>
+								<circle cx="27" cy="7" r="7" fill="white"/>
+								<path class="stroke" d="M24 6L26.9808 9L33 3" stroke="black" stroke-linecap="round"/>
+							</svg>
+						</h6>
+						<div class="account-third-block">
+							<div class="account-third-top">
+								<div class="account-third-top-left">
+									<span class="account-third-top-text">אשר:</span>
+									<span class="account-third-top-text">01.03.2019</span>
+								</div>
+								<span class="account-third-top-label">לא נשלח עדיין</span>
+							</div>
+							<div class="account-third-list">
+								<div class="account-third-item">
+									<p class="account-third-name">שם הציור</p>
+									<div class="account-third-flex">
+										<div class="account-third-left">
+											<p class="account-third-row">
+												<span class="account-third-key">סוג הדפסה ומסגור:</span>
+												<span class="account-third-value">נייר</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">גודל:</span>
+												<span class="account-third-value">10x10</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">סוג נייר:</span>
+												<span class="account-third-value">פיין ארט</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">הדפסה בלבד או מסגור:</span>
+												<span class="account-third-value">הדפסה בלבד</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">פספרטו:</span>
+												<span class="account-third-value">צבע  רוחב</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">גב קשיח:</span>
+												<span class="account-third-value">גב קשיח</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">הגנה:</span>
+												<span class="account-third-value">זכוכית מט</span>
+											</p>
+										</div>
+										<div class="account-third-right">
+											<img src="img/gallery-item1.jpg" alt="" class="account-third-img">
+										</div>
+									</div>
+									<div class="account-third-info">
+										<p class="account-third-price">
+											<span class="account-third-number">435</span>
+											<span class="account-third-currency">₪</span>
+										</p>
+										<p class="account-third-quantity">
+											לספור:
+											<span class="account-third-index">1</span>
+										</p>
+									</div>
+								</div>
+								<div class="account-third-item">
+									<p class="account-third-name">שם הציור</p>
+									<div class="account-third-flex">
+										<div class="account-third-left">
+											<p class="account-third-row">
+												<span class="account-third-key">סוג הדפסה ומסגור:</span>
+												<span class="account-third-value">נייר</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">גודל:</span>
+												<span class="account-third-value">10x10</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">סוג נייר:</span>
+												<span class="account-third-value">פיין ארט</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">הדפסה בלבד או מסגור:</span>
+												<span class="account-third-value">הדפסה בלבד</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">פספרטו:</span>
+												<span class="account-third-value">צבע  רוחב</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">גב קשיח:</span>
+												<span class="account-third-value">גב קשיח</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">הגנה:</span>
+												<span class="account-third-value">זכוכית מט</span>
+											</p>
+										</div>
+										<div class="account-third-right">
+											<img src="img/gallery-item1.jpg" alt="" class="account-third-img">
+										</div>
+									</div>
+									<div class="account-third-info">
+										<p class="account-third-price">
+											<span class="account-third-number">435</span>
+											<span class="account-third-currency">₪</span>
+										</p>
+										<p class="account-third-quantity">
+											לספור:
+											<span class="account-third-index">1</span>
+										</p>
+									</div>
+								</div>
+								<div class="account-third-info account-third-total">
+									<p class="account-third-price">
+										<span class="account-third-number">435</span>
+										<span class="account-third-currency">₪</span>
+									</p>
+									<p class="account-third-quantity">
+										סה"כ לתשלום כולל מע"מ:
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="account-third-block">
+							<div class="account-third-top">
+								<div class="account-third-top-left">
+									<span class="account-third-top-text">אשר:</span>
+									<span class="account-third-top-text">01.03.2019</span>
+								</div>
+								<span class="account-third-top-label">נמסר</span>
+							</div>
+							<div class="account-third-list">
+								<div class="account-third-item">
+									<p class="account-third-name">שם הציור</p>
+									<div class="account-third-flex">
+										<div class="account-third-left">
+											<p class="account-third-row">
+												<span class="account-third-key">סוג הדפסה ומסגור:</span>
+												<span class="account-third-value">נייר</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">גודל:</span>
+												<span class="account-third-value">10x10</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">סוג נייר:</span>
+												<span class="account-third-value">פיין ארט</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">הדפסה בלבד או מסגור:</span>
+												<span class="account-third-value">הדפסה בלבד</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">פספרטו:</span>
+												<span class="account-third-value">צבע  רוחב</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">גב קשיח:</span>
+												<span class="account-third-value">גב קשיח</span>
+											</p>
+											<p class="account-third-row">
+												<span class="account-third-key">הגנה:</span>
+												<span class="account-third-value">זכוכית מט</span>
+											</p>
+										</div>
+										<div class="account-third-right">
+											<img src="img/gallery-item1.jpg" alt="" class="account-third-img">
+										</div>
+									</div>
+									<div class="account-third-info">
+										<p class="account-third-price">
+											<span class="account-third-number">435</span>
+											<span class="account-third-currency">₪</span>
+										</p>
+										<p class="account-third-quantity">
+											לספור:
+											<span class="account-third-index">1</span>
+										</p>
+									</div>
+								</div>
+								<div class="account-third-info account-third-total">
+									<p class="account-third-price">
+										<span class="account-third-number">435</span>
+										<span class="account-third-currency">₪</span>
+									</p>
+									<p class="account-third-quantity">
+										סה"כ לתשלום כולל מע"מ:
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="account-left-item account-fourth">
+						<h6 class="account-left-subtitle">
+							כתובת
+							<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path class="fill" d="M4.5 13C4.5 12.7239 4.27614 12.5 4 12.5C3.72386 12.5 3.5 12.7239 3.5 13H4.5ZM4 29H3.5V29.5H4V29ZM25 29V29.5H25.5V29H25ZM25.5 13C25.5 12.7239 25.2761 12.5 25 12.5C24.7239 12.5 24.5 12.7239 24.5 13H25.5ZM0.667818 12.6263C0.461427 12.8098 0.442836 13.1258 0.626295 13.3322C0.809754 13.5386 1.12579 13.5572 1.33218 13.3737L0.667818 12.6263ZM14.5 1L14.8322 0.626295L14.5 0.331023L14.1678 0.626295L14.5 1ZM27.6678 13.3737C27.8742 13.5572 28.1902 13.5386 28.3737 13.3322C28.5572 13.1258 28.5386 12.8098 28.3322 12.6263L27.6678 13.3737ZM12 19V18.5H11.5V19H12ZM17 19H17.5V18.5H17V19ZM17 29V29.5H17.5V29H17ZM12 29H11.5V29.5H12V29ZM3.5 13V29H4.5V13H3.5ZM4 29.5H25V28.5H4V29.5ZM25.5 29V13H24.5V29H25.5ZM1.33218 13.3737L14.8322 1.3737L14.1678 0.626295L0.667818 12.6263L1.33218 13.3737ZM14.1678 1.3737L27.6678 13.3737L28.3322 12.6263L14.8322 0.626295L14.1678 1.3737ZM12 19.5H17V18.5H12V19.5ZM16.5 19V29H17.5V19H16.5ZM17 28.5H12V29.5H17V28.5ZM12.5 29V19H11.5V29H12.5Z" fill="black"/>
+							</svg>
+						</h6>
+						<form action="" class="account-fourth-form">
+							<div class="login-form-row account-second-row purchase-form-row_select">
+								<span class="login-form-title">עיר/ישוב</span>
+								<select class="register-card-select purchase-form-select select_adress">
+									<option value="1" class="register-card-option">טקסט</option>
+									<option value="2" class="register-card-option">טקסט</option>
+									<option value="3" class="register-card-option">טקסט</option>
+								</select>
+							</div>
+							<div class="purchase-form-group">
+								<div class="login-form-row purchase-form-row">
+									<span class="login-form-title">*מספר</span>
+									<input type="text" class="login-form-input" required>
+								</div>
+								<div class="login-form-row purchase-form-row">
+									<span class="login-form-title">כתובת </span>
+									<input type="text" class="login-form-input" required>
+								</div>
+							</div>
+							<div class="login-form-row account-second-row">
+								<span class="login-form-title">מיקוד</span>
+								<input type="text" class="login-form-input" required>
+							</div>
+							<div class="login-form-row account-second-row">
+								<span class="login-form-title">הערות (ללא צורך)</span>
+								<input type="text" class="login-form-input" required>
+							</div>
+							<button type="submit" class="account-second-btn">לשמור</button>
+						</form>
+					</div>
+					<div class="account-left-item account-fifth">
+						<h6 class="account-left-subtitle">
+							תמונות שצפתי
+							<svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path class="stroke" fill-rule="evenodd" clip-rule="evenodd" d="M1 9.72656C1 9.72656 5.36328 1 12.999 1C20.6348 1 24.998 9.72656 24.998 9.72656C24.998 9.72656 20.6348 18.4531 12.999 18.4531C5.36328 18.4531 1 9.72656 1 9.72656Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+								<path class="stroke" d="M12.9993 13.0025C14.8068 13.0025 16.272 11.5372 16.272 9.72976C16.272 7.92228 14.8068 6.45703 12.9993 6.45703C11.1918 6.45703 9.72656 7.92228 9.72656 9.72976C9.72656 11.5372 11.1918 13.0025 12.9993 13.0025Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</h6>
+						<div class="account-fifth-filter">
+							<a href="" class="account-fifth-link">עם מסגרת</a>
+							<a href="" class="account-fifth-link active">ללא מסגרת</a>
+						</div>
+						<div class="account-fifth-main">
+							<div class="gallery-item">
+								<div class="gallery-item-block">
+									<img src="img/gallery-item1.jpg" alt="" class="gallery-item-img">
+									<div class="gallery-item-info">
+										<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+										<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+											<br>כאן תוכלו לבחור את גודל התמונה,
+										</p>
+									</div>
+								</div>
+								<div class="gallery-item-bottom">
+									<a href="" class="gallery-item-like">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+											<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+										</svg>
+									</a>
+									<div class="gallery-item-about">
+										<h6 class="gallery-item-name">שם הציור</h6>
+										<p class="gallery-item-description">שם מלא</p>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-item">
+								<div class="gallery-item-block">
+									<img src="img/gallery-item2.jpg" alt="" class="gallery-item-img">
+									<div class="gallery-item-info">
+										<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+										<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+											<br>כאן תוכלו לבחור את גודל התמונה,
+										</p>
+									</div>
+								</div>
+								<div class="gallery-item-bottom">
+									<a href="" class="gallery-item-like">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+											<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+										</svg>
+									</a>
+									<div class="gallery-item-about">
+										<h6 class="gallery-item-name">שם הציור</h6>
+										<p class="gallery-item-description">שם מלא</p>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-item">
+								<div class="gallery-item-block">
+									<img src="img/gallery-item3.jpg" alt="" class="gallery-item-img">
+									<div class="gallery-item-info">
+										<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+										<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+											<br>כאן תוכלו לבחור את גודל התמונה,
+										</p>
+									</div>
+								</div>
+								<div class="gallery-item-bottom">
+									<a href="" class="gallery-item-like">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+											<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+										</svg>
+									</a>
+									<div class="gallery-item-about">
+										<h6 class="gallery-item-name">שם הציור</h6>
+										<p class="gallery-item-description">שם מלא</p>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-item">
+								<div class="gallery-item-block">
+									<img src="img/gallery-item4.jpg" alt="" class="gallery-item-img">
+									<div class="gallery-item-info">
+										<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+										<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+											<br>כאן תוכלו לבחור את גודל התמונה,
+										</p>
+									</div>
+								</div>
+								<div class="gallery-item-bottom">
+									<a href="" class="gallery-item-like">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+											<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+										</svg>
+									</a>
+									<div class="gallery-item-about">
+										<h6 class="gallery-item-name">שם הציור</h6>
+										<p class="gallery-item-description">שם מלא</p>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-item">
+								<div class="gallery-item-block">
+									<img src="img/gallery-item5.jpg" alt="" class="gallery-item-img">
+									<div class="gallery-item-info">
+										<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+										<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+											<br>כאן תוכלו לבחור את גודל התמונה,
+										</p>
+									</div>
+								</div>
+								<div class="gallery-item-bottom">
+									<a href="" class="gallery-item-like">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+											<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+										</svg>
+									</a>
+									<div class="gallery-item-about">
+										<h6 class="gallery-item-name">שם הציור</h6>
+										<p class="gallery-item-description">שם מלא</p>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-item">
+								<div class="gallery-item-block">
+									<img src="img/gallery-item1.jpg" alt="" class="gallery-item-img">
+									<div class="gallery-item-info">
+										<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+										<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+											<br>כאן תוכלו לבחור את גודל התמונה,
+										</p>
+									</div>
+								</div>
+								<div class="gallery-item-bottom">
+									<a href="" class="gallery-item-like">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+											<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+										</svg>
+									</a>
+									<div class="gallery-item-about">
+										<h6 class="gallery-item-name">שם הציור</h6>
+										<p class="gallery-item-description">שם מלא</p>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-item">
+								<div class="gallery-item-block">
+									<img src="img/gallery-item6.jpg" alt="" class="gallery-item-img">
+									<div class="gallery-item-info">
+										<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+										<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+											<br>כאן תוכלו לבחור את גודל התמונה,
+										</p>
+									</div>
+								</div>
+								<div class="gallery-item-bottom">
+									<a href="" class="gallery-item-like">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+											<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+										</svg>
+									</a>
+									<div class="gallery-item-about">
+										<h6 class="gallery-item-name">שם הציור</h6>
+										<p class="gallery-item-description">שם מלא</p>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-item">
+								<div class="gallery-item-block">
+									<img src="img/gallery-item7.jpg" alt="" class="gallery-item-img">
+									<div class="gallery-item-info">
+										<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+										<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+											<br>כאן תוכלו לבחור את גודל התמונה,
+										</p>
+									</div>
+								</div>
+								<div class="gallery-item-bottom">
+									<a href="" class="gallery-item-like">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+											<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+										</svg>
+									</a>
+									<div class="gallery-item-about">
+										<h6 class="gallery-item-name">שם הציור</h6>
+										<p class="gallery-item-description">שם מלא</p>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-item">
+								<div class="gallery-item-block">
+									<img src="img/gallery-item8.jpg" alt="" class="gallery-item-img">
+									<div class="gallery-item-info">
+										<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+										<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+											<br>כאן תוכלו לבחור את גודל התמונה,
+										</p>
+									</div>
+								</div>
+								<div class="gallery-item-bottom">
+									<a href="" class="gallery-item-like">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+											<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+										</svg>
+									</a>
+									<div class="gallery-item-about">
+										<h6 class="gallery-item-name">שם הציור</h6>
+										<p class="gallery-item-description">שם מלא</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="account-right">
+					<div class="account-right-sticky">
+						<div class="account-right-top">
+							<div class="account-right-top-user">
+								<p class="account-right-top-name">Name</p>
+								<p class="account-right-top-surname">Surname</p>
+							</div>
+							<p class="account-right-top-text">היי</p>
+						</div>
+						<div class="account-right-tab">
+							<a href="" class="account-right-link">
+								דף משתמש
+								<svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="stroke" d="M1 23V22C1 17.0294 5.02944 13 10 13V13C14.9706 13 19 17.0294 19 22V23" stroke="black" stroke-width="0.9"/>
+									<circle class="stroke" cx="10" cy="5" r="4.5" stroke="black"/>
+								</svg>
+							</a>
+							<a href="" class="account-right-link">
+								הזמנות
+								<svg width="34" height="31" viewBox="0 0 34 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="fill" d="M13.6945 27.5593C13.6945 26.0848 12.4993 24.8896 11.0251 24.8896C9.55067 24.8896 8.35547 26.0848 8.35547 27.559C8.35547 29.0335 9.55067 30.2287 11.0251 30.2287C12.4985 30.2271 13.6929 29.033 13.6945 27.5593ZM9.30233 27.5593C9.30233 26.6077 10.0735 25.8365 11.0251 25.8365C11.9765 25.8365 12.7476 26.6077 12.7476 27.559C12.7476 28.5106 11.9765 29.2818 11.0251 29.2818C10.074 29.2808 9.30338 28.5101 9.30233 27.5593Z" fill="black"/>
+									<path class="fill" d="M20.9096 30.2287C22.3841 30.2289 23.5793 29.0337 23.5793 27.5593C23.5795 26.0848 22.3843 24.8896 20.9099 24.8896C19.4354 24.8896 18.2402 26.0848 18.2402 27.5593C18.2421 29.0327 19.436 30.2268 20.9096 30.2287ZM20.9096 25.8365C21.861 25.8365 22.6324 26.6077 22.6324 27.559C22.6327 28.5104 21.8612 29.2818 20.9099 29.2818C19.9585 29.2818 19.1871 28.5106 19.1871 27.5593C19.1882 26.6085 19.9588 25.8378 20.9096 25.8365Z" fill="black"/>
+									<path class="fill" d="M0.473427 4.68906H3.36128C4.31157 4.68537 5.12184 5.37728 5.26662 6.31674L7.55265 20.7571C7.76849 22.1573 8.97636 23.1889 10.3932 23.1834H24.5236C24.7849 23.1834 24.9971 22.9712 24.9971 22.7099C24.9971 22.4484 24.7849 22.2365 24.5236 22.2365H10.3932C9.44292 22.2402 8.63265 21.548 8.48788 20.6089L8.09925 18.1537H22.5713C23.7966 18.1532 24.8872 17.377 25.2887 16.2196L27.9737 8.47041C28.0242 8.32563 28.0012 8.16553 27.9124 8.04057C27.8234 7.91587 27.6797 7.84164 27.5264 7.84164H6.46656L6.20185 6.16852C5.986 4.76832 4.77813 3.73666 3.36128 3.74221H0.473427C0.21188 3.74221 0 3.95435 0 4.21564C0 4.47718 0.21188 4.68906 0.473427 4.68906ZM26.8612 8.78875L24.3942 15.9095C24.1247 16.6859 23.3932 17.2066 22.5713 17.2069H7.94919L6.61636 8.78849L26.8612 8.78875Z" fill="black"/>
+									<circle cx="27" cy="7" r="7" fill="white"/>
+									<path class="stroke" d="M24 6L26.9808 9L33 3" stroke="black" stroke-linecap="round"/>
+								</svg>
+							</a>
+							<a href="" class="account-right-link">
+								כתובת
+								<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="fill" d="M4.5 13C4.5 12.7239 4.27614 12.5 4 12.5C3.72386 12.5 3.5 12.7239 3.5 13H4.5ZM4 29H3.5V29.5H4V29ZM25 29V29.5H25.5V29H25ZM25.5 13C25.5 12.7239 25.2761 12.5 25 12.5C24.7239 12.5 24.5 12.7239 24.5 13H25.5ZM0.667818 12.6263C0.461427 12.8098 0.442836 13.1258 0.626295 13.3322C0.809754 13.5386 1.12579 13.5572 1.33218 13.3737L0.667818 12.6263ZM14.5 1L14.8322 0.626295L14.5 0.331023L14.1678 0.626295L14.5 1ZM27.6678 13.3737C27.8742 13.5572 28.1902 13.5386 28.3737 13.3322C28.5572 13.1258 28.5386 12.8098 28.3322 12.6263L27.6678 13.3737ZM12 19V18.5H11.5V19H12ZM17 19H17.5V18.5H17V19ZM17 29V29.5H17.5V29H17ZM12 29H11.5V29.5H12V29ZM3.5 13V29H4.5V13H3.5ZM4 29.5H25V28.5H4V29.5ZM25.5 29V13H24.5V29H25.5ZM1.33218 13.3737L14.8322 1.3737L14.1678 0.626295L0.667818 12.6263L1.33218 13.3737ZM14.1678 1.3737L27.6678 13.3737L28.3322 12.6263L14.8322 0.626295L14.1678 1.3737ZM12 19.5H17V18.5H12V19.5ZM16.5 19V29H17.5V19H16.5ZM17 28.5H12V29.5H17V28.5ZM12.5 29V19H11.5V29H12.5Z" fill="black"/>
+								</svg>
+							</a>
+							<a href="" class="account-right-link">
+								תמונות שצפתי
+								<svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="stroke" fill-rule="evenodd" clip-rule="evenodd" d="M1 9.72656C1 9.72656 5.36328 1 12.999 1C20.6348 1 24.998 9.72656 24.998 9.72656C24.998 9.72656 20.6348 18.4531 12.999 18.4531C5.36328 18.4531 1 9.72656 1 9.72656Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+									<path class="stroke" d="M12.9993 13.0025C14.8068 13.0025 16.272 11.5372 16.272 9.72976C16.272 7.92228 14.8068 6.45703 12.9993 6.45703C11.1918 6.45703 9.72656 7.92228 9.72656 9.72976C9.72656 11.5372 11.1918 13.0025 12.9993 13.0025Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+						</div>
+						<a href="" class="account-right-btn">להתנתק</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	@import "footer.html"
+	@import "registration.html"
+	@import "registration-artist.html"
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

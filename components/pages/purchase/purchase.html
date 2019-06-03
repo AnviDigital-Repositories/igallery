@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <meta name="viewport" content="width=375, maximum-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	@import "header.html"
+	<main class="purchase">
+		<section class="purchase-main">
+			<h4 class="purchase-title">פרטי רכישה</h4>
+			<form action="" class="purchase-form purchase-form_first">
+				<div class="purchase-block valid">
+					<a href="" class="purchase-back">חזרה לעגלה</a>
+					<span class="package-check">
+						<span class="package-check-circle"></span>
+					</span>
+					<div class="purchase-content">
+						<div class="purchase-form-item">
+							<h6 class="purchase-form-subtitle">פרטי משתמש</h6>
+							<div class="login-form-row purchase-form-row">
+								<span class="login-form-title">*שם</span>
+								<input type="text" class="login-form-input" required>
+							</div>
+							<div class="login-form-row purchase-form-row">
+								<span class="login-form-title">*שם משפחה</span>
+								<input type="text" class="login-form-input" required>
+							</div>
+							<div class="login-form-row purchase-form-row">
+								<span class="login-form-title">*מייל</span>
+								<input type="email" class="login-form-input" required>
+							</div>
+							<div class="login-form-row purchase-form-row">
+								<span class="login-form-title">חברה</span>
+								<input type="text" class="login-form-input">
+							</div>
+							<div class="login-form-row purchase-form-row">
+								<span class="login-form-title">*טלפון / נייד</span>
+								<div class="purchase-form-block">
+									<select class="register-card-select purchase-form-select select_code">
+										<option value="1" class="register-card-option">+972</option>
+										<option value="2" class="register-card-option">+972</option>
+										<option value="3" class="register-card-option">+972</option>
+									</select>
+									<input type="phone" class="login-form-input purchase-form-phone" required placeholder="(__) __ __ __">
+								</div>
+							</div>
+						</div>
+						<div class="purchase-form-item">
+							<h6 class="purchase-form-subtitle">פרטי משלוח</h6>
+							<div class="purchase-form-flex">
+								<label class="register-payment-label">
+									<p class="register-payment-text">משלוח
+										<span class="register-payment-text-span">15 ₪</span>
+									</p>
+									<input type="radio" class="register-payment-radio" name="payment">
+									<span class="register-payment-check"></span>
+								</label>
+								<label class="register-payment-label">
+									<p class="register-payment-text">איסוף
+										<span class="register-payment-text-span">0 ₪</span>
+									</p>
+									<input type="radio" class="register-payment-radio" name="payment">
+									<span class="register-payment-check"></span>
+								</label>
+							</div>
+							<p class="purchase-form-text purchase-form-text_red">הערה: </p>
+							<p class="purchase-form-text">משלוחים מתייחסים לתמונות ממוסגרות עד גודל .70*100 לכל מידה מעבר  ראה</p>
+							<a href="" class="purchase-form-link"> מדיניות משלוחים</a>
+							<div class="purchase-form-change">
+								<label class="register-payment-label">
+									<p class="register-payment-text">Address uploaded from user settings </p>
+									<input type="radio" class="register-payment-radio" name="message">
+									<span class="register-payment-check"></span>
+								</label>
+								<p class="purchase-form-or">וא</p>
+								<label class="register-payment-label">
+									<p class="register-payment-text register-payment-text_under">השדח תבותכ</p>
+									<input type="radio" class="register-payment-radio" name="message">
+									<span class="register-payment-check"></span>
+								</label>
+							</div>
+							<div class="login-form-row purchase-form-row purchase-form-row_select">
+								<span class="login-form-title">*עיר/ישוב</span>
+								<select class="register-card-select purchase-form-select select_adress">
+									<option value="1" class="register-card-option">טקסט</option>
+									<option value="2" class="register-card-option">טקסט</option>
+									<option value="3" class="register-card-option">טקסט</option>
+								</select>
+							</div>
+							<div class="purchase-form-group">
+								<div class="login-form-row purchase-form-row">
+									<span class="login-form-title">*מספר</span>
+									<input type="text" class="login-form-input" required>
+								</div>
+								<div class="login-form-row purchase-form-row">
+									<span class="login-form-title">*כתובת </span>
+									<input type="text" class="login-form-input" required>
+								</div>
+							</div>
+							<div class="login-form-row purchase-form-row">
+								<span class="login-form-title">מיקוד</span>
+								<input type="text" class="login-form-input">
+							</div>
+							<div class="login-form-row purchase-form-row">
+								<span class="login-form-title">הערות (ללא צורך)</span>
+								<input type="text" class="login-form-input">
+							</div>
+						</div>
+						<div class="purchase-form-item">
+							<h6 class="purchase-form-subtitle">מדיניות משלוחים</h6>
+							<div class="purchase-form-info">
+								<p class="purchase-form-info-label">איסוף עצמי ת"א</p>
+								<p class="purchase-form-info-label">זמן הספקה</p>
+								<p class="purchase-form-info-label">משלוח תמונות גדולות</p>
+								<p class="purchase-form-info-label">אריזה</p>
+								<p class="purchase-form-info-label">אחריות משלוח</p>
+								<p class="purchase-form-info-label">החלפה</p>
+							</div>
+							<label class="login-form-label">
+								<span class="login-form-span">קראתי את התקנון ואני מאשר אותו</span>
+								<input type="checkbox" class="login-form-checkbox">
+								<span class="login-form-check">
+								<svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 3.5L5.5 8L12 1.5" stroke="#059FF9" stroke-width="2"></path>
+								</svg>
+							</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="purchase-info">
+					<div class="purchase-info-row">
+						<p class="purchase-info-price">545 ₪</p>
+						<p class="purchase-info-text">מחיר ההזמנה:</p>
+					</div>
+					<div class="purchase-info-row">
+						<p class="purchase-info-price">545 ₪</p>
+						<p class="purchase-info-text">מסירה:</p>
+					</div>
+					<div class="purchase-info-row">
+						<p class="purchase-info-price">545 ₪</p>
+						<p class="purchase-info-text">סך הכל:</p>
+					</div>
+				</div>
+				<div class="purchase-block">
+					<span class="package-check">
+						<span class="package-check-circle"></span>
+					</span>
+					<div class="purchase-content purchase-content_fluid">
+						<div class="purchase-form-item">
+							<h6 class="purchase-form-subtitle">םלשל ףידעמ ינא</h6>
+							<div class="login-form-row purchase-form-row">
+								<label class="register-payment-label">
+									<p class="register-payment-text">כרטיס אשראי </p>
+									<input type="radio" class="register-payment-radio" name="payment">
+									<span class="register-payment-check"></span>
+								</label>
+								<label class="register-payment-label">
+									<img src="img/paypal.svg" alt="" class="register-payment-img">
+									<input type="radio" class="register-payment-radio" name="payment">
+									<span class="register-payment-check"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="login-second-btn purchase-btn purchase-btn_first">הבא</button>
+			</form>
+			<form action="" class="purchase-form purchase-form_second">
+				<div class="purchase-block">
+					<a href="" class="purchase-back">חזור</a>
+					<span class="package-check">
+						<span class="package-check-circle"></span>
+					</span>
+					<div class="purchase-content">
+						<div class="login-form-row register-form-row">
+							<span class="login-form-title">Full name on a Card</span>
+							<input type="text" class="login-form-input" required>
+						</div>
+						<div class="login-form-row register-form-row">
+							<span class="login-form-title">Card number</span>
+							<input type="text" class="login-form-input login-form-input_card" required placeholder="xxxx xxxx xxxx xxxx">
+						</div>
+						<div class="register-card-block">
+							<div class="register-card-selected">
+								<span class="login-form-title">Expiration date</span>
+								<div class="register-card-flex">
+									<select class="register-card-select select_month" data-title="Month">
+										<option value="1" class="register-card-option">first</option>
+										<option value="2" class="register-card-option">second</option>
+										<option value="3" class="register-card-option">third</option>
+									</select>
+									<select class="register-card-select select_year" data-title="Year">
+										<option value="1" class="register-card-option">1</option>
+										<option value="2" class="register-card-option">2</option>
+										<option value="3" class="register-card-option">3</option>
+									</select>
+								</div>
+							</div>
+							<div class="login-form-row register-form-row_cv">
+								<span class="login-form-title">CVV2 / CVC2</span>
+								<input type="text" class="login-form-input login-form-input" required>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="login-second-btn purchase-btn purchase-btn_second">הבא</button>
+			</form>
+		</section>
+	</main>
+	<div class="purchase-popup">
+		<div class="purchase-popup-content">
+			<a href="" class="purchase-popup-close">
+				<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 1L4 4M7 7L4 4M4 4L7 1L1 7" stroke="#818181"></path>
+				</svg>
+			</a>
+			<a href="" class="purchase-popup-logo">
+				<img src="img/logo.png" alt="" class="purchase-popup-img">
+			</a>
+			<p class="purchase-popup-text">תודה על הזמנתך</p>
+		</div>
+	</div>
+	@import "footer.html"
+	@import "registration.html"
+	@import "registration-artist.html"
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

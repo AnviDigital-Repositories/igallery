@@ -1,0 +1,30 @@
+{
+  "name": "my-gulp-project",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "SytnikArtem\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b_Artem"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "jquery.maskedinput": "^1.4.1",
+    "nselect": "^1.0.3",
+    "masonry-layout": "masonry#^4.2.2",
+    "jquery-ui": "^1.12.1",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "scrollmagic": "^2.0.7"
+  }
+}

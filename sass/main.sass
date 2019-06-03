@@ -1,0 +1,1240 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: rgba(0, 0, 0, 0.3)
+  opacity: 1
+
+*:-moz-placeholder
+  color: rgba(0, 0, 0, 0.3)
+  opacity: 1
+
+*::-moz-placeholder
+  color: rgba(0, 0, 0, 0.3)
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: rgba(0, 0, 0, 0.3)
+  opacity: 1
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+input[type="number"]
+  -moz-appearance: textfield
+
+input[type="number"]:hover, input[type="number"]:focus
+  -moz-appearance: number-input
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: rgba(0, 0, 0, 0.3)
+
+body input:required:valid,
+body textarea:required:valid
+  color: rgb(0, 0, 0)
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+h1
+  font-family: "Assistant", sans-serif
+  font-size: 64px
+  line-height: 32
+  letter-spacing: 0.05em
+  color: #000000
+  direction: rtl
+h2
+  font-family: "Assistant", sans-serif
+  font-style: normal
+  font-weight: 300
+  font-size: 52px
+  line-height: 1
+  text-align: center
+  letter-spacing: 0.05em
+  color: #000000
+  direction: rtl
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+a
+  direction: rtl
+  text-decoration: none
+  outline: none
+input
+  outline: none
+  border: none
+button
+  outline: none
+  background: none
+  border: none
+p, span
+  font-family: "Assistant", sans-serif
+  direction: rtl
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: "Assistant", sans-serif
+  overflow-x: hidden
+.overlay
+  background: rgba(#000000, 0.5)
+  width: 100%
+  height: 100vh
+  position: absolute
+  left: 0
+  top: 75px
+  opacity: 0
+  pointer-events: none
+  transition: all 0.5s ease
+  z-index: 1
+  &.active
+    opacity: 1
+    pointer-events: auto
+img
+  display: block
+  max-width: 100%
+  height: auto
+svg
+  overflow: hidden
+.container
+  width: 100%
+  max-width: 1340px
+  padding: 0 25px
+  margin: 0 auto
+  position: relative
+  &_sm
+    max-width: 1120px
+  &_xs
+    max-width: 900px
+.header
+  background: #F8F8F8
+  padding: 10px 0
+  position: relative
+  z-index: 4
+  .svg-hover
+    opacity: 0
+  &-heart
+    position: absolute
+    left: 25px
+    top: 65px
+    text-align: center
+    padding: 25px 0
+    max-width: 300px
+    width: 100%
+    background: #ffffff
+    opacity: 0
+    pointer-events: none
+    transition: all 0.5s ease
+    z-index: 2
+    &:before
+      content: ''
+      position: absolute
+      left: 90px
+      top: -8px
+      width: 14px
+      height: 14px
+      background: #FFFFFF
+      transform: matrix(0.71, 0.71, -0.7, 0.71, 0, 0)
+    p
+      padding-bottom: 13px
+    &-img
+      width: 100%
+      height: 190px
+      object-fit: cover
+      margin-bottom: 25px
+    &-btn
+      padding: 12px 0
+      max-width: 230px
+      display: block
+      width: 100%
+      border: 1px solid #E1E1E1
+      box-sizing: border-box
+      margin: 0 auto
+  &-drop
+    background: #FFFFFF
+    position: absolute
+    left: 0
+    top: 75px
+    text-align: right
+    width: 100%
+    display: none
+    z-index: 1
+    .header-link
+      padding: 22px
+      width: auto
+      font-family: "Assistant", sans-serif
+      font-style: normal
+      font-weight: normal
+      &:hover
+        font-family: "Assistant", sans-serif
+        font-style: normal
+        font-weight: normal
+        background: #F8F8F8
+    .header-list
+      margin-left: 60px
+
+      &:first-child
+        margin-left: 0
+      &:hover
+        .header-first, .overlay
+          opacity: 1
+          pointer-events: auto
+
+  &-menu
+    display: flex
+    justify-content: flex-end
+    &-burger
+      display: flex
+      justify-content: flex-end
+      padding-right: 72px
+
+  &-item
+    display: flex
+    align-items: center
+    margin-right: 35px
+    transition: all 0.5s ease
+    cursor: pointer
+    height: 100%
+    &:hover
+      .svg-hover
+        opacity: 1
+        transition: all 0.3s ease
+      .svg-basket
+        opacity: 0
+        transition: all 0.3s ease
+      .svg-hover
+        opacity: 1
+      .header-basket, .header-heart, .overlay
+        opacity: 1
+        pointer-events: auto
+
+  &-basket
+    position: absolute
+    top: 65px
+    left: 25px
+    max-width: 630px
+    width: 100%
+    background: #FFFFFF
+    opacity: 0
+    pointer-events: none
+    transition: all 0.5s ease
+    z-index: 2
+    &:before
+      content: ''
+      position: absolute
+      left: 21px
+      top: -8px
+      width: 14px
+      height: 14px
+      background: #FFFFFF
+      transform: matrix(0.71, 0.71, -0.7, 0.71, 0, 0)
+    &-delete
+      height: 14px
+    &-bg
+      position: absolute
+      left: 0
+      top: -20px
+      width: 100%
+      height: 20px
+      background: none
+    &-title
+      font-family: "Assistant", sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 1
+      text-align: right
+      color: #000000
+      margin-bottom: 7px
+    &-one
+      width: 100%
+      height: 100%
+      object-fit: cover
+      &:hover
+        box-shadow: -8px 10px 20px #C4C4C4, inset 10px 1px 1px #C4C4C4
+    &-input
+      font-family: "Assistant", sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 1
+      text-align: center
+      color: #000000
+      border: none
+      width: 20px
+    &-quantity
+      display: flex
+      justify-content: center
+    &-price
+      font-family: "Assistant", sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 1
+      text-align: center
+      color: #000000
+      span
+        font-size: 18px
+    &-list
+      display: flex
+      justify-content: space-between
+      align-items: inherit
+      padding: 30px 0 40px 40px
+      min-height: 110px
+      &:first-child
+        padding: 60px 0 30px 40px
+    &-flex
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      text-align: right
+      padding: 0 5px
+      max-width: 150px
+    &-block
+      max-width: 210px
+      width: 100%
+      height: 110px
+      margin-left: 45px
+    &-info p
+      font-family: "Assistant", sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 1
+      text-align: right
+      color: #A5A5A5
+    &-link
+      font-family: "Assistant", sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 1
+      text-align: right
+      color: #89BBE0
+      position: relative
+      margin-top: 7px
+      white-space: nowrap
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        bottom: -2px
+        background: #89BBE0
+        width: 100%
+        height: 1px
+    &-span
+      padding-left: 14px
+      font-family: "Assistant-Regular", sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 18px
+      color: #000000
+    &-item
+      display: flex
+    &-btn
+      font-family: "Assistant", sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 1
+      text-align: center
+      padding: 27px 0 26px
+      &:last-child
+        color: #000000
+        width: 32%
+      &:first-child
+        color: #FFFFFF
+        width: 68%
+        background: #C4AD75
+  &-block
+    max-width: 210px
+    width: 100%
+    margin-left: 45px
+
+  &-sum
+    font-size: 14px
+    line-height: 1
+    color: #000000
+    display: flex
+    justify-content: flex-end
+    padding: 30px 0 20px 40px
+    text-align: right
+    p
+      width: 50%
+      padding-right: 5px
+    &-span
+      width: 50%
+      margin-left: 3px
+  &-flex
+    display: flex
+    align-items: center
+    max-width: 410px
+    width: 100%
+    &-main
+      display: flex
+      justify-content: space-between
+
+  &-btn
+    font-family: "Assistant", sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 1
+    text-align: right
+    color: #C4AD75
+    padding: 12px 32px 11px
+    border: 1px solid #C4AD75
+    box-sizing: border-box
+    border-radius: 50px
+    margin-left: 10px
+    &-menu
+      cursor: pointer
+      width: 20px
+      height: 15px
+      position: relative
+      -webkit-transition: background-color .5s ease
+      transition: background-color .5s ease
+      margin-left: 53px
+
+  &-list
+    display: flex
+    align-items: center
+  &-link
+    display: flex
+    align-items: center
+    justify-content: center
+    font-family: "Assistant", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    text-align: center
+    letter-spacing: 0.1em
+    color: #000000
+    transition: all 0.5s ease
+    width: 95px
+    margin: 0 8px
+    &-img
+      margin-left: 10px
+
+    &:hover, &.active
+      font-family: "Assistant", sans-serif
+      font-weight: bold
+
+  &-line
+    width: 20px
+    height: 1px
+    display: block
+    background: #000000
+    position: absolute
+    left: 0
+    -webkit-transition: all .5s ease
+    transition: all .5s ease
+  &-btns
+    width: 100%
+    display: flex
+  &-first
+    padding: 65px 30px 30px
+    position: absolute
+    left: 25px
+    top: 58px
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    background: #ffffff
+    max-width: 1210px
+    justify-content: start
+    transition: all 0.5s ease
+    text-align: center
+    opacity: 0
+    pointer-events: none
+    z-index: 2
+    &-list
+      width: calc(20% - 60px)
+      margin: 0 30px 35px
+      &:nth-child(5n+5)
+        margin: 0 0 0 30px
+    &-down
+      width: 100%
+      padding-top: 35px
+      border-top: 1px solid #D8D8D8
+    &-img
+      width: 100%
+      height: 8.5vw
+      object-fit: cover
+      transition: all 0.5s ease
+      &:hover
+        box-shadow: 2px 2px 30px #C4C4C4
+    &-text
+      font-family: "Assistant", sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 1
+      text-align: center
+      margin-top: 15px
+      color: #000000
+  &-title
+    font-family: "Assistant", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 26px
+    line-height: 1
+    text-align: right
+    letter-spacing: 0.05em
+    color: #000000
+    margin-bottom: 5px
+  &-second
+    &-list
+      width: calc(16.66% - 20px)
+      margin: 0 10px 35px
+  &-block
+    &-img
+      width: 35%
+      height: 190px
+      position: relative
+  &-third
+    display: flex
+    justify-content: space-between
+    text-align: right
+    &-img
+      height: 100%
+      width: 100%
+      object-fit: cover
+    &-btn
+      position: absolute
+      right: 0
+      bottom: 0
+      font-family: "Assistant", sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 1
+      text-align: center
+      color: #000000
+      padding: 12px 22px
+      background: #ffffff
+    &-block
+      width: 65%
+      padding-left: 10px
+    &-flex
+      display: flex
+    &-menu
+      width: 33.33%
+    .header-link
+      padding: 0
+      text-align: right
+      margin-top: 20px
+      justify-content: end
+      &:hover
+        background: none
+
+
+  &-fourth
+    justify-content: flex-end
+    .header-third-menu
+      width: 20%
+    .header-third-block
+      width: 100%
+    .header-third-flex
+      justify-content: flex-end
+    .header-title
+      text-align: left
+      font-size: 16px
+
+
+
+.header-drop .header-link:hover .overlay
+  opacity: 1
+  pointer-events: auto
+.header-btn-menu.btn-active .header-line_center, .header-btn-menu.bg-active .header-line_center
+  opacity: 0
+
+.header-btn-menu.btn-active .header-line_top, .header-btn-menu.bg-active .header-line_top
+  -webkit-transform: translateY(7px) rotate(218deg)
+  transform: translateY(7px) rotate(218deg)
+
+.header-btn-menu.btn-active .header-line_bottom, .header-btn-menu.bg-active .header-line_bottom
+  -webkit-transform: translateY(-7px) rotate(-218deg)
+  transform: translateY(-7px) rotate(-218deg)
+
+.header-line.header-line_top
+  top: 0
+
+.header-line.header-line_center
+  top: 50%
+  transform: translateY(-50%)
+
+.header-line.header-line_bottom
+  bottom: 0
+.light-12
+  font-family: 'Assistant', sans-serif
+  font-weight: 300
+  font-size: 14px
+  line-height: 1
+  font-style: normal
+  color: #000000
+.light-14
+  font-family: 'Assistant', sans-serif
+  font-weight: 300
+  font-size: 14px
+  line-height: 1
+  font-style: normal
+  color: #000000
+.light-18
+  font-family: 'Assistant', sans-serif
+  font-weight: 300
+  font-size: 18px
+  line-height: 1
+  color: #000000
+.light
+  font-family: 'Assistant', sans-serif
+  font-weight: 300
+  line-height: 1
+
+.bold
+  font-family: 'Assistant', sans-serif
+  font-weight: bold
+.bold-18
+  font-family: 'Assistant', sans-serif
+  font-weight: bold
+  font-size: 18px
+.plus, .minus
+  background: none
+  border: none
+  font-family: "Assistant", sans-serif
+  font-style: normal
+  font-weight: 300
+  font-size: 14px
+  line-height: 1
+  text-align: center
+  color: #000000
+  cursor: pointer
+.minus
+  margin-bottom: 3px
+.footer
+  background: #F0F0F0
+  &-top
+    padding: 55px 0 35px
+  &-flex
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &-left
+    width: 355px
+    background: #FFFFFF
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 22px 22px 30px
+    margin-left: 85px
+    &-info
+      text-align: center
+      width: 100%
+      margin-top: 18px
+      padding-top: 20px
+      border-top: 1px solid #E3E3E3
+    &-title
+      font-size: 24px
+      line-height: 1.33
+      text-transform: uppercase
+    &-text
+      font-size: 12px
+      line-height: 1.33
+      text-align: center
+      max-width: 150px
+      margin: 0 auto
+  &-right
+    width: 680px
+    margin-left: 30px
+    margin-top: -10px
+    &-row
+      display: flex
+      justify-content: space-between
+    &-title
+      font-size: 18px
+      line-height: 1.5
+      direction: rtl
+      font-weight: bold
+      color: #696969
+  &-list
+    margin-top: 20px
+    &-item
+      text-align: right
+      padding: 5px 0
+    &-link
+      font-size: 12px
+      color: rgba(0, 0, 0, 0.8)
+  &-contact
+    &-row
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      margin-bottom: 13px
+      &:first-child
+        margin-top: 10px
+    &-name
+      font-weight: bold
+      font-size: 14px
+      margin-left: 25px
+    &-link
+      font-weight: 300
+      font-size: 16px
+      color: rgba(0, 0, 0, 0.4)
+  &-form
+    display: flex
+    justify-content: flex-end
+    margin-top: 20px
+    &-form
+      width: 440px
+      height: 42px
+      display: flex
+      justify-content: flex-end
+  &-input
+    width: calc(100% - 105px)
+    height: 100%
+    border: none
+    background: #FFFFFF
+    padding: 0 20px
+    font-size: 14px
+    direction: rtl
+  &-btn
+    background: #C4AD75
+    font-weight: 600
+    font-size: 14px
+    line-height: 42px
+    color: #FFFFFF
+    width: 105px
+    flex-shrink: 0
+    padding: 0
+    outline: none
+    border: none
+    cursor: pointer
+    transition: background-color .5s ease
+    &:hover
+      background: rgba(196, 173, 117, 0.4)
+  &-bottom
+    border-top: 1px solid #E0E0E0
+    padding: 15px 0
+    &-flex
+      display: flex
+      justify-content: space-between
+      font-size: 12px
+    &-text
+      direction: ltr
+    &-right
+      display: flex
+      justify-content: flex-end
+      align-items: center
+    &-info
+      margin-right: 10px
+.social
+  display: flex
+  justify-content: space-between
+  max-width: 100px
+  margin: 25px auto 0
+  &-link
+    margin: 0 10px
+    width: 21px
+    text-align: center
+.register
+  position: fixed
+  left: 0
+  top: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  background: rgba(0, 0, 0, 0.5)
+  width: 100%
+  height: 100vh
+  z-index: 5
+  opacity: 0
+  pointer-events: none
+  transition: opacity .5s ease
+  &_artist
+    .register-left-scrolling
+      padding-top: 15px
+  &.active
+    opacity: 1
+    pointer-events: auto
+  &-main
+    width: 1070px
+    height: 550px
+    background: #FFFFFF
+    transition: all .5s ease
+    display: flex
+    position: relative
+    &.active
+      width: 100%
+      height: 100vh
+  &-left
+    width: 44%
+    position: relative
+    opacity: 1
+    transition: all .5s ease
+    &-container
+      max-width: 320px
+      margin: 0 auto
+    &.close
+      opacity: 0
+      width: 0
+    &-scrolling
+      position: absolute
+      width: 100%
+      font-size: 12px
+      text-align: center
+      color: #6B6B6B
+      bottom: 0
+      left: 0
+      background: #FFFFFF
+      padding: 30px 0 20px
+      transition: opacity .5s ease
+      opacity: 1
+      pointer-events: auto
+      &.hide
+        opacity: 0
+        pointer-events: none
+    &-scroll
+      padding: 55px 20px 105px
+      overflow: auto
+      scrollbar-width: none
+      height: 100%
+      &::-webkit-scrollbar
+        width: 0
+    &-content
+      max-width: 680px
+      margin: 0 auto
+      &.hide
+        display: none
+    &-title
+      font-size: 34px
+      text-align: center
+      letter-spacing: 0.05em
+      color: #000000
+      margin-bottom: 30px
+    &-text
+      font-size: 12px
+      line-height: 1.33
+      text-align: center
+      color: #000000
+      margin-bottom: 10px
+    &-info
+      margin: 30px 0 60px
+    .login-form-label
+      padding-right: 0
+      margin: 20px 0
+  &-right
+    width: 56%
+    position: relative
+    transition: all .5s ease
+    &.open
+      width: 100%
+      .register-right-btn
+        opacity: 0
+        pointer-events: none
+    &-img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &-btn
+      background: #FFFFFF
+      width: 270px
+      height: 60px
+      line-height: 60px
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 10%
+      text-align: center
+      font-size: 24px
+      color: #000000
+      transition: all .5s ease
+      &:hover
+        color: #FFFFFF
+        background: #4C4C4C
+  &-close
+    position: absolute
+    width: 22px
+    height: 22px
+    border-radius: 50%
+    background: #E9E9E9
+    display: flex
+    align-items: center
+    justify-content: center
+    top: 22px
+    left: 22px
+  &-form
+    &-title
+      font-size: 12px
+      line-height: 16px
+      text-align: center
+      color: #000000
+      margin: 55px 0 20px
+    &-block
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 100%
+    &-photo
+      width: 150px
+      height: 150px
+      background: #F7F7F7 url(../img/photo.svg) no-repeat center
+      margin: 35px auto 30px
+      border-radius: 50%
+      overflow: hidden
+      position: relative
+      &_del
+        position: absolute
+        background: #F6F6F6
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25)
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 32px
+        height: 32px
+        z-index: 2
+        border-radius: 50%
+        left: 0
+        top: 0
+    &-img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-thank
+    position: absolute
+    width: 650px
+    height: 340px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: #FFFFFF
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 20px
+    opacity: 0
+    pointer-events: none
+    transition: opacity .5s ease
+    &.active
+      opacity: 1
+      pointer-events: auto
+    &-text
+      font-size: 24px
+      color: #000000
+  &-logo
+    position: absolute
+    top: 20px
+    right: 25px
+    width: 35px
+    height: 35px
+    display: inline-block
+    &-img
+      width: 100%
+  &-payment
+    max-width: 320px
+    margin: 0 auto
+    display: none
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    &.active
+      display: block
+    .login-second-btn
+      margin-top: 95px
+    &-form
+      margin-top: 30px
+    &-text
+      font-weight: 300
+      font-size: 26px
+      letter-spacing: 0.05em
+      color: #000000
+      &-span
+        color: #A3A3A3
+      &_under
+        border-bottom: 1px dashed #9E9E9E
+    &-title
+      font-weight: bold
+      font-size: 18px
+      text-align: center
+      color: #000000
+    &-label
+      width: 100%
+      height: 80px
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      border: 1px solid #AEAEAE
+      margin-bottom: 15px
+      padding: 0 40px 0 20px
+      position: relative
+      cursor: pointer
+      transition: all .5s ease
+      &:hover
+        border: 1px solid #059FF9
+        background: rgba(5, 159, 249, 0.06)
+        .register-payment-check:before
+          background: #059FF9
+      &.active
+        border: 1px solid #059FF9
+        background: rgba(5, 159, 249, 0.06)
+    &-radio
+      position: absolute
+      visibility: hidden
+      width: 0
+      height: 0
+      &:checked ~ .register-payment-check
+        background: #059FF9
+        border: 1px solid #059FF9
+        &:before
+          background: #FFffff
+
+    &-check
+      width: 20px
+      height: 20px
+      border: 1px solid #DADADA
+      border-radius: 50%
+      margin-left: 25px
+      position: relative
+      transition: all .5s ease
+      flex-shrink: 0
+      &:before
+        content: ''
+        width: 8px
+        height: 8px
+        position: absolute
+        background: #FFffff
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        border-radius: 50%
+        transition: all .5s ease
+  &-card
+    max-width: 410px
+    margin: 0 auto
+    display: none
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    &.active
+      display: block
+    .login-form-title
+      text-align: left
+    .login-form-input
+      direction: ltr
+    .login-second-btn
+      margin-top: 45px
+    &-form
+      margin-top: 35px
+    &-block
+      display: flex
+      justify-content: space-between
+    &-selected
+      font-size: 0
+    &-flex
+      display: flex
+      .register-card-flex .nselect.nsOrange .nselect__inner
+        width: 100%
+      .nselect
+        height: 60px
+        width: 100px
+        margin-right: 10px
+
+        &.nsOrange .nselect__head
+          height: 100%
+          width: 100%
+          display: flex
+          align-items: center
+          font-size: 14px
+          color: #A3A3A3
+          background: #FFffff
+          border: 1px solid #DADADA
+          padding: 12px 28px 7px 20px
+          &:after
+            border-color: #C3C3C3 transparent transparent
+            top: 50%
+            border-width: 8px 6px 0
+        &.nsOrange .nselect__inner
+          top: 60px
+          &:before
+            display: none
+
+
+.package
+  margin-top: 65px
+  display: none
+  &-flex
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+  &-item
+    display: block
+    position: relative
+    border: 1px solid #D1D1D1
+    cursor: pointer
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0)
+    transition: all .5s ease
+    z-index: 1
+    background: #FFffff
+    margin-top: -1px
+    width: 100%
+    &:first-child
+      border-top: 1px solid #D1D1D1
+      margin-top: 0
+    &:hover, &.active
+      border: 1px solid #FFffff
+      box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1)
+      z-index: 2
+    &.active
+      z-index: 3
+  &-radio
+    position: absolute
+    width: 0
+    height: 0
+    visibility: hidden
+    &:checked ~ .package-check
+      .package-check-circle
+        background: #059FF9
+        &:before
+          opacity: 1
+  &-content
+    display: flex
+    justify-content: space-between
+    direction: ltr
+    padding: 50px 100px 35px 50px
+  &-left
+    width: 235px
+  &-right
+    margin-left: 40px
+    direction: ltr
+    &-title
+      display: block
+      font-weight: bold
+      font-size: 24px
+      color: #000000
+      margin-bottom: 5px
+    &-text
+      font-size: 14px
+      color: #868686
+      display: block
+    .artist-item-price
+      text-align: right
+      display: block
+      direction: ltr
+    .artist-item-subprice
+      display: block
+      text-align: right
+      padding-right: 7px
+  &-check
+    width: 54px
+    height: 54px
+    background: #FFffff
+    border-radius: 50%
+    position: absolute
+    right: -27px
+    top: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    transform: translateY(-50%)
+    &-circle
+      width: 34px
+      height: 34px
+      background: #EFEFEF
+      border-radius: 50%
+      transition: background-color .5s ease
+      position: relative
+      &:before
+        position: absolute
+        content: ''
+        width: 24px
+        height: 21px
+        background: url(../img/check-white.svg) no-repeat center
+        background-size: contain
+        left: 7px
+        top: 5px
+        opacity: 0
+        transition: opacity .5s ease
+  &-link
+    font-size: 14px
+    color: #C8C8C8
+    text-decoration: underline
+    margin-top: 15px
+.add
+  position: relative
+  width: 180px
+  height: 45px
+  line-height: 45px
+  border: 1px solid rgba(5, 159, 249, 0.3)
+  border-radius: 22.5px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  cursor: pointer
+  &-file
+    position: absolute
+    opacity: 0
+    width: 100%
+    height: 100%
+  &-text
+    font-size: 12px
+    color: #059FF9
+    margin-right: 7px
+.register-form-row_cv
+  max-width: 160px
+.svg-hover
+  transition: opacity .5s ease
+
+@import "../components/pages/home/style"
+@import "../components/pages/login/style"
+@import "../components/pages/artist/style"
+@import "../components/pages/gallery/style"
+@import "../components/pages/list/style"
+@import "../components/pages/page/style"
+@import "../components/pages/info/style"
+@import "../components/pages/about/style"
+@import "../components/pages/contact/style"
+@import "../components/pages/blog/style"
+@import "../components/pages/cart/style"
+@import "../components/pages/purchase/style"
+@import "../components/pages/favorit/style"
+@import "../components/pages/account/style"
+@import "media"
+// Всегда в конце

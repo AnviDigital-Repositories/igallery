@@ -1,0 +1,218 @@
+.login
+  background: #FFFFFF
+  padding: 95px 0 195px
+  &-flex
+    display: flex
+    justify-content: space-between
+  &-right
+    width: 738px
+    height: 480px
+    margin-left: 30px
+    &-block
+      width: 100%
+      height: 100%
+    &-img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &-name
+      font-weight: 300
+      font-size: 12px
+      color: #3B3B3B
+      margin-top: 10px
+  &-left
+    width: 410px
+    position: relative
+    margin-top: 30px
+  &-form
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &-value
+      position: absolute
+      left: 15px
+      bottom: 20px
+    &-link
+      color: #89BBE0
+    &-row
+      display: flex
+      position: relative
+      flex-direction: column
+      width: 100%
+      margin-bottom: 15px
+    &-title
+      font-size: 14px
+      line-height: 18px
+      color: #A3A3A3
+      margin-bottom: 10px
+      display: inline-block
+      &.active
+        color: #059FF9
+    &-subtitle
+      font-weight: 300
+      font-size: 12px
+      color: #A3A3A3
+      margin-bottom: 10px
+    &-input
+      width: 100%
+      height: 60px
+      line-height: 60px
+      border: 1px solid #DADADA
+      outline: none
+      direction: rtl
+      padding: 0 20px
+      color: #000000
+      font-size: 18px
+      background: #FFffff
+      font-family: "Assistant", sans-serif
+      //&:required:invalid
+      //  border: 1px solid #D5B0B0
+      //  background: url(../img/invalid.svg) no-repeat left 18px center
+      //  background-size: 7px 7px
+      //&:valid
+      //  border: 1px solid #98CD9D
+      //&:hover
+      //  border: 1px solid #059FF9
+      //&:focus
+      //  border: 2px solid #059FF9
+    &-textarea
+      height: 160px
+      padding: 20px
+      line-height: normal
+      resize: none
+    &-label
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      position: relative
+      margin: 13px 0 30px
+      padding-right: 13px
+      cursor: pointer
+      path
+        transition: all .2s ease
+      &:hover
+        path
+          stroke: #059FF9
+      &_disabled
+        cursor: not-allowed
+        &:hover
+          path
+            stroke: #ffffff
+        .login-form-span
+          color: #ABABAB
+    &-checkbox
+      position: absolute
+      width: 0
+      height: 0
+      visibility: hidden
+      &:checked ~ .login-form-check
+        background: #059FF9
+        border-color: #059FF9
+        path
+          stroke: #FFFFFF
+    &-span
+      font-size: 14px
+      font-weight: 300
+      color: #000000
+      margin-right: 15px
+    &-check
+      border: 1px solid #DADADA
+      width: 20px
+      height: 20px
+      display: flex
+      align-items: center
+      justify-content: center
+      path
+        stroke: #FFFFFF
+    &-btn
+      background: #059FF9
+      height: 60px
+      line-height: 60px
+      border: none
+      outline: none
+      cursor: pointer
+      min-width: 190px
+      font-size: 24px
+      font-weight: bold
+      color: #FFFFFF
+      transition: background-color .5s ease
+      &:hover
+        background-color: rgba(5, 159, 249, 0.4)
+  &-bottom
+    display: flex
+    justify-content: flex-end
+    margin-top: 30px
+    &-btn
+      min-width: 190px
+      height: 60px
+      line-height: 60px
+      font-size: 24px
+      cursor: pointer
+      text-align: center
+      transition: all .5s ease
+      &:hover
+        color: #FFFFFF
+        background: #4C4C4C
+    &-cabinet
+      color: #000000
+      border: 1px solid #000000
+      margin-left: 30px
+    &-pass
+      color: #AEAEAE
+      border: 1px solid #AEAEAE
+  &-second
+    &-form
+      display: none
+      &.active
+        display: block
+    &-title
+      font-size: 34px
+      text-align: center
+      letter-spacing: 0.05em
+      color: #000000
+    &-text
+      text-align: center
+      font-weight: 300
+      font-size: 14px
+      color: #000000
+      margin-bottom: 60px
+    &-btn
+      background: #059FF9
+      outline: none
+      border: none
+      height: 60px
+      line-height: 60px
+      width: 100%
+      font-weight: bold
+      font-size: 24px
+      color: #FFFFFF
+      cursor: pointer
+      transition: background-color .5s ease
+      margin-top: 25px
+      &:hover
+        background-color: rgba(5, 159, 249, 0.4)
+  &-step
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 30px 0 40px
+    &-item
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      color: #C2C2C2
+      border: 1px solid #059FF9
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: bold
+      font-size: 16px
+      transition: all .5s ease
+      &.active
+        background: #059FF9
+        color: #FFFFFF
+    &-line
+      width: 40px
+      height: 1px
+      background: #059FF9
+      margin: 0 15px
