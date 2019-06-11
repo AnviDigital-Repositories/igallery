@@ -20,6 +20,36 @@
       border-bottom: 1px solid #D4D4D4
     &-main
       margin-top: 35px
+    &_custom
+      .gallery-item-img
+        transition: all .5s ease
+        position: relative
+        top: 0
+      .gallery-item-block
+        border: 20px solid #F2F2F2
+        transition: background-color .5s ease
+        padding: 45px
+        overflow: hidden
+        &:hover
+          box-shadow: none
+          background: transparent
+          .gallery-item-img
+            box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2)
+            transform: translateY(-15px)
+          .gallery-item-info
+            transform: translateY(-55px)
+      .gallery-item-info
+        height: auto
+        position: absolute
+        top: 100%
+        text-align: center
+        transform: translateY(0px)
+        background: transparent
+        transition: transform .5s ease
+        font-weight: normal
+        font-size: 18px
+        text-align: center
+        color: #000000
 
 
 

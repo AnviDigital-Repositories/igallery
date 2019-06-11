@@ -111,6 +111,7 @@ body
   line-height: normal
   font-family: "Assistant", sans-serif
   overflow-x: hidden
+  padding-top: 75px
 .overlay
   background: rgba(#000000, 0.5)
   width: 100%
@@ -144,7 +145,10 @@ svg
 .header
   background: #F8F8F8
   padding: 10px 0
-  position: relative
+  position: fixed
+  width: 100%
+  left: 0
+  top: 0
   z-index: 4
   .svg-hover
     opacity: 0
@@ -253,7 +257,7 @@ svg
     opacity: 0
     pointer-events: none
     transition: all 0.5s ease
-    z-index: 2
+    z-index: 4
     &:before
       content: ''
       position: absolute
@@ -263,6 +267,13 @@ svg
       height: 14px
       background: #FFFFFF
       transform: matrix(0.71, 0.71, -0.7, 0.71, 0, 0)
+    &-menu
+      height: 100%
+      max-height: calc(100vh - 208px)
+      overflow: auto
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        width: 0
     &-delete
       height: 14px
     &-bg
@@ -285,6 +296,7 @@ svg
       width: 100%
       height: 100%
       object-fit: cover
+      transition: box-shadow .5s ease
       &:hover
         box-shadow: -8px 10px 20px #C4C4C4, inset 10px 1px 1px #C4C4C4
     &-input
@@ -367,6 +379,8 @@ svg
       color: #000000
     &-item
       display: flex
+      width: 320px
+      justify-content: space-between
     &-btn
       font-family: "Assistant", sans-serif
       font-style: normal
@@ -375,13 +389,19 @@ svg
       line-height: 1
       text-align: center
       padding: 27px 0 26px
+      transition: all .5s ease
       &:last-child
         color: #000000
         width: 32%
+        &:hover
+          background: #4C4C4C
+          color: #FFffff
       &:first-child
         color: #FFFFFF
         width: 68%
         background: #C4AD75
+        &:hover
+          background: rgba(196, 173, 117, 0.4)
   &-block
     max-width: 210px
     width: 100%
@@ -468,6 +488,7 @@ svg
   &-btns
     width: 100%
     display: flex
+    justify-content: space-between
   &-first
     padding: 65px 30px 30px
     position: absolute
@@ -757,6 +778,7 @@ svg
       font-size: 12px
     &-text
       direction: ltr
+      margin-left: 85px
     &-right
       display: flex
       justify-content: flex-end
@@ -792,6 +814,8 @@ svg
   &.active
     opacity: 1
     pointer-events: auto
+    .register-left-scrolling
+      pointer-events: auto
   &-main
     width: 1070px
     height: 550px
@@ -825,10 +849,9 @@ svg
       padding: 30px 0 20px
       transition: opacity .5s ease
       opacity: 1
-      pointer-events: auto
       &.hide
         opacity: 0
-        pointer-events: none
+        pointer-events: none!important
     &-scroll
       padding: 55px 20px 105px
       overflow: auto
@@ -1221,6 +1244,125 @@ svg
   max-width: 160px
 .svg-hover
   transition: opacity .5s ease
+.search
+  &-popup
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    background: url(../img/search-bg.jpg) no-repeat center
+    background-size: cover
+    z-index: 10
+    display: flex
+    align-items: center
+    justify-content: center
+    opacity: 0
+    pointer-events: none
+    transition: opacity .5s ease
+    &.active
+      opacity: 1
+      pointer-events: auto
+    &-close
+      width: 22px
+      height: 22px
+      background: #ffffff
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      top: 27px
+      left: 27px
+      border-radius: 50%
+.help
+  &-popup
+    position: fixed
+    top: 75px
+    left: 0
+    background: rgba(0, 0, 0, 0.5)
+    width: 100%
+    height: calc(100vh - 75px)
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    z-index: 3
+    overflow: auto
+    opacity: 0
+    pointer-events: none
+    transition: opacity .5s ease
+    &.active
+      opacity: 1
+      pointer-events: auto
+    &-content
+      width: 475px
+      background: #FFffff
+      margin: 40px
+      position: relative
+    &-close
+      background: #ECECEC
+      height: 22px
+      width: 22px
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      top: 18px
+      left: 18px
+      position: absolute
+    &-title
+      font-weight: 300
+      font-size: 26px
+      text-align: center
+      letter-spacing: 0.05em
+      color: #000000
+      border-bottom: 1px solid #E1E1E1
+      padding: 13px 0 10px
+    &-main
+      padding: 35px 85px 70px
+    &-item
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      margin-bottom: 40px
+    &-name
+      font-weight: bold
+      font-size: 16px
+      color: #000000
+      margin-bottom: 8px
+    &-tel
+      font-weight: 300
+      font-size: 18px
+      text-align: right
+      color: #059FF9
+      text-decoration: none
+    &-row
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      margin-bottom: 5px
+      &:last-child
+        margin-bottom: 0
+    &-mail
+      font-weight: 300
+      font-size: 16px
+      color: #000000
+      margin-right: 10px
+    &-subname
+      font-weight: bold
+      font-size: 14px
+      color: #000000
+      width: 50px
+    &-text
+      font-size: 18px
+      color: #000000
+      margin-bottom: 10px
+    &-btn.login-second-btn
+      height: 50px
+      line-height: 50px
+      font-weight: normal
+      font-size: 14px
+
+
 
 @import "../components/pages/home/style"
 @import "../components/pages/login/style"
