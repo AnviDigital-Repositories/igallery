@@ -83,9 +83,8 @@
       &.active
         opacity: 1
         pointer-events: auto
+        z-index: 2
     &-subtitle
-      //position: sticky
-      //top: 75px
       direction: rtl
       display: flex
       font-weight: 300
@@ -94,6 +93,7 @@
       align-items: center
       flex-direction: row-reverse
       justify-content: flex-end
+      position: relative
       svg
         margin-left: 30px
   &-first
@@ -486,6 +486,7 @@
       margin-left: -110px
       padding: 20px 110px
       background: rgba(137, 7, 7, 0.03)
+      margin-bottom: 55px
       &-item
         direction: rtl
         font-size: 12px
@@ -599,7 +600,7 @@
       font-size: 12px
       color: #FFFFFF
       transition: opacity .5s ease
-      pointer-events: auto
+      z-index: 1
       &.hide
         opacity: 0
         pointer-events: none
@@ -631,6 +632,7 @@
   &-sixth
     padding: 0 110px
     background: #ffffff
+    z-index: 1
     &-item
       display: flex
       align-items: center
@@ -671,6 +673,7 @@
         top: 0
         width: 100%
         transition: opacity .5s ease
+        z-index: 1
         &.active
           opacity: 1
           pointer-events: auto
@@ -719,6 +722,31 @@
     svg
       margin-bottom: 30px
 .calendar
+  position: relative
+  background: #FFffff
+  &-index
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    opacity: 0
+    pointer-events: none
+    transition: opacity .5s ease
+    &.active
+      opacity: 1
+      pointer-events: auto
+    &:first-child
+      .calendar-graf-item:hover
+        background: #FFCD1B
+    &:nth-child(2)
+      .calendar-graf-item:hover
+        background: #94E480
+    &:nth-child(3)
+      .calendar-graf-item:hover
+        background: #CC1717
+    &:nth-child(4)
+      .calendar-graf-item:hover
+        background: #059FF9
   &-title
     direction: rtl
     font-weight: bold
@@ -729,6 +757,12 @@
     color: #B3B3B3
   &-row
     padding-right: 30px
+    border-bottom: 1px solid #F2F2F2
+    padding-bottom: 35px
+    margin-bottom: 35px
+    &:last-child
+      border: none
+      margin-bottom: 0
   &-flex
     display: flex
     margin-top: 8px
@@ -751,6 +785,7 @@
   &-left
     width: 520px
     margin-right: 30px
+    position: relative
   &-right
     width: 190px
     display: flex
@@ -798,6 +833,78 @@
       padding: 10px 15px
       svg
         margin-left: 10px
+  &-graf
+    height: 175px
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    &-item
+      width: 10px
+      background: #F1F1F1
+      border-radius: 2px 2px 0px 0px
+      height: 100%
+      cursor: pointer
+      transition: background-color .5s ease
+      &:nth-child(3)
+        height: 20%
+  &-days
+    display: flex
+    justify-content: space-between
+    margin-top: 2px
+    &-item
+      width: 10px
+      font-size: 10px
+      color: #D2D2D2
+      text-align: center
+  &-bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 17px
+  &-btn
+    display: flex
+    align-items: center
+    font-size: 12px
+    line-height: 12px
+    color: #747474
+    &_prev
+      flex-direction: row-reverse
+      svg
+        margin-right: 8px
+    &_next
+      svg
+        margin-left: 8px
+    svg
+      margin-top: 2px
+  &-info
+    display: flex
+    flex-direction: row-reverse
+    font-weight: 600
+    font-size: 14px
+    color: #000000
+    &_year
+      margin-right: 3px
+  &-label
+    background: #FFFFFF
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1)
+    border-radius: 2px
+    padding: 10px 17px
+    display: flex
+    position: absolute
+    opacity: 0
+    pointer-events: none
+    transition: all .5s ease
+    &.active
+      opacity: 1
+      pointer-events: auto
+    &-right
+      margin-left: 10px
+    &-value
+      font-size: 12px
+      color: #000000
+    &-day
+      font-size: 10px
+      color: #C4C4C4
 .delete-popup
   position: fixed
   opacity: 0

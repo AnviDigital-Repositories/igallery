@@ -165,18 +165,23 @@
 						<a href="#" class="header-heart-btn light-12">צפה בהכל</a>
 					</div>
 				</div>
-				<div class="header-item">
+				<div class="header-item desctop">
 					<a href="#" class="header-search">
 						<img src="img/search.svg" alt="" class="header-search-img">
 					</a>
 				</div>
-				<a href="#" class="header-btn">עזרה</a>
+				<a href="#" class="header-btn desctop">עזרה</a>
 			</div>
 			<a href="#" class="header-logo">
 				<img src="img/logo.png" alt="" class="header-logo-img">
 			</a>
 			<div class="header-flex">
-				<ul class="header-menu">
+				<div class="header-item mobile">
+					<a href="#" class="header-search">
+						<img src="img/search.svg" alt="" class="header-search-img">
+					</a>
+				</div>
+				<ul class="header-menu desctop">
 					<li class="header-list"><a href="" class="header-link header-link_artist">לאומנים</a></li>
 					<li class="header-list"><a href="" class="header-link header-link_register">למשתמשים</a></li>
 					<li class="header-list">
@@ -195,13 +200,22 @@
 		</div>
 	</div>
 	<div class="header-drop">
+		<a href="" class="header-drop-close">
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1 1L10.25 10.25M19.5 19.5L10.25 10.25M10.25 10.25L19.5 1L1 19.5" stroke="black"/>
+			</svg>
+		</a>
 		<div class="container">
 			<ul class="header-menu-burger">
 				<li class="header-list">
 					<a href="#" class="header-link">תצלום אישי </a>
 				</li>
 				<li class="header-list">
-					<div class="header-link">גלרית אמנים</div>
+					<div class="header-link">גלרית אמנים
+						<svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 1L1 4.5L6 8" stroke="black"/>
+						</svg>
+					</div>
 					<ul class="header-first">
 						<li class="header-first-list">
 							<a href="#" class="header-first-link">
@@ -295,7 +309,11 @@
 					</ul>
 				</li>
 				<li class="header-list">
-                    <div class="header-link">םיאשונ</div>
+                    <div class="header-link">םיאשונ
+						<svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 1L1 4.5L6 8" stroke="black"/>
+						</svg>
+					</div>
                     <ul class="header-first">
                         <li class="header-first-list">
                             <a href="#" class="header-first-link">
@@ -379,7 +397,11 @@
                     </ul>
                 </li>
 				<li class="header-list">
-					<div class="header-link"><p>תמונות לבית ולמשרד</p></div>
+					<div class="header-link">תמונות לבית ולמשרד
+						<svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 1L1 4.5L6 8" stroke="black"/>
+						</svg>
+					</div>
 					<ul class="header-first">
 						<li class="header-second-list">
 							<a href="#" class="header-first-link">
@@ -420,7 +442,11 @@
 					</ul>
 				</li>
 				<li class="header-list">
-					<div class="header-link"><p>קטגוריות ראשיות</p></div>
+					<div class="header-link">קטגוריות ראשיות
+						<svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 1L1 4.5L6 8" stroke="black"/>
+						</svg>
+					</div>
 					<ul class="header-first">
 						<li class="header-first-list">
 							<a href="#" class="header-first-link">
@@ -536,65 +562,87 @@
 	</section>
 	<section class="home-second">
 		<div class="container">
-			<div class="home-second-slider">
-				<a href="#" class="home-second-block">
-					<div class="home-second-item">
-						<img src="img/main2.png" alt="" class="home-second-img">
-						<div class="home-second-hover">
-							ציורים<br>
-							גלריית
-						</div>
+			<div class="home-second-slider swiper-container">
+				<div class="home-second-btns">
+					<div class="swiper-button-prev third-btn">
+						<svg width="6" height="10" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.5 0.5L1 8L8.5 15.5" stroke="black"/>
+						</svg>
 					</div>
-					<p class="home-second-text">תמונה אישית שלי</p>
-				</a>
-				<a href="#" class="home-second-block">
-					<div class="home-second-item">
-						<img src="img/main1.png" alt="" class="home-second-img">
-						<div class="home-second-hover">
-							ציורים<br>
-							גלריית
-						</div>
+					<div class="circle"></div>
+					<div class="swiper-button-next third-btn">
+						<svg width="6" height="10" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 0.5L8.5 8L1 15.5" stroke="black"></path>
+						</svg>
 					</div>
-					<p class="home-second-text">תמונות ממוסגרות</p>
-				</a>
-				<a href="#" class="home-second-block">
-					<div class="home-second-item">
-						<img src="img/main3.png" alt="" class="home-second-img">
-						<div class="home-second-hover">
-							ציורים<br>
-							גלריית
-						</div>
+				</div>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#" class="home-second-block">
+							<div class="home-second-item">
+								<img src="img/main2.png" alt="" class="home-second-img">
+								<div class="home-second-hover">
+									ציורים<br>
+									גלריית
+								</div>
+							</div>
+							<p class="home-second-text">תמונה אישית שלי</p>
+						</a>
 					</div>
-					<p class="home-second-text">את הכל</p>
-				</a>
-				<a href="#" class="home-second-block">
-					<div class="home-second-item">
-						<img src="img/main4.png" alt="" class="home-second-img">
-						<div class="home-second-hover">
-							ציורים<br>
-							גלריית
-						</div>
+					<div class="swiper-slide">
+						<a href="#" class="home-second-block">
+							<div class="home-second-item">
+								<img src="img/main1.png" alt="" class="home-second-img">
+								<div class="home-second-hover">
+									ציורים<br>
+									גלריית
+								</div>
+							</div>
+							<p class="home-second-text">תמונות ממוסגרות</p>
+						</a>
 					</div>
-					<p class="home-second-text">תמונה אישית שלי</p>
-				</a>
-				<a href="#" class="home-second-block">
-					<div class="home-second-item">
-						<img src="img/main5.png" alt="" class="home-second-img">
-						<div class="home-second-hover">
-							ציורים<br>
-							גלריית
-						</div>
+					<div class="swiper-slide">
+						<a href="#" class="home-second-block">
+							<div class="home-second-item">
+								<img src="img/main3.png" alt="" class="home-second-img">
+								<div class="home-second-hover">
+									ציורים<br>
+									גלריית
+								</div>
+							</div>
+							<p class="home-second-text">את הכל</p>
+						</a>
 					</div>
-					<p class="home-second-text">גלריית צילומים</p>
-				</a>
+					<div class="swiper-slide">
+						<a href="#" class="home-second-block">
+							<div class="home-second-item">
+								<img src="img/main4.png" alt="" class="home-second-img">
+								<div class="home-second-hover">
+									ציורים<br>
+									גלריית
+								</div>
+							</div>
+							<p class="home-second-text">תמונה אישית שלי</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="home-second-block">
+							<div class="home-second-item">
+								<img src="img/main5.png" alt="" class="home-second-img">
+								<div class="home-second-hover">
+									ציורים<br>
+									גלריית
+								</div>
+							</div>
+							<p class="home-second-text">גלריית צילומים</p>
+						</a>
+					</div>
+				</div>
 			</div>
 			<div class="home-second-right">
-				<div class="home-second-block">
+				<div class="home-second-block home-second-block_right">
 					<p class="home-second-title">
-						על הקי?<br>
-						אתם מעדיפים<br>
-						איזה תמונה
-
+						איזה תמונה אתם מעדיפים על הקי?
 					</p>
 				</div>
 			</div>
@@ -618,6 +666,14 @@
 							<span class="home-third-fon">נוף</span>
 						</div>
 					</a>
+					<a href="#" class="home-third-item home-third-five hide">
+						<img src="img/gallery4.jpg" alt="" class="home-third-img">
+						<p class="home-third-text">יודיקה</p>
+						<div class="home-third-hover">
+							<p class=""> אמנות דיגיטלית</p>
+							<span class="home-third-fon">נוף</span>
+						</div>
+					</a>
 				</div>
 				<div class="home-third-col">
 					<a href="#" class="home-third-item home-third-tree">
@@ -631,6 +687,14 @@
 					<a href="#" class="home-third-item home-third-four">
 						<img src="img/gallery3.jpg" alt="" class="home-third-img">
 						<p class="home-third-text"> איורים</p>
+						<div class="home-third-hover">
+							<p class=""> אמנות דיגיטלית</p>
+							<span class="home-third-fon">נוף</span>
+						</div>
+					</a>
+					<a href="#" class="home-third-item home-third-six hide">
+						<img src="img/gallery5.jpg" alt="" class="home-third-img">
+						<p class="home-third-text">ישראל שלנו</p>
 						<div class="home-third-hover">
 							<p class=""> אמנות דיגיטלית</p>
 							<span class="home-third-fon">נוף</span>
@@ -659,55 +723,70 @@
 		</div>
 		<div class="home-gallery">
 			<h2 class="home-gallery-title">במיוחד לחדר</h2>
-			<div class="home-gallery-flex">
-				<a href="#" class="home-gallery-item">
-					<img src="img/gallery6.jpg" alt="" class="home-gallery-img">
-					<p class="home-gallery-text"> לחדר עבודה</p>
-					<div class="home-third-hover">
-						<p class=""> לחדר עבודה</p>
-						<span class="home-third-fon">נוף</span>
+			<div class="home-gallery-flex swiper-container">
+				<div class="home-second-btns home-gallery-btns">
+					<div class="swiper-button-prev fourth-btn">
+						<svg width="6" height="10" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.5 0.5L1 8L8.5 15.5" stroke="black"/>
+						</svg>
 					</div>
-				</a>
-				<a href="#" class="home-gallery-item">
-					<img src="img/gallery7.jpg" alt="" class="home-gallery-img">
-					<p class="home-gallery-text"> לחדר עבודה</p>
-					<div class="home-third-hover">
-						<p class=""> לחדר עבודה</p>
-						<span class="home-third-fon">נוף</span>
+					<div class="circle"></div>
+					<div class="swiper-button-next fourth-btn">
+						<svg width="6" height="10" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 0.5L8.5 8L1 15.5" stroke="black"></path>
+						</svg>
 					</div>
-				</a>
-				<a href="#" class="home-gallery-item">
-					<img src="img/gallery8.jpg" alt="" class="home-gallery-img">
-					<p class="home-gallery-text"> לחדר עבודה</p>
-					<div class="home-third-hover">
-						<p class=""> לחדר עבודה</p>
-						<span class="home-third-fon">נוף</span>
-					</div>
-				</a>
-				<a href="#" class="home-gallery-item">
-					<img src="img/gallery9.jpg" alt="" class="home-gallery-img">
-					<p class="home-gallery-text"> לחדר עבודה</p>
-					<div class="home-third-hover">
-						<p class=""> לחדר עבודה</p>
-						<span class="home-third-fon">נוף</span>
-					</div>
-				</a>
-				<a href="#" class="home-gallery-item">
-					<img src="img/gallery10.jpg" alt="" class="home-gallery-img">
-					<p class="home-gallery-text"> לחדר עבודה</p>
-					<div class="home-third-hover">
-						<p class=""> לחדר עבודה</p>
-						<span class="home-third-fon">נוף</span>
-					</div>
-				</a>
-				<a href="#" class="home-gallery-item">
-					<img src="img/gallery11.jpg" alt="" class="home-gallery-img">
-					<p class="home-gallery-text"> לחדר עבודה</p>
-					<div class="home-third-hover">
-						<p class=""> לחדר עבודה</p>
-						<span class="home-third-fon">נוף</span>
-					</div>
-				</a>
+				</div>
+				<div class="swiper-wrapper">
+					<a href="#" class="home-gallery-item swiper-slide">
+						<img src="img/gallery6.jpg" alt="" class="home-gallery-img">
+						<p class="home-gallery-text"> לחדר עבודה</p>
+						<div class="home-third-hover">
+							<p class=""> לחדר עבודה</p>
+							<span class="home-third-fon">נוף</span>
+						</div>
+					</a>
+					<a href="#" class="home-gallery-item swiper-slide">
+						<img src="img/gallery7.jpg" alt="" class="home-gallery-img">
+						<p class="home-gallery-text"> לחדר עבודה</p>
+						<div class="home-third-hover">
+							<p class=""> לחדר עבודה</p>
+							<span class="home-third-fon">נוף</span>
+						</div>
+					</a>
+					<a href="#" class="home-gallery-item swiper-slide">
+						<img src="img/gallery8.jpg" alt="" class="home-gallery-img">
+						<p class="home-gallery-text"> לחדר עבודה</p>
+						<div class="home-third-hover">
+							<p class=""> לחדר עבודה</p>
+							<span class="home-third-fon">נוף</span>
+						</div>
+					</a>
+					<a href="#" class="home-gallery-item swiper-slide">
+						<img src="img/gallery9.jpg" alt="" class="home-gallery-img">
+						<p class="home-gallery-text"> לחדר עבודה</p>
+						<div class="home-third-hover">
+							<p class=""> לחדר עבודה</p>
+							<span class="home-third-fon">נוף</span>
+						</div>
+					</a>
+					<a href="#" class="home-gallery-item swiper-slide">
+						<img src="img/gallery10.jpg" alt="" class="home-gallery-img">
+						<p class="home-gallery-text"> לחדר עבודה</p>
+						<div class="home-third-hover">
+							<p class=""> לחדר עבודה</p>
+							<span class="home-third-fon">נוף</span>
+						</div>
+					</a>
+					<a href="#" class="home-gallery-item swiper-slide">
+						<img src="img/gallery11.jpg" alt="" class="home-gallery-img">
+						<p class="home-gallery-text"> לחדר עבודה</p>
+						<div class="home-third-hover">
+							<p class=""> לחדר עבודה</p>
+							<span class="home-third-fon">נוף</span>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -717,6 +796,19 @@
 			<p class="home-four-subtitle"> מבוקשים בה, אינו ניווט נבחרים מדע אם. לוח מחליטה לעברית לויקיפדיה או. או הבהרה חינוך בהיסטוריה עזה, זקוק תקשורת ביולוגיה סדר של</p>
 			<div class="home-four-main">
 				<div class="home-four-slider swiper-container">
+					<div class="home-second-btns home-four-btns">
+						<div class="swiper-button-prev first-btn">
+							<svg width="6" height="10" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.5 0.5L1 8L8.5 15.5" stroke="black"/>
+							</svg>
+						</div>
+						<div class="circle"></div>
+						<div class="swiper-button-next first-btn">
+							<svg width="6" height="10" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 0.5L8.5 8L1 15.5" stroke="black"></path>
+							</svg>
+						</div>
+					</div>
 					<div class="swiper-wrapper">
 						<div class="home-four-slide swiper-slide">
 							<img src="img/slide1.jpg" alt="" class="home-four-img">
@@ -1009,6 +1101,7 @@
 								<path d="M8.5 0.5L1 8L8.5 15.5" stroke="black"/>
 							</svg>
 						</div>
+						<div class="circle"></div>
 						<div class="swiper-button-next second-btn">
 							<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M1 0.5L8.5 8L1 15.5" stroke="black"/>
@@ -1160,9 +1253,18 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="footer-bottom-flex">
+                <div class="footer-botto-social">
+                    <a href="" class="social-link">
+                        <img src="img/instagram.svg" alt="" class="social-link-img">
+                    </a>
+                    <a href="" class="social-link">
+                        <img src="img/facebook.svg" alt="" class="social-link-img">
+                    </a>
+                </div>
                 <div class="footer-bottom-left">
                     <p class="footer-bottom-text">© iGallery. All Rights Reserved. 2019</p>
                 </div>
+
                 <div class="footer-bottom-right">
                     <p class="footer-bottom-info">Made by ANVI.AGENCY</p>
                     <img src="img/w-icon.svg" alt="" class="footer-bottom-img">

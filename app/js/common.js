@@ -157,13 +157,13 @@ $(document).ready(function () {
                 spaceBetween: 50,
                 slidesPerView: 4,
             },
-            768: {
+            1020: {
                 slidesPerView: 3,
-                spaceBetween: 30,
+                spaceBetween: 50,
             },
-            640: {
+            767: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 15,
             },
             320: {
                 slidesPerView: 1,
@@ -188,13 +188,13 @@ $(document).ready(function () {
                 slidesPerView: 3,
                 spaceBetween: 10
             },
-            768: {
-                slidesPerView: 3,
+            1020: {
+                slidesPerView: 2,
                 spaceBetween: 30,
             },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
+            767: {
+                slidesPerView: 1,
+                spaceBetween: 30,
             },
             320: {
                 slidesPerView: 1,
@@ -208,6 +208,52 @@ $(document).ready(function () {
        $('.home-fifth-slider .swiper-slide-prev').prevAll().addClass('hide');
     });
 
+    var mySwiper5 = new Swiper ('.home-second-slider', {
+        // Optional parameters
+        slidesPerView: 5,
+        spaceBetween: 10,
+        direction: 'horizontal',
+        simulateTouch: false,
+        initialSlide: 2,
+        centeredSlides: true,
+        navigation: {
+            nextEl: '.swiper-button-next.third-btn',
+            prevEl: '.swiper-button-prev.third-btn',
+        },
+        breakpoints: {
+            767: {
+                slidesPerView: 3,
+                loop: true,
+                simulateTouch: true
+            },
+            480: {
+                slidesPerView: 2
+            }
+        }
+    });
+
+    var mySwiper6 = new Swiper ('.home-gallery-flex', {
+        // Optional parameters
+        slidesPerView: 6,
+        spaceBetween: 0,
+        direction: 'horizontal',
+        simulateTouch: false,
+        initialSlide: 3,
+        navigation: {
+            nextEl: '.swiper-button-next.fourth-btn',
+            prevEl: '.swiper-button-prev.fourth-btn',
+        },
+        breakpoints: {
+            767: {
+                slidesPerView: 3,
+                simulateTouch: true
+            },
+            480: {
+                centeredSlides: true,
+                slidesPerView: 2
+            }
+        }
+    });
     //info slider
 
     var mySwiper2 = new Swiper ('.info-right-slider', {
@@ -559,6 +605,7 @@ $(document).ready(function () {
         checkTabHeight();
         checkFormHeight();
         checkStickHeight();
+        checkCalendarHeight();
         $(window).scrollTop(0);
         // stickyTabs();
 
@@ -578,13 +625,22 @@ $(document).ready(function () {
         var stickHeight = $('.account-left-sticky.active').outerHeight();
         $('.account-left-top').height(stickHeight);
     }
+    function checkCalendarHeight() {
+        var calendarHeight = $('.calendar-index.active').outerHeight();
+        $('.calendar').height(calendarHeight);
+    }
     checkStickHeight();
     checkTabHeight();
+    checkCalendarHeight();
 
     //tabs calendar
     $('.account-third-tabs-link').click(function(e){
        e.preventDefault();
        $(this).addClass('active').siblings().removeClass('active');
+       var tabIndex = $(this).index();
+       $('.calendar-index').eq(tabIndex).addClass('active').siblings().removeClass('active');
+        checkCalendarHeight();
+        checkTabHeight();
     });
 
     //menu calendar
@@ -656,6 +712,32 @@ $(document).ready(function () {
         bodyUnfreezeScroll();
     });
 
+    //label calendar
+    $('.calendar-graf-item').hover(function(e){
+        e.preventDefault();
+        var _this = $(this);
+        _this.closest('.calendar-left').find('.calendar-label').addClass('active');
+        _this.addClass('active').siblings().removeClass('active');
+        var leftGutter = 15;
+        var leftPosition = _this.position().left;
+        var topPosition = _this.position().top;
+        var labelWidth = _this.closest('.calendar-left').find('.calendar-label').outerWidth() + leftGutter;
+        var contentWidth = _this.closest('.calendar-left').find('.calendar-graf').outerWidth();
+
+        if (leftPosition + labelWidth < contentWidth) {
+            console.log('www');
+            _this.closest('.calendar-left').find('.calendar-label').css({'left': leftPosition + leftGutter, "top": topPosition - 35})
+        }
+        else if(leftPosition + labelWidth > contentWidth) {
+            _this.closest('.calendar-left').find('.calendar-label').css({'left': leftPosition - labelWidth + 10, "top": topPosition - 35})
+        }
+        else {
+            console.log('sss')
+        }
+    }, function(){
+        $(this).closest('.calendar-left').find('.calendar-label').removeClass('active');
+        $(this).removeClass('active');
+    });
 });
 $('.register-left-scroll').scroll(function(){
     $('.register-left-scrolling').addClass('hide');
