@@ -206,6 +206,20 @@
 			</svg>
 		</a>
 		<div class="container">
+			<ul class="header-menu-submenu">
+				<li class="header-menu-sublist">
+					<a href="" class="header-link active">
+						<img src="img/user.svg" alt="" class="header-link-img">
+						התחברות
+					</a>
+				</li>
+				<li class="header-menu-sublist">
+					<a href="" class="header-link header-link_register">למשתמשים</a>
+				</li>
+				<li class="header-menu-sublist">
+					<a href="" class="header-link header-link_artist">לאומנים</a>
+				</li>
+			</ul>
 			<ul class="header-menu-burger">
 				<li class="header-list">
 					<a href="#" class="header-link">תצלום אישי </a>
@@ -482,6 +496,7 @@
 				</li>
 			</ul>
 		</div>
+		<a href="" class="header-menu-help">עזרה</a>
 	</div>
 
 </header>
@@ -1151,8 +1166,9 @@
                                 </span>
                             </label>
                             <button type="submit" class="login-second-btn register-left-btn">הצטרף</button>
-                        </div>
-                    </form>
+                        </form>
+                        <a href="" class="register-right-btn">יש לי חשבון</a>
+                    </div>
                 </div>
             </div>
             <a href="" class="register-left-scrolling">scroll</a>
@@ -1195,45 +1211,51 @@
                     <form action="" class="register-form register-form_artist">
                         <div class="package">
                             <div class="package-flex">
-                                <label class="register-form-label package-item">
-                                    <input type="radio" class="package-radio" name="package" required>
-                                    <span class="package-check">
-                                    <span class="package-check-circle"></span>
-                                </span>
+                                <div class="package-item">
+                                    <label class="register-form-label">
+                                        <input type="radio" class="package-radio" name="package" required>
+                                        <span class="package-check">
+                                        <span class="package-check-circle"></span>
+                                    </span>
+                                    </label>
+                                    <span class="package-content">
+                                        <span class="package-left">
+                                            <a href="" class="package-left-btn">תיאור</a>
+                                            <ul class="package-left-list">
+                                                <li class="artist-item-item">שיוך לגלריות 1</li>
+                                                <li class="artist-item-item">התאמה לחדר 1</li>
+                                                <li class="artist-item-item">שיוך לקטגוריה 3</li>
+                                                <li class="artist-item-item">פתיחת גלריה אישית מלאה</li>
+                                                <li class="artist-item-item">ללא הגבלה למספר העלאת תמונות</li>
+                                                <li class="artist-item-item">םייתפוקת הריכמ תוחוד</li>
+                                                <li class="artist-item-item">הנומתל הבוגת תורשפא</li>
+                                            </ul>
+                                        </span>
+                                        <span class="package-right">
+                                            <span class="package-right-title">מסלול חופשי</span>
+                                            <span class="package-right-text">
+                                                תשלום עמלה של 20% על המכירות
+                                                <br>ללא תשלום חודשי קבוע.
+                                                <br>פטור מעמלה ל-100 האמנים הראשונים!
+                                            </span>
+                                            <span class="artist-item-price">
+                                                <span class="artist-item-currency">₪</span>
+                                                <span class="artist-item-value">0</span>
+                                            </span>
+                                            <span class="artist-item-subprice">לחודש</span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="package-item">
+                                    <label class="register-form-label">
+                                        <input type="radio" class="package-radio" name="package" required>
+                                        <span class="package-check">
+                                        <span class="package-check-circle"></span>
+                                    </span>
+                                    </label>
                                     <span class="package-content">
                                     <span class="package-left">
-                                        <ul class="package-left-list">
-                                            <li class="artist-item-item">שיוך לגלריות 1</li>
-                                            <li class="artist-item-item">התאמה לחדר 1</li>
-                                            <li class="artist-item-item">שיוך לקטגוריה 3</li>
-                                            <li class="artist-item-item">פתיחת גלריה אישית מלאה</li>
-                                            <li class="artist-item-item">ללא הגבלה למספר העלאת תמונות</li>
-                                            <li class="artist-item-item">םייתפוקת הריכמ תוחוד</li>
-                                            <li class="artist-item-item">הנומתל הבוגת תורשפא</li>
-                                        </ul>
-                                    </span>
-                                    <span class="package-right">
-                                        <span class="package-right-title">מסלול חופשי</span>
-                                        <span class="package-right-text">
-                                            תשלום עמלה של 20% על המכירות
-                                            <br>ללא תשלום חודשי קבוע.
-                                            <br>פטור מעמלה ל-100 האמנים הראשונים!
-                                        </span>
-                                        <span class="artist-item-price">
-                                            <span class="artist-item-currency">₪</span>
-                                            <span class="artist-item-value">0</span>
-                                        </span>
-                                        <span class="artist-item-subprice">לחודש</span>
-                                    </span>
-                                </span>
-                                </label>
-                                <label class="register-form-label package-item">
-                                    <input type="radio" class="package-radio" name="package" required>
-                                    <span class="package-check">
-                                    <span class="package-check-circle"></span>
-                                </span>
-                                    <span class="package-content">
-                                    <span class="package-left">
+                                        <a href="" class="package-left-btn">תיאור</a>
                                         <ul class="package-left-list">
                                             <li class="artist-item-item">שיוך לגלריות 2</li>
                                             <li class="artist-item-item">התאמה לחדר 3</li>
@@ -1258,14 +1280,17 @@
                                         <span class="artist-item-subprice">לחודש</span>
                                     </span>
                                 </span>
-                                </label>
-                                <label class="register-form-label package-item">
-                                    <input type="radio" class="package-radio" name="package" required>
-                                    <span class="package-check">
-                                    <span class="package-check-circle"></span>
-                                </span>
+                                </div>
+                                <div class="package-item">
+                                    <label class="register-form-label">
+                                        <input type="radio" class="package-radio" name="package" required>
+                                        <span class="package-check">
+                                            <span class="package-check-circle"></span>
+                                        </span>
+                                    </label>
                                     <span class="package-content">
                                     <span class="package-left">
+                                        <a href="" class="package-left-btn">תיאור</a>
                                         <ul class="package-left-list">
                                             <li class="artist-item-item">שיוך לגלריות 3</li>
                                             <li class="artist-item-item">התאמה לחדר 5</li>
@@ -1290,7 +1315,7 @@
                                         <span class="artist-item-subprice">לחודש</span>
                                     </span>
                                 </span>
-                                </label>
+                                </div>
                                 <a href="" class="package-link">למידע נוסף על כללים לאמנים</a>
                             </div>
                         </div>

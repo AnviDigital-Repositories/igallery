@@ -66,7 +66,7 @@ blockquote, q
 h1
   font-family: "Assistant", sans-serif
   font-size: 64px
-  line-height: 32
+  line-height: 1
   letter-spacing: 0.05em
   color: #000000
   direction: rtl
@@ -314,12 +314,12 @@ svg
       font-family: "Assistant", sans-serif
       font-style: normal
       font-weight: 300
-      font-size: 16px
+      font-size: 26px
       line-height: 1
       text-align: center
       color: #000000
       border: none
-      width: 20px
+      width: 30px
     &-quantity
       display: flex
       justify-content: center
@@ -838,7 +838,7 @@ svg
       width: 100%
       height: 100vh
   &-left
-    width: 44%
+    width: 50%
     position: relative
     opacity: 1
     transition: all .5s ease
@@ -893,7 +893,7 @@ svg
       padding-right: 0
       margin: 20px 0
   &-right
-    width: 56%
+    width: 50%
     position: relative
     transition: all .5s ease
     &.open
@@ -1001,6 +1001,7 @@ svg
       width: 100%
   &-payment
     max-width: 320px
+    width: 100%
     margin: 0 auto
     display: none
     position: absolute
@@ -1080,6 +1081,7 @@ svg
         transition: all .5s ease
   &-card
     max-width: 410px
+    width: 100%
     margin: 0 auto
     display: none
     position: absolute
@@ -1271,6 +1273,7 @@ svg
     opacity: 0
     pointer-events: none
     transition: opacity .5s ease
+    padding: 25px
     &.active
       opacity: 1
       pointer-events: auto
@@ -1372,9 +1375,41 @@ svg
       line-height: 50px
       font-weight: normal
       font-size: 14px
-.home-fifth-arrows .circle, .footer-botto-social
+.home-fifth-arrows .circle, .footer-botto-social, .header-menu-help, .header-menu-submenu, .register-left-content .register-right-btn
   display: none
-
+.register-form-label
+  width: 100%
+  height: 100%
+  position: absolute
+  z-index: 1
+.package-left-btn
+  width: 100%
+  border: 1px solid #E5E5E5
+  height: 40px
+  line-height: 40px
+  font-size: 12px
+  text-align: center
+  color: #000000
+  position: relative
+  z-index: 3
+  margin-top: 15px
+  display: none
+.artist-first-right .artist-first-title
+  display: none
+.cart-last-price
+  white-space: nowrap
+.cart-last-info
+  padding: 0 40px
+.gutter-sizer
+  width: 30px
+.gallery-form-top.active
+  .gallery-form-arrow
+    transform: rotate(0deg)
+.login-right-text
+  font-weight: 300
+  font-size: 12px
+  color: #3B3B3B
+  margin-top: 15px
 
 @import "../components/pages/home/style"
 @import "../components/pages/login/style"

@@ -34,6 +34,32 @@
     justify-content: space-between
   .header-drop .header-list
     margin: 0
+  .register-main
+    width: calc(100% - 50px)
+  .artist-first-right
+    width: 550px
+    margin-left: 100px
+  .artist-first-img
+    max-width: 100%
+    &:nth-child(2)
+      left: -50px
+      max-width: 400px
+  .artist-second-item:before
+    left: -45px
+  .artist-item-list
+    padding: 30px 50px
+  .container_xs
+    max-width: 900px
+  .blog-page-absolute
+    right: -45px
+  .cart-item
+    padding: 55px 80px 50px 60px
+  .cart-left
+    padding-left: 60px
+  .favorit-item-main
+    width: 100%
+  .list-item
+    padding: 15px
 @media only screen and (max-width : 1020px)
   .container
     max-width: 740px
@@ -131,16 +157,21 @@
     height: 100vh
     overflow:  hidden
     background: transparent
+    transform: translateX(100%)
+    transition: transform .5s ease
+    &.active
+      transform: translateX(0)
     .container
       max-width: 100%
-      padding: 0
+      padding: 0 0 50px 0
       background: #FFffff
+      height: 100vh
+      overflow: auto
   .header-menu-burger
     flex-direction: column-reverse
     padding: 0
     background: #F9F9F9
   .header-drop-close
-    display: block
     position: absolute
     left: 0
     top: 0
@@ -150,6 +181,10 @@
     justify-content: center
     width: 70px
     height: 75px
+    transform: translateX(100%)
+    transition: transform .5s ease
+    &.active
+      transform: translateX(0)
   .header-drop .header-link
     width: 100%
     justify-content: space-between
@@ -162,12 +197,168 @@
     border-bottom: 1px solid #DFDFDF
   .header-drop .header-link svg
     display: block
+    transition: transform .5s ease
   .header-first
     position: static
     opacity: 1
     pointer-events: auto
+    padding: 20px 25px 0px 35px
+    display: none
+    &.active
+      display: flex
   .header-drop .header-list
     flex-direction: column
+  .header-first-list, .header-second-list
+    width: calc(50% - 8px)
+    margin: 0 16px 20px 0
+    &:nth-child(even)
+      margin-right: 0
+    &:nth-child(5n+5)
+      margin: 0 16px 20px 0
+  .header-first-img
+    height: 30vw
+  .header-first-text
+    text-align: right
+  .header-first-down
+    border: none
+    padding-top: 10px
+  .header-block-img
+    display: none
+  .header-third-block
+    padding: 0
+    width: 100%
+  .header-third-flex
+    flex-direction: column
+    align-items: flex-end
+    padding-top: 10px
+  .header-third-menu
+    width: 100%
+    .header-link
+      padding: 14px 25px
+      font-size: 16px
+      border-bottom: 1px solid #D7D7D7
+      width: calc(100% + 25px)
+  .header-third-menu:last-child .header-third-list:last-child .header-link
+    border: none
+  .header-fourth .header-third-menu
+    width: 100%
+  .header-fourth .header-title
+    display: none
+  .overlay
+    display: none
+  .header-list.active svg
+    transform: rotate(90deg)
+  .header-menu-help
+    background: #C4AD75
+    font-weight: 600
+    font-size: 14px
+    color: #FFFFFF
+    height: 50px
+    line-height: 50px
+    text-align: center
+    display: block
+    position: absolute
+    right: 0
+    top: calc(100% - 50px)
+    width: calc(100% - 70px)
+    z-index: 2
+    margin-left: 70px
+  .header-menu-submenu
+    display: flex
+    flex-wrap: wrap
+  .header-menu-sublist
+    width: 50%
+    &:first-child
+      width: 100%
+      .header-link
+        padding: 26px 25px
+        justify-content: center
+        border-bottom: 1px solid #DFDFDF
+        border-left: 1px solid #DFDFDF
+        font-size: 14px
+    .header-link
+      padding: 20px 25px
+      border-bottom: 1px solid #DFDFDF
+      font-size: 14px
+      justify-content: center
+    &:nth-child(2)
+      border-right: 1px solid #DFDFDF
+      border-left: 1px solid #DFDFDF
+  .package-content
+    padding: 40px
+  .package
+    display: block
+  .help-popup
+    height: 100vh
+    z-index: 4
+    top: 0
+  .artist-first-flex
+    align-items: flex-start
+  .artist-first-subtitle
+    margin: 35px 0
+  .artist-first-img:nth-child(2)
+    max-width: 250px
+  .artist-second
+    padding: 35px 0
+  .artist-second-list
+    padding: 0
+  .artist-second-item:before
+    left: -22px
+  .artist-slider
+    margin-top: 160px
+  .artist-item-list
+    padding: 30px 25px
+  .artist-item-btn
+    max-width: 180px
+  .artist-fourth
+    padding: 100px 0
+  .blog-main-info
+    padding: 30px
+  .blog-top
+    min-height: auto
+    padding: 120px 0 100px
+  .cart-item
+    padding: 40px
+  .cart-quantity
+    margin-left: 30px
+  .cart-img
+    margin-left: 30px
+    width: 220px
+    height: 220px
+    margin-top: 20px
+  .cart
+    padding: 55px 0 130px
+  .blog-page-main
+    padding: 55px 0 145px
+  .container_xs
+    max-width: 650px
+  .favorit-item_custom .gallery-item-block
+    padding: 0
+  .favorit-item_custom .gallery-item-info
+    display: none
+  .info-left
+    padding: 50px 80px 50px 50px
+  .info-right-slider, .info-right-photo
+    width: 350px
+  .info-item:nth-child(odd) .info-left
+    padding: 50px 50px 50px 80px
+  .list-item
+    width: calc(50% - 30px)
+  .list
+    padding: 70px 0 100px
+  .list-item
+    padding: 25px
+  .login-flex
+    flex-direction: column
+    align-items: center
+  .login-right
+    width: 100%
+    margin: 60px 0 0
+  .login
+    padding: 70px 0 100px
+  .login-left
+    width: 100%
+    max-width: 410px
 @media only screen and (max-width : 767px)
   .container
     max-width: 460px
@@ -273,7 +464,328 @@
     text-align: center
   .footer-bottom-right
     width: 50%
+  .header-first-text
+    font-size: 12px
+  .about-text
+    margin-top: 30px
+  .about
+    padding: 60px 0 50px
+  .header-basket, .header-heart
+    width: 96%
+    left: 2%
+    max-width: 100%
+  .register-thank
+    width: calc(100% - 50px)
+  .register-main
+    flex-direction: column-reverse
+    width: 100%
+    height: 100vh
+    overflow: auto
+    justify-content: flex-end
+  .register
+    align-items: flex-start
+  .register-left
+    width: 100%
+    height: calc(100vh - 75px)
+  .register-right
+    width: 100%
+    height: 75px
+  .register-logo
+    display: none
+  .register-left .register-close
+    width: 40px
+    height: 40px
+    background: #FFffff
+    top: -55px
+    z-index: 2
+  .register-right-btn
+    display: none
+  .register-left-content .register-right-btn
+    display: block
+    position: static
+    transform: none
+    margin: 10px auto 0
+    width: 100%
+    border: 1px solid #DADADA
+  .register-left-scroll
+    padding: 30px 25px 45px
+  .register-right.open
+    height: 100vh
+  .artist-first-title
+    display: none
+  .artist-first-right .artist-first-title
+    display: block
+  .artist-first-flex
+    flex-direction: column-reverse
+  .artist-first-right
+    width: 100%
+    margin: 0
+  .artist-first-right
+    padding: 0
+    display: flex
+    flex-direction: column
+  .artist-first-img
+    max-width: 170px
+    top: 70px
+  .artist-first-img:nth-child(2)
+    max-width: calc(100% - 20px)
+    margin-left: 45px
+  .artist-first-title
+    width: 100%
+    text-align: center
+    margin-bottom: 70px
+  .artist-first-left
+    width: 100%
+  .artist-second-list
+    flex-direction: column-reverse
+    align-items: center
+    margin-top: 50px
+  .artist-first
+    padding: 40px 0 35px
+  .artist-first-subtitle
+    font-size: 30px
+    margin: 30px 0 20px
+  .artist-second-title
+    font-size: 30px
+  .artist-second-item:before
+    transform: rotate(-90deg)
+    left: calc(50% - 20px)
+    top: calc(100% + 60px)
+  .artist-second-item
+    margin-bottom: 90px
+    &:first-child
+      margin-bottom: 0
+  .artist-second-item:nth-child(3):before
+    transform: rotate(-90deg) scale(1, 1)
+    top: calc(100% + 40px)
+  .artist-second-item:nth-child(2):before
+    top: calc(100% + 40px)
+  .artist-third-text
+    font-size: 16px
+  .artist-third
+    padding: 30px 0 60px
+  .artist-slider
+    width: 100%
+    margin-top: 80px
+  .artist-item_second
+    margin-top: 0
+  .artist-third
+    overflow: hidden
+  .artist-slider-btns
+    margin: 0 0 40px
+  .artist-item-list
+    padding: 30px 60px
+  .artist-item-btn
+    max-width: 220px
+  .artist-fourth
+    padding: 30px 0 200px
+  .artist-fourth-item
+    margin-top: 30px
+  .blog-slider
+    width: 100%
+    padding-bottom: 105px
+  .blog-top
+    padding: 80px 0 220px
+  .blog-top-text
+    font-size: 14px
+  .blog-slider .swiper-button-next
+    right: calc(50% - 75px)
+  .blog-slider .swiper-button-prev
+    right: calc(50% + 30px)
+  .blog-top:before
+    bottom: 0
+  .blog-bottom-title
+    font-size: 42px
+  .blog-bottom
+    padding-top: 70px
+  .blog-main .gallery-item
+    width: 100%
+  .blog-main
+    margin-top: 65px
+  .blog-main-info
+    padding: 65px 58px
+  .blog-main .gallery-item
+    margin-bottom: 45px
+  .blog-btn
+    margin-top: 10px
+  .blog
+    padding-bottom: 110px
+  .cart
+    padding: 35px 0 100px
+  .cart-item
+    padding: 0
+    flex-direction: column
+  .cart-img
+    width: calc(100% + 2px)
+    height: auto
+    margin: -1px 0 35px -1px
+  .cart-quantity
+    width: 100%
+    margin: 0
+    justify-content: center
+    flex-direction: row
+    order: 1
+  .cart-block
+    width: 100%
+    order: 2
+  .header-basket-input
+    margin: 0 5px
+  .cart-block
+    padding: 35px 40px 35px 35px
+  .cart-block-item
+    padding-left: 0
+  .cart-block-item:nth-child(even)
+    padding-right: 20%
+  .cart-left
+    position: static
+    order: 3
+    padding: 0px 40px 35px 35px
+    flex-direction: row
+  .header-basket-delete
+    height: 50px
+    width: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #F4F4F4
+  .cart-bottom
+    flex-direction: column-reverse
+    align-items: center
+    margin-top: 70px
+  .cart-bottom-row
+    width: 100%
+    max-width: 480px
+    margin: 0 0 20px
+  .cart-last
+    flex-direction: column-reverse
+    margin-top: 70px
+  .cart-last-text
+    font-size: 16px
+  .cart-last-price
+    font-size: 30px
+  .cart-last-info
+    justify-content: space-between
+    padding: 15px 20px
+  .cart-last-btn
+    width: 100%
+    height: 85px
+    line-height: 85px
+  .blog-page-absolute
+    display: none
+  .blog-page-flex
+   flex-direction: column
+  .blog-page-item
+    width: 100%
+    margin: 0
+  .blog-page-item:first-child
+    margin-left: 0
+  .blog-page-item img
+    margin-bottom: 30px
+  .blog-page-main
+    padding: 55px 0 55px
+  .contact-title
+    font-size: 42px
+  .contact-flex
+    flex-direction: column
+    align-items: center
+    margin-top: 70px
+  .contact-container
+    padding: 0 25px
+  .contact-right
+    width: 325px
+    margin-top: 40px
+  .contact-left
+    width: 325px
+  .contact-right-item
+    margin-bottom: 25px
+  .contact
+    padding: 70px 0 70px
+  .gallery-item
+    width: calc(50% - 8px)
+  .gutter-sizer
+    width: 16px
+  .gallery-item-name
+    font-size: 14px
+  .gallery-item-description
+    font-size: 12px
+  .gallery-item-bottom
+    align-items: center
+  .favorit
+    padding: 50px 0 30px
+  .favorit-title
+    margin-bottom: 50px
+  .info-title
+    font-size: 42px
+    margin-bottom: 25px
+  .info
+    padding: 35px 0 0px
+  .info-flex
+    flex-direction: column-reverse
+  .info-right, .info-right-slider, .info-right-photo
+    width: 100%
+    top: 0
+  .info-right-block
+    padding: 0
+    position: static
+    margin-top: 35px
+  .info-right
+    flex-direction: column
+  .info-left
+    width: calc(100% + 50px)
+    margin-left: -25px
+    position: relative
+    padding: 30px 30px 50px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: -140px
+      width: 100%
+      height: 220px
+      background: #F9F9F9
+      z-index: -1
+  .info-left-title
+    text-align: right
+  .info-text p
+    text-align: right
+  .info-item:nth-child(odd) .info-flex
+    flex-direction: column-reverse
+  .info-item
+    padding: 33px 0
+  .info-item_first .info-left:before
+    top: -205px
+  .info-item_fluid .info-left:before
+    display: none
+  .info-item:nth-child(odd) .info-left
+    padding: 30px 30px 50px
+  .info-item_fluid:nth-child(odd) .info-left
+    width: calc(100% + 50px)
+  .info-item.info-item_fluid
+    padding-bottom: 10px
+  .list-title
+    font-size: 30px
+  .list-item
+    width: 100%
+    margin: 15px
+  .list
+    padding: 30px 0 100px
+  .list-list
+    margin-top: 30px
+  .login-form-btn
+    width: 100%
+  .login-bottom
+    flex-direction: column-reverse
+  .login-bottom-cabinet
+    margin: 0 0 15px 0
+  .login
+    padding: 25px 0 110px
+  .login-right-block
+    height: 410px
+  .login-right
+    height: auto
 @media only screen and (max-width : 480px)
+  .login-right-block
+    height: 74vw
   .header-flex
     width: 100px
   .header-basket-span
@@ -371,3 +883,56 @@
     margin-top: 20px
   .home-input
     padding: 0 100px 0 70px
+  .package-content
+    flex-direction: column-reverse
+    padding: 30px 63px 40px
+  .package-right-text br
+    display: none
+  .package-left
+    width: 100%
+  .package-left-list
+    margin-top: 20px
+  .package-item
+    margin-bottom: 55px
+    &:last-child
+      margin-bottom: 0
+  .package-check
+    left: calc(50% - 27px)
+    top: 100%
+  .package-left-btn
+    display: block
+    &.active
+      background: #F4F4F4
+      border: 1px solid #F4F4F4
+  .package-left-list
+    display: none
+  .package-flex
+    align-items: center
+  .register-payment
+    height: 100%
+    padding-bottom: 50px
+    &.active
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+  .register-payment .login-second-btn, .register-card .login-second-btn
+    position: absolute
+    bottom: 25px
+  .register-card .login-second-btn
+    //width: calc(100% - 50px)
+  .register-payment-form
+    width: 100%
+  .register-card
+    padding: 0 0px 50px 0
+    height: 100%
+    max-width: 320px
+    &.active
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+  .help-popup-content
+    margin: 0
+  .blog-page-info-text
+    display: none
