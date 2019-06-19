@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <meta name="viewport" content="width=375, maximum-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="custom-body">
+	@import "header.html"
+
+	<main class="paint">
+		<section class="paint-first">
+			<div class="paint-first-left">
+				<div class="paint-first-scroll">
+					<form action="" class="paint-form">
+						<div class="paint-form-top">
+							<div class="paint-form-info infos">
+								<div class="infos-item infos-item_question">
+									<a href="" class="infos-item-block">
+										<svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.72784 12.608C3.69584 12.288 3.67984 12.064 3.67984 11.936C3.67984 11.12 3.83984 10.408 4.15984 9.8C4.47984 9.192 4.95184 8.496 5.57584 7.712C6.11984 7.008 6.51984 6.424 6.77584 5.96C7.03184 5.48 7.15984 4.96 7.15984 4.4C7.15984 3.632 6.92784 2.992 6.46384 2.48C6.01584 1.952 5.35984 1.688 4.49584 1.688C3.93584 1.688 3.39184 1.824 2.86384 2.096C2.33584 2.352 1.87184 2.72 1.47184 3.2L0.727844 2.528C1.87984 1.264 3.17584 0.631999 4.61584 0.631999C5.76784 0.631999 6.67984 0.975999 7.35184 1.664C8.03984 2.352 8.38384 3.24 8.38384 4.328C8.38384 5 8.23984 5.608 7.95184 6.152C7.66384 6.68 7.22384 7.328 6.63184 8.096C6.02384 8.848 5.56784 9.512 5.26384 10.088C4.95984 10.664 4.80784 11.312 4.80784 12.032C4.80784 12.16 4.82384 12.352 4.85584 12.608H3.72784ZM4.37584 17.288C4.07184 17.288 3.80784 17.184 3.58384 16.976C3.37584 16.752 3.27184 16.472 3.27184 16.136C3.27184 15.784 3.37584 15.496 3.58384 15.272C3.80784 15.048 4.07184 14.936 4.37584 14.936C4.67984 14.936 4.93584 15.048 5.14384 15.272C5.35184 15.48 5.45584 15.768 5.45584 16.136C5.45584 16.472 5.35184 16.752 5.14384 16.976C4.93584 17.184 4.67984 17.288 4.37584 17.288Z" fill="black"/>
+										</svg>
+									</a>
+									<ul class="infos-item-drop">
+										<li class="infos-item-item">
+											<a href="" class="infos-item-link">מסירה</a>
+										</li>
+										<li class="infos-item-item">
+											<a href="" class="infos-item-link">אני צריך עזרה</a>
+										</li>
+									</ul>
+								</div>
+								<a href="" class="infos-item infos-item_like gallery-item-like">
+									<svg width="26" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+										<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+									</svg>
+								</a>
+							</div>
+							<h4 class="paint-form-title">הגדרות ציור</h4>
+						</div>
+						<div class="paint-form-row">
+							<div class="paint-form-flex">
+								<p class="paint-form-text">העלה את התמונה שלי</p>
+								<label for="" class="paint-form-label">
+									<input type="file" class="add-file">
+									<span class="paint-form-add">+</span>
+								</label>
+							</div>
+						</div>
+						<div class="paint-form-row select_xl">
+							<h6 class="paint-form-subtitle">הדפסה , מסגור</h6>
+							<select class="register-card-select purchase-form-select select_change">
+								<option value="1" class="register-card-option">נייר</option>
+								<option value="2" class="register-card-option">קנבס</option>
+								<option value="3" class="register-card-option">אלומיניום</option>
+								<option value="3" class="register-card-option">זכוכית</option>
+								<option value="3" class="register-card-option">פרספקס</option>
+							</select>
+						</div>
+						<div class="paint-form-row select_l ltr">
+							<h6 class="paint-form-subtitle">גודל הדפסה</h6>
+							<div class="paint-form-group">
+								<div class="paint-form-block">
+									<div class="paint-form-flex">
+										<div class="paint-form-item">
+											<select class="register-card-select purchase-form-select select_type">
+												<option value="1" class="register-card-option">20 x 50 cm</option>
+												<option value="1" class="register-card-option">30 x 50 cm</option>
+												<option value="1" class="register-card-option">40 x 50 cm</option>
+												<option value="1" class="register-card-option">50 x 50 cm</option>
+											</select>
+											<span class="paint-form-text">ס"מ</span>
+										</div>
+									</div>
+								</div>
+								<div class="paint-form-block">
+									<div class="paint-form-item">
+										<input type="text" class="paint-form-input w80" placeholder="15”">
+										<span class="paint-form-text">אינץ</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="paint-form-change change">
+							<div class="change-item active">
+								<div class="paint-form-row label_sm">
+									<h6 class="paint-form-subtitle">סוג נייר</h6>
+									<div class="paint-form-item">
+										<label class="paint-form-labels">
+											<input type="radio" class="paint-form-radio" name="paper-type">
+											<span class="paint-form-span">נייר לוסטר</span>
+										</label>
+										<label class="paint-form-labels">
+											<input type="radio" class="paint-form-radio" name="paper-type">
+											<span class="paint-form-span">נייר פין ארט</span>
+										</label>
+										<label class="paint-form-labels">
+											<input type="radio" class="paint-form-radio" name="paper-type" checked>
+											<span class="paint-form-span">נייר פוטו</span>
+										</label>
+									</div>
+								</div>
+								<div class="paint-form-row label_md">
+									<h6 class="paint-form-subtitle">גבול</h6>
+									<div class="paint-form-item">
+										<label class="paint-form-labels">
+											<input type="radio" class="paint-form-radio" name="border-type">
+											<span class="paint-form-span">הדפסה בלבד</span>
+										</label>
+										<label class="paint-form-labels">
+											<input type="radio" class="paint-form-radio" name="border-type" checked>
+											<span class="paint-form-span">הוסף מסגרת</span>
+										</label>
+									</div>
+									<div class="paint-form-slider swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<label class="slider-label">
+													<img src="img/border1.png" alt="" class="slider-label-img">
+													<input type="radio" class="slider-label-radio" name="border-img">
+													<span class="slider-label-check">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.487 0.137873C18.5675 -0.357246 17.5419 0.597626 16.9407 1.16348C15.5615 2.50737 14.3944 4.06346 13.0858 5.47808C11.6358 7.03417 10.2919 8.59025 8.80658 10.111C7.9578 10.9598 7.0383 11.8793 6.47245 12.9403C5.19929 11.7024 4.10295 10.3585 2.68833 9.26226C1.66273 8.48421 -0.0348217 7.91836 0.000543893 9.79274C0.0712751 12.233 2.22858 14.8501 3.82003 16.5122C4.49197 17.2195 5.37611 17.9622 6.40172 17.9976C7.63951 18.0683 8.91267 16.5829 9.65535 15.7695C10.9639 14.3549 12.0249 12.7634 13.2273 11.3135C14.7834 9.40372 16.3748 7.52928 17.8955 5.58418C18.8504 4.38175 21.8565 1.41098 19.487 0.137873ZM1.55657 9.65128C1.52121 9.65128 1.48584 9.65128 1.41511 9.68659C1.27365 9.65128 1.16755 9.61586 1.02609 9.54512C1.13219 9.47439 1.30901 9.50976 1.55657 9.65128Z" fill="black"/>
+								</svg>
+							</span>
+													<span class="slider-label-bg"></span>
+												</label>
+											</div>
+											<div class="swiper-slide">
+												<label class="slider-label">
+													<img src="img/border2.png" alt="" class="slider-label-img">
+													<input type="radio" class="slider-label-radio" name="border-img">
+													<span class="slider-label-check">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.487 0.137873C18.5675 -0.357246 17.5419 0.597626 16.9407 1.16348C15.5615 2.50737 14.3944 4.06346 13.0858 5.47808C11.6358 7.03417 10.2919 8.59025 8.80658 10.111C7.9578 10.9598 7.0383 11.8793 6.47245 12.9403C5.19929 11.7024 4.10295 10.3585 2.68833 9.26226C1.66273 8.48421 -0.0348217 7.91836 0.000543893 9.79274C0.0712751 12.233 2.22858 14.8501 3.82003 16.5122C4.49197 17.2195 5.37611 17.9622 6.40172 17.9976C7.63951 18.0683 8.91267 16.5829 9.65535 15.7695C10.9639 14.3549 12.0249 12.7634 13.2273 11.3135C14.7834 9.40372 16.3748 7.52928 17.8955 5.58418C18.8504 4.38175 21.8565 1.41098 19.487 0.137873ZM1.55657 9.65128C1.52121 9.65128 1.48584 9.65128 1.41511 9.68659C1.27365 9.65128 1.16755 9.61586 1.02609 9.54512C1.13219 9.47439 1.30901 9.50976 1.55657 9.65128Z" fill="black"/>
+								</svg>
+							</span>
+													<span class="slider-label-bg"></span>
+												</label>
+											</div>
+											<div class="swiper-slide">
+												<label class="slider-label">
+													<img src="img/border3.png" alt="" class="slider-label-img">
+													<input type="radio" class="slider-label-radio" name="border-img">
+													<span class="slider-label-check">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.487 0.137873C18.5675 -0.357246 17.5419 0.597626 16.9407 1.16348C15.5615 2.50737 14.3944 4.06346 13.0858 5.47808C11.6358 7.03417 10.2919 8.59025 8.80658 10.111C7.9578 10.9598 7.0383 11.8793 6.47245 12.9403C5.19929 11.7024 4.10295 10.3585 2.68833 9.26226C1.66273 8.48421 -0.0348217 7.91836 0.000543893 9.79274C0.0712751 12.233 2.22858 14.8501 3.82003 16.5122C4.49197 17.2195 5.37611 17.9622 6.40172 17.9976C7.63951 18.0683 8.91267 16.5829 9.65535 15.7695C10.9639 14.3549 12.0249 12.7634 13.2273 11.3135C14.7834 9.40372 16.3748 7.52928 17.8955 5.58418C18.8504 4.38175 21.8565 1.41098 19.487 0.137873ZM1.55657 9.65128C1.52121 9.65128 1.48584 9.65128 1.41511 9.68659C1.27365 9.65128 1.16755 9.61586 1.02609 9.54512C1.13219 9.47439 1.30901 9.50976 1.55657 9.65128Z" fill="black"/>
+								</svg>
+							</span>
+													<span class="slider-label-bg"></span>
+												</label>
+											</div>
+											<div class="swiper-slide">
+												<label class="slider-label">
+													<img src="img/border4.png" alt="" class="slider-label-img">
+													<input type="radio" class="slider-label-radio" name="border-img">
+													<span class="slider-label-check">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.487 0.137873C18.5675 -0.357246 17.5419 0.597626 16.9407 1.16348C15.5615 2.50737 14.3944 4.06346 13.0858 5.47808C11.6358 7.03417 10.2919 8.59025 8.80658 10.111C7.9578 10.9598 7.0383 11.8793 6.47245 12.9403C5.19929 11.7024 4.10295 10.3585 2.68833 9.26226C1.66273 8.48421 -0.0348217 7.91836 0.000543893 9.79274C0.0712751 12.233 2.22858 14.8501 3.82003 16.5122C4.49197 17.2195 5.37611 17.9622 6.40172 17.9976C7.63951 18.0683 8.91267 16.5829 9.65535 15.7695C10.9639 14.3549 12.0249 12.7634 13.2273 11.3135C14.7834 9.40372 16.3748 7.52928 17.8955 5.58418C18.8504 4.38175 21.8565 1.41098 19.487 0.137873ZM1.55657 9.65128C1.52121 9.65128 1.48584 9.65128 1.41511 9.68659C1.27365 9.65128 1.16755 9.61586 1.02609 9.54512C1.13219 9.47439 1.30901 9.50976 1.55657 9.65128Z" fill="black"/>
+								</svg>
+							</span>
+													<span class="slider-label-bg"></span>
+												</label>
+											</div>
+											<div class="swiper-slide">
+												<label class="slider-label">
+													<img src="img/border1.png" alt="" class="slider-label-img">
+													<input type="radio" class="slider-label-radio" name="border-img">
+													<span class="slider-label-check">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.487 0.137873C18.5675 -0.357246 17.5419 0.597626 16.9407 1.16348C15.5615 2.50737 14.3944 4.06346 13.0858 5.47808C11.6358 7.03417 10.2919 8.59025 8.80658 10.111C7.9578 10.9598 7.0383 11.8793 6.47245 12.9403C5.19929 11.7024 4.10295 10.3585 2.68833 9.26226C1.66273 8.48421 -0.0348217 7.91836 0.000543893 9.79274C0.0712751 12.233 2.22858 14.8501 3.82003 16.5122C4.49197 17.2195 5.37611 17.9622 6.40172 17.9976C7.63951 18.0683 8.91267 16.5829 9.65535 15.7695C10.9639 14.3549 12.0249 12.7634 13.2273 11.3135C14.7834 9.40372 16.3748 7.52928 17.8955 5.58418C18.8504 4.38175 21.8565 1.41098 19.487 0.137873ZM1.55657 9.65128C1.52121 9.65128 1.48584 9.65128 1.41511 9.68659C1.27365 9.65128 1.16755 9.61586 1.02609 9.54512C1.13219 9.47439 1.30901 9.50976 1.55657 9.65128Z" fill="black"/>
+								</svg>
+							</span>
+													<span class="slider-label-bg"></span>
+												</label>
+											</div>
+											<div class="swiper-slide">
+												<label class="slider-label">
+													<img src="img/border2.png" alt="" class="slider-label-img">
+													<input type="radio" class="slider-label-radio" name="border-img">
+													<span class="slider-label-check">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.487 0.137873C18.5675 -0.357246 17.5419 0.597626 16.9407 1.16348C15.5615 2.50737 14.3944 4.06346 13.0858 5.47808C11.6358 7.03417 10.2919 8.59025 8.80658 10.111C7.9578 10.9598 7.0383 11.8793 6.47245 12.9403C5.19929 11.7024 4.10295 10.3585 2.68833 9.26226C1.66273 8.48421 -0.0348217 7.91836 0.000543893 9.79274C0.0712751 12.233 2.22858 14.8501 3.82003 16.5122C4.49197 17.2195 5.37611 17.9622 6.40172 17.9976C7.63951 18.0683 8.91267 16.5829 9.65535 15.7695C10.9639 14.3549 12.0249 12.7634 13.2273 11.3135C14.7834 9.40372 16.3748 7.52928 17.8955 5.58418C18.8504 4.38175 21.8565 1.41098 19.487 0.137873ZM1.55657 9.65128C1.52121 9.65128 1.48584 9.65128 1.41511 9.68659C1.27365 9.65128 1.16755 9.61586 1.02609 9.54512C1.13219 9.47439 1.30901 9.50976 1.55657 9.65128Z" fill="black"/>
+								</svg>
+							</span>
+													<span class="slider-label-bg"></span>
+												</label>
+											</div>
+										</div>
+										<div class="paint-form-btns">
+											<div class="seventh-btn swiper-button-prev">
+												<svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<line y1="-0.5" x2="29" y2="-0.5" transform="matrix(-1 0 0 1 39 2)" stroke="black"/>
+													<line y1="-0.5" x2="11.4018" y2="-0.5" transform="matrix(-0.789352 -0.613941 -0.613941 0.789352 9 8)" stroke="black"/>
+												</svg>
+											</div>
+											<div class="seventh-btn swiper-button-next">
+												<svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<line y1="1.5" x2="29" y2="1.5" stroke="black"/>
+													<line x1="29.693" y1="7.60532" x2="38.693" y2="0.605325" stroke="black"/>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="paint-form-row select_md ltr">
+									<h6 class="paint-form-subtitle">בחר רקע</h6>
+									<div class="paint-form-group">
+										<div class="paint-form-block">
+											<div class="paint-form-item">
+												<div class="paint-form-flex">
+													<div class="paint-form-item">
+														<select class="register-card-select purchase-form-select select_type">
+															<option value="1" class="register-card-option">2 cm</option>
+															<option value="1" class="register-card-option">3 cm</option>
+															<option value="1" class="register-card-option">4 cm</option>
+															<option value="1" class="register-card-option">5 cm</option>
+														</select>
+													</div>
+												</div>
+												<div class="color-item">
+													<input type="text" class="paint-form-input w100 color-input" value="#292929">
+													<div class="paint-form-color color">
+														<div class="color-active"></div>
+														<div class="color-drop color-drop_border">
+															<div class="color-drop-item active" style="background-color: #292929;"></div>
+															<div class="color-drop-item" style="background-color: #7C878E;"></div>
+															<div class="color-drop-item" style="background-color: #E1C583;"></div>
+															<div class="color-drop-item" style="background-color: #F8C39E;"></div>
+															<div class="color-drop-item" style="background-color: #DEB9B3;"></div>
+															<div class="color-drop-item" style="background-color: #E2DDD2;"></div>
+															<div class="color-drop-item" style="background-color: #DEE1C7;"></div>
+															<div class="color-drop-item" style="background-color: #F1F4F8;"></div>
+															<div class="color-drop-item" style="background-color: #DEB9B3;"></div>
+															<div class="color-drop-item" style="background-color: #E2DDD2;"></div>
+															<div class="color-drop-item" style="background-color: #F1F4F8;"></div>
+															<div class="color-drop-item" style="background-color: #7C878E;"></div>
+															<div class="color-drop-item" style="background-color: #DEE1C7;"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="paint-form-row select_xl no-border">
+									<h6 class="paint-form-subtitle">הגנה</h6>
+									<select class="register-card-select purchase-form-select select_type">
+										<option value="1" class="register-card-option">ללא</option>
+										<option value="2" class="register-card-option">זכוכית </option>
+										<option value="3" class="register-card-option">זכוכית מט</option>
+										<option value="4" class="register-card-option">למינציה</option>
+									</select>
+								</div>
+							</div>
+							<div class="change-item">
+								<div class="paint-form-row no-border">
+									<div class="paint-form-group paint-form-group_fluid">
+										<div class="paint-form-col">
+											<h6 class="paint-form-subtitle">כנפיים</h6>
+											<select class="register-card-select purchase-form-select select_type">
+												<option value="1" class="register-card-option">פאות לבנות</option>
+												<option value="1" class="register-card-option">פאות שחרות</option>
+												<option value="1" class="register-card-option">פאות גלריה</option>
+											</select>
+										</div>
+										<div class="paint-form-col">
+											<h6 class="paint-form-subtitle">גבול</h6>
+											<select class="register-card-select purchase-form-select select_type">
+												<option value="1" class="register-card-option">הדפסה ומסגור</option>
+												<option value="1" class="register-card-option">הדפבה ומתיחה</option>
+												<option value="1" class="register-card-option">רק הדפסה</option>
+											</select>
+										</div>
+									</div>
+									<div class="paint-form-slider swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<label class="slider-label">
+													<img src="img/border1.png" alt="" class="slider-label-img">
+													<input type="radio" class="slider-label-radio" name="border-img">
+													<span class="slider-label-check">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.487 0.137873C18.5675 -0.357246 17.5419 0.597626 16.9407 1.16348C15.5615 2.50737 14.3944 4.06346 13.0858 5.47808C11.6358 7.03417 10.2919 8.59025 8.80658 10.111C7.9578 10.9598 7.0383 11.8793 6.47245 12.9403C5.19929 11.7024 4.10295 10.3585 2.68833 9.26226C1.66273 8.48421 -0.0348217 7.91836 0.000543893 9.79274C0.0712751 12.233 2.22858 14.8501 3.82003 16.5122C4.49197 17.2195 5.37611 17.9622 6.40172 17.9976C7.63951 18.0683 8.91267 16.5829 9.65535 15.7695C10.9639 14.3549 12.0249 12.7634 13.2273 11.3135C14.7834 9.40372 16.3748 7.52928 17.8955 5.58418C18.8504 4.38175 21.8565 1.41098 19.487 0.137873ZM1.55657 9.65128C1.52121 9.65128 1.48584 9.65128 1.41511 9.68659C1.27365 9.65128 1.16755 9.61586 1.02609 9.54512C1.13219 9.47439 1.30901 9.50976 1.55657 9.65128Z" fill="black"/>
+								</svg>
+							</span>
+													<span class="slider-label-bg"></span>
+												</label>
+											</div>
+											<div class="swiper-slide">
+												<label class="slider-label">
+													<img src="img/border2.png" alt="" class="slider-label-img">
+													<input type="radio" class="slider-label-radio" name="border-img">
+													<span class="slider-label-check">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.487 0.137873C18.5675 -0.357246 17.5419 0.597626 16.9407 1.16348C15.5615 2.50737 14.3944 4.06346 13.0858 5.47808C11.6358 7.03417 10.2919 8.59025 8.80658 10.111C7.9578 10.9598 7.0383 11.8793 6.47245 12.9403C5.19929 11.7024 4.10295 10.3585 2.68833 9.26226C1.66273 8.48421 -0.0348217 7.91836 0.000543893 9.79274C0.0712751 12.233 2.22858 14.8501 3.82003 16.5122C4.49197 17.2195 5.37611 17.9622 6.40172 17.9976C7.63951 18.0683 8.91267 16.5829 9.65535 15.7695C10.9639 14.3549 12.0249 12.7634 13.2273 11.3135C14.7834 9.40372 16.3748 7.52928 17.8955 5.58418C18.8504 4.38175 21.8565 1.41098 19.487 0.137873ZM1.55657 9.65128C1.52121 9.65128 1.48584 9.65128 1.41511 9.68659C1.27365 9.65128 1.16755 9.61586 1.02609 9.54512C1.13219 9.47439 1.30901 9.50976 1.55657 9.65128Z" fill="black"/>
+								</svg>
+							</span>
+													<span class="slider-label-bg"></span>
+												</label>
+											</div>
+											<div class="swiper-slide">
+												<label class="slider-label">
+													<img src="img/border3.png" alt="" class="slider-label-img">
+													<input type="radio" class="slider-label-radio" name="border-img">
+													<span class="slider-label-check">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.487 0.137873C18.5675 -0.357246 17.5419 0.597626 16.9407 1.16348C15.5615 2.50737 14.3944 4.06346 13.0858 5.47808C11.6358 7.03417 10.2919 8.59025 8.80658 10.111C7.9578 10.9598 7.0383 11.8793 6.47245 12.9403C5.19929 11.7024 4.10295 10.3585 2.68833 9.26226C1.66273 8.48421 -0.0348217 7.91836 0.000543893 9.79274C0.0712751 12.233 2.22858 14.8501 3.82003 16.5122C4.49197 17.2195 5.37611 17.9622 6.40172 17.9976C7.63951 18.0683 8.91267 16.5829 9.65535 15.7695C10.9639 14.3549 12.0249 12.7634 13.2273 11.3135C14.7834 9.40372 16.3748 7.52928 17.8955 5.58418C18.8504 4.38175 21.8565 1.41098 19.487 0.137873ZM1.55657 9.65128C1.52121 9.65128 1.48584 9.65128 1.41511 9.68659C1.27365 9.65128 1.16755 9.61586 1.02609 9.54512C1.13219 9.47439 1.30901 9.50976 1.55657 9.65128Z" fill="black"/>
+								</svg>
+							</span>
+													<span class="slider-label-bg"></span>
+												</label>
+											</div>
+											<div class="swiper-slide">
+												<label class="slider-label">
+													<img src="img/border4.png" alt="" class="slider-label-img">
+													<input type="radio" class="slider-label-radio" name="border-img">
+													<span class="slider-label-check">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.487 0.137873C18.5675 -0.357246 17.5419 0.597626 16.9407 1.16348C15.5615 2.50737 14.3944 4.06346 13.0858 5.47808C11.6358 7.03417 10.2919 8.59025 8.80658 10.111C7.9578 10.9598 7.0383 11.8793 6.47245 12.9403C5.19929 11.7024 4.10295 10.3585 2.68833 9.26226C1.66273 8.48421 -0.0348217 7.91836 0.000543893 9.79274C0.0712751 12.233 2.22858 14.8501 3.82003 16.5122C4.49197 17.2195 5.37611 17.9622 6.40172 17.9976C7.63951 18.0683 8.91267 16.5829 9.65535 15.7695C10.9639 14.3549 12.0249 12.7634 13.2273 11.3135C14.7834 9.40372 16.3748 7.52928 17.8955 5.58418C18.8504 4.38175 21.8565 1.41098 19.487 0.137873ZM1.55657 9.65128C1.52121 9.65128 1.48584 9.65128 1.41511 9.68659C1.27365 9.65128 1.16755 9.61586 1.02609 9.54512C1.13219 9.47439 1.30901 9.50976 1.55657 9.65128Z" fill="black"/>
+								</svg>
+							</span>
+													<span class="slider-label-bg"></span>
+												</label>
+											</div>
+											<div class="swiper-slide">
+												<label class="slider-label">
+													<img src="img/border1.png" alt="" class="slider-label-img">
+													<input type="radio" class="slider-label-radio" name="border-img">
+													<span class="slider-label-check">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.487 0.137873C18.5675 -0.357246 17.5419 0.597626 16.9407 1.16348C15.5615 2.50737 14.3944 4.06346 13.0858 5.47808C11.6358 7.03417 10.2919 8.59025 8.80658 10.111C7.9578 10.9598 7.0383 11.8793 6.47245 12.9403C5.19929 11.7024 4.10295 10.3585 2.68833 9.26226C1.66273 8.48421 -0.0348217 7.91836 0.000543893 9.79274C0.0712751 12.233 2.22858 14.8501 3.82003 16.5122C4.49197 17.2195 5.37611 17.9622 6.40172 17.9976C7.63951 18.0683 8.91267 16.5829 9.65535 15.7695C10.9639 14.3549 12.0249 12.7634 13.2273 11.3135C14.7834 9.40372 16.3748 7.52928 17.8955 5.58418C18.8504 4.38175 21.8565 1.41098 19.487 0.137873ZM1.55657 9.65128C1.52121 9.65128 1.48584 9.65128 1.41511 9.68659C1.27365 9.65128 1.16755 9.61586 1.02609 9.54512C1.13219 9.47439 1.30901 9.50976 1.55657 9.65128Z" fill="black"/>
+								</svg>
+							</span>
+													<span class="slider-label-bg"></span>
+												</label>
+											</div>
+											<div class="swiper-slide">
+												<label class="slider-label">
+													<img src="img/border2.png" alt="" class="slider-label-img">
+													<input type="radio" class="slider-label-radio" name="border-img">
+													<span class="slider-label-check">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.487 0.137873C18.5675 -0.357246 17.5419 0.597626 16.9407 1.16348C15.5615 2.50737 14.3944 4.06346 13.0858 5.47808C11.6358 7.03417 10.2919 8.59025 8.80658 10.111C7.9578 10.9598 7.0383 11.8793 6.47245 12.9403C5.19929 11.7024 4.10295 10.3585 2.68833 9.26226C1.66273 8.48421 -0.0348217 7.91836 0.000543893 9.79274C0.0712751 12.233 2.22858 14.8501 3.82003 16.5122C4.49197 17.2195 5.37611 17.9622 6.40172 17.9976C7.63951 18.0683 8.91267 16.5829 9.65535 15.7695C10.9639 14.3549 12.0249 12.7634 13.2273 11.3135C14.7834 9.40372 16.3748 7.52928 17.8955 5.58418C18.8504 4.38175 21.8565 1.41098 19.487 0.137873ZM1.55657 9.65128C1.52121 9.65128 1.48584 9.65128 1.41511 9.68659C1.27365 9.65128 1.16755 9.61586 1.02609 9.54512C1.13219 9.47439 1.30901 9.50976 1.55657 9.65128Z" fill="black"/>
+								</svg>
+							</span>
+													<span class="slider-label-bg"></span>
+												</label>
+											</div>
+										</div>
+										<div class="paint-form-btns">
+											<div class="seventh-btn swiper-button-prev">
+												<svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<line y1="-0.5" x2="29" y2="-0.5" transform="matrix(-1 0 0 1 39 2)" stroke="black"/>
+													<line y1="-0.5" x2="11.4018" y2="-0.5" transform="matrix(-0.789352 -0.613941 -0.613941 0.789352 9 8)" stroke="black"/>
+												</svg>
+											</div>
+											<div class="seventh-btn swiper-button-next">
+												<svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<line y1="1.5" x2="29" y2="1.5" stroke="black"/>
+													<line x1="29.693" y1="7.60532" x2="38.693" y2="0.605325" stroke="black"/>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="change-item">
+								<div class="paint-form-row select_xl no-border">
+									<h6 class="paint-form-subtitle">סוג אלומיניום</h6>
+									<select class="register-card-select purchase-form-select select_type">
+										<option value="1" class="register-card-option">סוג 1</option>
+										<option value="2" class="register-card-option">סוג 2</option>
+										<option value="3" class="register-card-option">סוג 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="change-item">
+								<div class="paint-form-row select_xl no-border">
+									<h6 class="paint-form-subtitle">בחר עובי זכוכית</h6>
+									<select class="register-card-select purchase-form-select select_type">
+										<option value="1" class="register-card-option"> מ"מ 3</option>
+										<option value="2" class="register-card-option"> מ"מ 5</option>
+										<option value="3" class="register-card-option">קאפה שחור 8 מ"מ</option>
+									</select>
+								</div>
+							</div>
+							<div class="change-item">
+								<div class="paint-form-row select_xl no-border">
+									<h6 class="paint-form-subtitle">סוג אלומיניום</h6>
+									<select class="register-card-select purchase-form-select select_type">
+										<option value="1" class="register-card-option"> מ"מ 1</option>
+										<option value="1" class="register-card-option"> מ"מ 3</option>
+										<option value="2" class="register-card-option"> מ"מ 5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="paint-form-row paint-form-row_last no-border">
+							<div class="paint-form-row-relative">
+								<button class="paint-form-btn">טקסט</button>
+								<div class="paint-form-price">
+									<div class="paint-form-price-flex">
+										<span class="paint-form-currency">₪</span>
+										<span class="paint-form-number">1305</span>
+										<span class="paint-form-total">:ריחמ</span>
+									</div>
+									<div class="paint-form-price-hide">
+										<span class="paint-form-price-span">100x70 cm</span>
+										<span class="paint-form-price-span">:ינוציח לדוג תיפוס הדימ</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="paint-first-right">
+				<div class="paint-first-picture picture">
+					<img src="" alt="" class="picture-img">
+				</div>
+				<div class="paint-first-bottom">
+					<div class="paint-first-flex paint-line">
+						<div class="paint-line-left">
+							<div class="paint-first-more">
+								<div class="paint-first-circle active"></div>
+								<div class="paint-first-circle"></div>
+								<div class="paint-first-circle"></div>
+							</div>
+							<a href="" class="paint-first-btn">
+								קרא עוד על הציור הזה
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L5 5L9 1" stroke="#BABABA"/>
+								</svg>
+							</a>
+						</div>
+						<div class="paint-line-right">
+							<div class="paint-line-btn paint-line-btn_minus">
+								<svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.81633 1H18H0" stroke="#2D364C"/>
+								</svg>
+							</div>
+							<div class="paint-line-btn paint-line-btn_plus">
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.81633 0V9M8.81633 18V9M8.81633 9H18H0" stroke="#2D364C"/>
+								</svg>
+							</div>
+							<div class="color-item">
+								<input type="text" class="paint-form-input w100 color-input" value="#292929">
+								<div class="paint-form-color color">
+									<div class="color-active"></div>
+									<div class="color-drop color-drop_bg">
+										<div class="color-drop-item active" style="background-color: #292929;"></div>
+										<div class="color-drop-item" style="background-color: #7C878E;"></div>
+										<div class="color-drop-item" style="background-color: #E1C583;"></div>
+										<div class="color-drop-item" style="background-color: #F8C39E;"></div>
+										<div class="color-drop-item" style="background-color: #DEB9B3;"></div>
+										<div class="color-drop-item" style="background-color: #E2DDD2;"></div>
+										<div class="color-drop-item" style="background-color: #DEE1C7;"></div>
+										<div class="color-drop-item" style="background-color: #F1F4F8;"></div>
+										<div class="color-drop-item" style="background-color: #DEB9B3;"></div>
+										<div class="color-drop-item" style="background-color: #E2DDD2;"></div>
+										<div class="color-drop-item" style="background-color: #F1F4F8;"></div>
+										<div class="color-drop-item" style="background-color: #7C878E;"></div>
+										<div class="color-drop-item" style="background-color: #DEE1C7;"></div>
+									</div>
+								</div>
+							</div>
+							<p class="paint-line-text">רקע כללי</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<div class="hide-block" id="scroll-block">
+		<section class="paint-second">
+			<div class="container">
+				<div class="paint-second-flex">
+					<div class="paint-second-left">
+						<div class="paint-second-top">
+							<a href="" class="paint-second-link">גלריית תמונות</a>
+							<p class="paint-second-label">רכמ בר</p>
+						</div>
+						<div class="paint-second-bottom">
+							<div class="info-right-slider swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="img/info1.jpg" alt="" class="info-right-img">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/info2.jpg" alt="" class="info-right-img">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/info3.jpg" alt="" class="info-right-img">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/info1.jpg" alt="" class="info-right-img">
+									</div>
+								</div>
+							</div>
+							<div class="info-right-block">
+								<div class="swiper-button-prev">
+									<svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<line y1="-0.5" x2="29" y2="-0.5" transform="matrix(-1 0 0 1 39 2)" stroke="black"/>
+										<line y1="-0.5" x2="11.4018" y2="-0.5" transform="matrix(-0.789352 -0.613941 -0.613941 0.789352 9 8)" stroke="black"/>
+									</svg>
+								</div>
+								<div class="swiper-pagination"></div>
+								<div class="swiper-button-next">
+									<svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<line y1="1.5" x2="29" y2="1.5" stroke="black"/>
+										<line x1="29.693" y1="7.60532" x2="38.693" y2="0.605325" stroke="black"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="paint-second-right">
+						<div class="paint-second-info">
+							<h6 class="paint-second-name">שם הציור</h6>
+							<p class="paint-second-text">בשפה בידור מתן אם. שימושי קלאסיים היא מה, ניהול מדריכים על צ'ט, יכול קהילה יוצרים עוד על. גם אחד שתפו שפות חינוך, מדריכים ויקיפדיה
+								זאת אל. דת החלל פסיכולוגיה צעד, על כלשהו בהשחתה כדי. של צעד ביוני אירועים, שנורו כלכלה או אתה. זקוק למאמרים בויקיפדיה שתי גם, גם כדי תורת ותשובות פסיכולוגיה.</p>
+							<p class="paint-second-text">בשפה בידור מתן אם. שימושי קלאסיים היא מה, ניהול מדריכים על צ'ט, יכול קהילה יוצרים עוד על. גם אחד שתפו שפות חינוך, מדריכים ויקיפדיה
+								זאת אל. דת החלל פסיכולוגיה צעד, על כלשהו בהשחתה כדי. של צעד ביוני אירועים, שנורו כלכלה או אתה. זקוק למאמרים בויקיפדיה שתי גם, גם כדי תורת ותשובות פסיכולוגיה.</p>
+						</div>
+						<div class="paint-second-block">
+							<div class="paint-second-img">
+								<img src="img/circle-photo2.jpg" alt="">
+							</div>
+							<p class="paint-second-subname">את השם</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="paint-third">
+			<h6 class="paint-third-title">20% for new users</h6>
+			<p class="paint-third-date">01.01 - 01.03</p>
+		</section>
+		<section class="paint-fourth">
+			<div class="container">
+				<h6 class="paint-fourth-title">המלצות</h6>
+				<div class="gallery-main">
+					<div class="gutter-sizer"></div>
+					<div class="gallery-item">
+						<div class="gallery-item-block">
+							<img src="img/gallery-item1.jpg" alt="" class="gallery-item-img">
+							<div class="gallery-item-info">
+								<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+								<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+									<br>כאן תוכלו לבחור את גודל התמונה,
+								</p>
+							</div>
+						</div>
+						<div class="gallery-item-bottom">
+							<a href="" class="gallery-item-like">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+									<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+								</svg>
+							</a>
+							<div class="gallery-item-about">
+								<h6 class="gallery-item-name">שם הציור</h6>
+								<p class="gallery-item-description">שם מלא</p>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gallery-item-block">
+							<img src="img/gallery-item2.jpg" alt="" class="gallery-item-img">
+							<div class="gallery-item-info">
+								<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+								<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+									<br>כאן תוכלו לבחור את גודל התמונה,
+								</p>
+							</div>
+						</div>
+						<div class="gallery-item-bottom">
+							<a href="" class="gallery-item-like">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+									<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+								</svg>
+							</a>
+							<div class="gallery-item-about">
+								<h6 class="gallery-item-name">שם הציור</h6>
+								<p class="gallery-item-description">שם מלא</p>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gallery-item-block">
+							<img src="img/gallery-item3.jpg" alt="" class="gallery-item-img">
+							<div class="gallery-item-info">
+								<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+								<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+									<br>כאן תוכלו לבחור את גודל התמונה,
+								</p>
+							</div>
+						</div>
+						<div class="gallery-item-bottom">
+							<a href="" class="gallery-item-like">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+									<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+								</svg>
+							</a>
+							<div class="gallery-item-about">
+								<h6 class="gallery-item-name">שם הציור</h6>
+								<p class="gallery-item-description">שם מלא</p>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gallery-item-block">
+							<img src="img/gallery-item4.jpg" alt="" class="gallery-item-img">
+							<div class="gallery-item-info">
+								<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+								<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+									<br>כאן תוכלו לבחור את גודל התמונה,
+								</p>
+							</div>
+						</div>
+						<div class="gallery-item-bottom">
+							<a href="" class="gallery-item-like">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+									<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+								</svg>
+							</a>
+							<div class="gallery-item-about">
+								<h6 class="gallery-item-name">שם הציור</h6>
+								<p class="gallery-item-description">שם מלא</p>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gallery-item-block">
+							<img src="img/gallery-item5.jpg" alt="" class="gallery-item-img">
+							<div class="gallery-item-info">
+								<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+								<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+									<br>כאן תוכלו לבחור את גודל התמונה,
+								</p>
+							</div>
+						</div>
+						<div class="gallery-item-bottom">
+							<a href="" class="gallery-item-like">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+									<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+								</svg>
+							</a>
+							<div class="gallery-item-about">
+								<h6 class="gallery-item-name">שם הציור</h6>
+								<p class="gallery-item-description">שם מלא</p>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gallery-item-block">
+							<img src="img/gallery-item1.jpg" alt="" class="gallery-item-img">
+							<div class="gallery-item-info">
+								<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+								<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+									<br>כאן תוכלו לבחור את גודל התמונה,
+								</p>
+							</div>
+						</div>
+						<div class="gallery-item-bottom">
+							<a href="" class="gallery-item-like">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+									<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+								</svg>
+							</a>
+							<div class="gallery-item-about">
+								<h6 class="gallery-item-name">שם הציור</h6>
+								<p class="gallery-item-description">שם מלא</p>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gallery-item-block">
+							<img src="img/gallery-item6.jpg" alt="" class="gallery-item-img">
+							<div class="gallery-item-info">
+								<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+								<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+									<br>כאן תוכלו לבחור את גודל התמונה,
+								</p>
+							</div>
+						</div>
+						<div class="gallery-item-bottom">
+							<a href="" class="gallery-item-like">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+									<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+								</svg>
+							</a>
+							<div class="gallery-item-about">
+								<h6 class="gallery-item-name">שם הציור</h6>
+								<p class="gallery-item-description">שם מלא</p>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gallery-item-block">
+							<img src="img/gallery-item7.jpg" alt="" class="gallery-item-img">
+							<div class="gallery-item-info">
+								<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+								<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+									<br>כאן תוכלו לבחור את גודל התמונה,
+								</p>
+							</div>
+						</div>
+						<div class="gallery-item-bottom">
+							<a href="" class="gallery-item-like">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+									<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+								</svg>
+							</a>
+							<div class="gallery-item-about">
+								<h6 class="gallery-item-name">שם הציור</h6>
+								<p class="gallery-item-description">שם מלא</p>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item">
+						<div class="gallery-item-block">
+							<img src="img/gallery-item8.jpg" alt="" class="gallery-item-img">
+							<div class="gallery-item-info">
+								<h6 class="gallery-item-title">להציג עם המסגרת</h6>
+								<p class="gallery-item-text">להוסיף מסגרת וגם לראות את המחיר הסופי
+									<br>כאן תוכלו לבחור את גודל התמונה,
+								</p>
+							</div>
+						</div>
+						<div class="gallery-item-bottom">
+							<a href="" class="gallery-item-like">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.9602 7.49767C23.6099 3.64176 20.8806 0.844212 17.4651 0.844212C15.1895 0.844212 13.106 2.06874 11.9337 4.03132C10.7719 2.04336 8.77378 0.84375 6.53473 0.84375C3.11961 0.84375 0.389913 3.6413 0.0400469 7.49721C0.012353 7.66753 -0.101192 8.56389 0.244059 10.0257C0.741626 12.1341 1.89092 14.0519 3.56687 15.5704L11.9281 23.1581L20.4329 15.5709C22.1089 14.0519 23.2582 12.1346 23.7557 10.0257C24.101 8.56435 23.9874 7.66799 23.9602 7.49767ZM22.8571 9.81427C22.4029 11.7399 21.35 13.4943 19.8153 14.8846L11.9337 21.9165L4.18721 14.8864C2.64974 13.4934 1.59737 11.7395 1.14273 9.81381C0.815938 8.4305 0.950253 7.64907 0.950715 7.64399L0.957638 7.59737C1.25766 4.21918 3.60287 1.76688 6.53473 1.76688C8.69808 1.76688 10.6025 3.09619 11.5062 5.23554L11.9313 6.24314L12.3564 5.23554C13.2459 3.12896 15.2509 1.76734 17.4655 1.76734C20.3969 1.76734 22.7426 4.21964 23.0486 7.64168C23.0495 7.64907 23.1838 8.43096 22.8571 9.81427Z" fill="black"></path>
+									<path class="svg-hover" d="M23.9602 7.65392C23.6099 3.79801 20.8806 1.00046 17.4651 1.00046C15.1895 1.00046 13.106 2.22499 11.9337 4.18757C10.7719 2.19961 8.77378 1 6.53473 1C3.11961 1 0.389913 3.79755 0.0400469 7.65346C0.012353 7.82378 -0.101192 8.72014 0.244059 10.1819C0.741626 12.2903 1.89092 14.2081 3.56687 15.7267L11.9281 23.3144L20.4329 15.7272C22.1089 14.2081 23.2582 12.2908 23.7557 10.1819C24.101 8.7206 23.9874 7.82424 23.9602 7.65392Z" fill="black"></path>
+								</svg>
+							</a>
+							<div class="gallery-item-about">
+								<h6 class="gallery-item-name">שם הציור</h6>
+								<p class="gallery-item-description">שם מלא</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@import "footer.html"
+	</div>
+
+	@import "registration.html"
+	@import "registration-artist.html"
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

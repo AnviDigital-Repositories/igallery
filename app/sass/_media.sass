@@ -12,6 +12,9 @@
     left: -15px
   .home-four .swiper-button-next
     right: -15px
+  .home-four .home-second-btns
+    width: calc(100% + 40px)
+    left: -20px
 @media only screen and (max-width : 1360px)
   .container
     max-width: 1000px
@@ -60,6 +63,18 @@
     width: 100%
   .list-item
     padding: 15px
+  .account-right-link
+    padding: 0 40px 0 20px
+  .account-third-list
+    padding: 40px 60px 20px 60px
+  .calendar-right-img
+    height: 120px
+  .calendar-graf-item
+    width: 8px
+  .calendar-graf
+    height: 120px
+  .account-fifth-col:last-child
+    margin-left: 20px
 @media only screen and (max-width : 1020px)
   .container
     max-width: 740px
@@ -359,6 +374,143 @@
   .login-left
     width: 100%
     max-width: 410px
+  .page-right-circle
+    width: 100%
+    height: 100%
+  .gallery-item-info
+    padding: 10px
+  .gallery-item-title
+    font-size: 14px
+    margin-bottom: 10px
+  .gallery-item-text
+    font-size: 10px
+  .page-bottom-main
+    padding-top: 170px
+  .gallery .gallery-main
+    width: 100%
+    &.active
+      width: 100%
+  .gallery-filter
+    position: absolute
+    width: 325px
+    top: 0
+    right: 0
+    background: #FFffff
+    padding-left: 25px
+    opacity: 0
+    pointer-events: auto
+    transition: all .6s ease
+    &.active
+      margin-left: 0
+      opacity: 1
+      pointer-events: auto
+      width: 325px
+  .gallery-type
+    display: none
+  .gallery-info
+    justify-content: flex-end
+  .account-third-list
+    padding: 40px 50px 20px 50px
+  .login-form-row
+    max-width: 100%
+  .account-first
+    padding: 50px
+  .account-first-info
+    padding: 0 25px
+  .account-first-info-text
+    font-size: 20px
+  .account-right-link
+    padding: 0 20px 0 20px
+  .account-right
+    width: 200px
+    flex-shrink: 0
+  .account-left-sticky
+    padding: 20px 50px
+  .account-second
+    padding: 0px 50px 55px
+  .account-second-btn
+    max-width: 100%
+  .account-third
+    padding: 0px 50px 60px
+  .account-third-flex
+    flex-direction: column-reverse
+  .account-third-right
+    width: 100%
+    margin: 0 0 40px 0
+  .account-fourth
+    padding: 0px 50px 60px 50px
+  .account-fifth
+    padding: 0 50px 0
+  .account-fifth-main .gallery-item
+    width: calc(50% - 15px)
+  .account-fifth-main .gutter-sizer2
+    width: 30px
+  .account .gallery-item-block
+    padding: 30px
+  .account-third-tabs-link
+    margin: 0
+  .account-third-tabs
+    justify-content: space-between
+  .calendar-flex
+    flex-direction: column-reverse
+  .calendar-row
+    padding-right: 0
+  .calendar-right
+    width: 100%
+    margin-bottom: 30px
+  .calendar-right-img
+    height: auto
+  .calendar-left
+    width: 100%
+    margin: 0
+  .account-third-block_row
+    flex-direction: column-reverse
+  .account-third-block-right
+    width: 100%
+    margin-bottom: 30px
+  .account-third-block-left
+    width: 100%
+    margin: 0
+  .account-second-row_sm
+    max-width: 220px
+  .account-fifth-item
+    flex-direction: row-reverse
+    flex-wrap: wrap
+  .account-fifth-col
+    width: 16.66%
+  .account-fifth-col:last-child
+    width: 14%
+    flex-shrink: 1
+  .account-fifth-col_img
+    width: 100% !important
+    margin: 20px 0 0 0!important
+  .account-fifth-item
+    padding-top: 20px
+  .account-fifth-col
+    font-size: 10px
+  .account-fifth-top_nomarg .account-fifth-col:last-child
+    width: 14%
+  .account-sixth
+    padding: 0 50px
+  .account-sixth-item
+    flex-direction: column-reverse
+    flex-wrap: wrap
+  .account-sixth-item .account-fifth-col:last-child
+    margin: 0
+    width: 100%
+  .account-sixth-item .account-fifth-col
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 14px 70px
+  .account-fifth-col-number
+    width: 70px
+    text-align: center
+  .account-fifth-col-title
+    display: block
+  .account-left-sticky:nth-child(5)
+    .account-fifth-top
+      display: none
 @media only screen and (max-width : 767px)
   .container
     max-width: 460px
@@ -413,6 +565,7 @@
     border: none
     position: static
     margin: 0
+    z-index: 0
   .home-four-btns
     margin: 0 0 30px
   .home-four-subtitle
@@ -641,7 +794,7 @@
     order: 3
     padding: 0px 40px 35px 35px
     flex-direction: row
-  .header-basket-delete
+  .cart-left .header-basket-delete
     height: 50px
     width: 50px
     display: flex
@@ -783,6 +936,106 @@
     height: 410px
   .login-right
     height: auto
+  .page
+    padding: 0 0 50px
+  .page-flex
+    flex-direction: column-reverse
+  .page-right
+    width: 100%
+    display: flex
+    justify-content: center
+  .page-right:before
+    display: none
+  .page-right-sticky
+    position: static!important
+  .page-right .scrollmagic-pin-spacer
+    padding: 0!important
+  .page-left
+    width: 100%
+  .page-left-top
+    margin-right: 0
+    padding-bottom: 40px
+  .page-right-circle
+    width: 130px
+    height: 130px
+  .page-left-title, .page-left-description
+    text-align: center
+  .page-left-about
+    font-size: 12px
+    line-height: 16px
+    margin-top: 25px
+  .gallery-item-bottom
+    margin-top: 10px
+  .purchase-block
+    padding: 40px 40px 60px
+  .purchase-block:nth-child(3) .login-form-row
+    flex-direction: column
+  .purchase-block:nth-child(3) .register-payment-label
+    width: 100%
+  .purchase
+    padding: 55px 0 100px
+  .home-four .home-second-btns
+    position: static
+    width: 100%
+    justify-content: center
+    .circle
+      display: block
+  .account-title
+    display: none
+  .account-left
+    position: absolute
+    width: 100%
+    margin: 0
+    top: 0
+    right: 0
+    transform: translateX(100%)
+    transition: transform .5s ease
+    z-index: 2
+    &.active
+      transform: translateX(0)
+  .account .container
+    position: static
+  .account
+    position: relative
+    overflow: hidden
+    padding-bottom: 35px
+  .account-right
+    width: 100%
+  .account-left-top
+    top: 0
+    position: static
+  .account-flex
+    margin-top: 5px
+  .account-right-link
+    padding-right: 90px
+  .account-left-sticky
+    padding: 20px 25px
+  .account-second, .account-third, .account-fourth, .account-fifth
+    padding: 0px 25px 55px
+  .account-third-name
+    display: none
+    &_mobile
+      display: block
+      text-align: right
+      margin-bottom: 20px
+  .account-third-right
+    margin-bottom: 20px
+  .account-third-total
+    flex-direction: column-reverse
+    align-items: flex-end
+  .account-fifth-main .gallery-item
+    width: calc(50% - 8px)
+  .account-fifth-main .gutter-sizer2
+    width: 16px
+  .calendar-right
+    max-width: 400px
+    margin: 0 auto 30px
+  .calendar-graf-item
+    width: 10px
+  .account-left-block
+    position: relative
+    padding-right: 15px
+    background: url(../img/arrow.svg) no-repeat center right
 @media only screen and (max-width : 480px)
   .login-right-block
     height: 74vw
@@ -936,3 +1189,115 @@
     margin: 0
   .blog-page-info-text
     display: none
+  .page-right
+    padding-top: 50px
+  .page-right-name
+    margin-top: 20px
+  .purchase-main
+    padding: 0
+  .purchase-title
+    margin-bottom: 100px
+  .purchase-block
+    padding: 40px 20px 60px
+  .purchase-form-flex
+    flex-direction: column
+  .purchase-form-flex .register-payment-label
+    width: 100%
+  .purchase-popup-content
+    margin: 25px
+  .gallery-btn
+    width: calc(100% + 50px)
+    margin-left: -25px
+    display: block
+    border: none
+    border-bottom: 1px solid #E3E3E3
+    padding: 13px 25px
+    background-position: left 25px center
+    &:hover
+      background-color: transparent
+      border: none
+      border-bottom: 1px solid #E3E3E3
+  .gallery-info
+    display: block
+  .gallery-title
+    font-size: 34px
+    text-align: center
+  .gallery-filter.active, .gallery-filter
+    width: calc(100% + 50px)
+    left: -25px
+    padding: 0 25px
+  .gallery-info
+    position: sticky
+    top: 75px
+    left: 0
+  .account-fifth-link
+    width: 50%
+    text-align: center
+    border: 1px solid #EFEFEF!important
+    height: 50px
+    line-height: 48px
+    font-size: 14px
+    &.active
+      background: #EFEFEF
+  .account-fifth
+    padding-bottom: 100px
+  .account-fifth_custom
+    padding: 0px 30px 100px 0
+    overflow: auto
+  .calendar-right-img
+    height: 210px
+  .calendar-left-overlay
+    overflow: auto
+    padding-top: 30px
+  .calendar-left-scroll
+    width: 500px
+    position: relative
+  .calendar-graf-item
+    width: 8px
+  .account-sixth-item .account-fifth-col
+    padding: 14px 50px
+  .account-sixth-item .account-fifth-col:last-child
+    padding: 14px 20px
+    justify-content: center
+  .account-fifth-top
+    display: none
+    &_mobile
+      display: flex
+  .account-left-item-scroll
+    width: 650px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+  .account-fifth-col:last-child
+    width: 140px!important
+    flex-shrink: 0
+  .account-fifth-item
+    flex-wrap: nowrap
+    flex-direction: row
+  .account-fifth-top, .account-fifth-list
+    width: 100%
+  .account-fifth-item, .account-fifth-top
+    padding-right: 25px
+  .account-fifth-col_img
+    margin: 0 0 0 20px!important
+  .account-sixth-item .account-fifth-col:last-child
+    width: 100%!important
+  .account-fifth-col
+    font-size: 14px
+  .account-fifth-col_img
+    height: 140px
+  .account-fifth-item
+    padding-top: 0
+    padding-right: 0
+    margin-right: 25px
+  .account-fifth-list
+    margin-bottom: 30px
+  .account-fifth-list
+    margin-top: 20px
+  .account-fifth-top_mobile.account-fifth-top
+    display: flex
+  .account-sixth .package-content
+    padding: 30px 40px 40px
+  .payment-popup .login-second-btn
+    position: static
+    top: 0
