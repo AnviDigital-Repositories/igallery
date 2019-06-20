@@ -15,6 +15,13 @@
   .home-four .home-second-btns
     width: calc(100% + 40px)
     left: -20px
+  .paint-line .color-drop
+    transform: translate(0%, -100%)
+    left: inherit
+    right: 0
+  .paint-line .color-drop:after
+    left: calc(100% - 25px)
+    transform: none
 @media only screen and (max-width : 1360px)
   .container
     max-width: 1000px
@@ -75,6 +82,23 @@
     height: 120px
   .account-fifth-col:last-child
     margin-left: 20px
+  .gallery_frame .favorit-item
+    max-width: 1290px
+    width: 100%
+  .paint-second .paint-second-block
+    margin-left: 30px
+  .paint-fourth .gallery-main
+    width: 100%
+  .paint-form-price
+    width: 60%
+  .paint-form-btn
+    width: 40%
+  .color-drop
+    width: 315px
+  .paint-first-flex
+    padding: 0 20px
+  .paint-check-item .paint-check-circle:before
+    width: 185px
 @media only screen and (max-width : 1020px)
   .container
     max-width: 740px
@@ -398,7 +422,7 @@
     background: #FFffff
     padding-left: 25px
     opacity: 0
-    pointer-events: auto
+    pointer-events: none
     transition: all .6s ease
     &.active
       margin-left: 0
@@ -511,6 +535,109 @@
   .account-left-sticky:nth-child(5)
     .account-fifth-top
       display: none
+  .frame-flex
+    flex-direction: column-reverse
+    justify-content: flex-start
+    height: auto
+  .frame
+    overflow: auto
+  .frame-right
+    width: 100%
+    padding: 100px 0 60px
+  .frame-top
+    flex-direction: column-reverse
+    align-items: flex-end
+  .frame-right-name
+    text-align: center
+  .frame-top-title
+    display: none
+  .paint-second-blocks .frame-top-title
+    display: block
+  .frame-top .paint-second-block
+    width: 100%
+    flex-direction: row-reverse
+  .paint-second-img
+    width: 95px
+    margin-left: 20px
+  .paint-second-subname
+    margin-top: 0
+  .frame-top-left
+    padding-right: 0
+    padding-top: 15px
+    margin-top: 30px
+    border: none
+    border-top: 1px solid #DBDBDB
+  .frame-left
+    margin: 0
+    width: 100%
+    padding: 50px 25px
+  .frame-bottom-price
+    margin-top: 30px
+  .frame-bottom-left
+    display: none
+  .frame-bottom-btn
+    width: 100%
+    margin-top: 20px
+  .custom-body .header
+    opacity: 1
+    pointer-events: auto
+  .custom-body
+    padding-top: 75px
+  .paint-first
+    flex-direction: column-reverse
+  .custom-body .paint-first, .custom-body .paint-first-scroll, .custom-body .paint-first-left
+    height: auto
+  .hide-block
+    height: auto
+  .picture
+    position: static
+    transform: none
+  .paint-first-right
+    width: 100%
+    padding-bottom: 110px
+  .picture
+    margin: 100px auto 170px
+  .paint-first-flex
+    max-width: 100%
+    padding: 0 45px
+  .paint-first-left
+    width: 100%
+    display: flex
+    justify-content: center
+  .paint-form-row-relative
+    margin: 0 auto
+  .paint-second-flex
+    flex-direction: column-reverse
+  .paint-second-right
+    width: 100%
+    margin-left: 0
+  .paint-second .paint-second-img
+    margin-left: 0
+  .paint-second-left
+    margin: 40px auto 0
+  .paint-fourth
+    padding: 45px 0
+  .paint-first-scroll
+    padding-bottom: 150px
+  .paint-first-btn, .hide-block .frame-top-title
+    display: none
+  .hide-block .paint-second-subname
+    margin-top: 10px
+  //.paint-first-scroll
+  //  overflow: visible
+  .paint-first-left
+    overflow: visible
+  .paint-check-list
+    flex-direction: column
+    align-items: center
+  .paint-check-item .paint-check-circle:before
+    display: none
+  .paint-check-item
+    margin-bottom: 50px
+    &:last-child
+      margin-bottom: 0
+  .paint-check
+    padding: 100px 0 100px
 @media only screen and (max-width : 767px)
   .container
     max-width: 460px
@@ -1036,6 +1163,9 @@
     position: relative
     padding-right: 15px
     background: url(../img/arrow.svg) no-repeat center right
+  .paint-second-left
+    width: 410px
+
 @media only screen and (max-width : 480px)
   .login-right-block
     height: 74vw
@@ -1301,3 +1431,98 @@
   .payment-popup .login-second-btn
     position: static
     top: 0
+  .frame-right-block
+    height: auto
+  .frame-close
+    width: 40px
+    height: 40px
+    top: 18px
+    left: 25px
+  .frame-right
+    padding: 100px 55px 60px
+  .frame-right-picture
+    height: auto
+  .frame-right-item
+    width: 100%
+    text-align: right
+  .frame-right-list
+    margin-top: 30px
+    padding-right: 23%
+  .frame-top-text
+    font-size: 12px
+    line-height: 16px
+  .picture
+    width: 190px
+    height: 240px
+    margin: 75px auto 170px
+  .paint-line-left
+    position: absolute
+    top: -30px
+    left: 30px
+  .paint-first-bottom
+    height: 80px
+  .paint-first-right
+    padding-bottom: 80px
+  .paint-line .color-drop
+    left: 50%
+    transform: translate(-50%, -100%)
+  .paint-line .color-drop:after
+    left: 50%
+    transform: translateX(-50%)
+  .paint-form-top
+    padding: 45px 0 15px
+  .paint-form-btn
+    width: 100%
+    height: 75px
+    line-height: 75px
+  .paint-form-price
+    height: 90px
+    min-height: auto
+    width: 100%
+    top: -90px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+  .paint-first-scroll
+    padding-bottom: 200px
+  .paint-second-right
+    flex-direction: column-reverse
+  .hide-block .paint-second-name
+    display: none
+  .hide-block .frame-top-title
+    display: block
+  .hide-block .paint-second-block
+    margin: 0
+    width: 100%
+    display: flex
+    flex-direction: row-reverse
+  .paint-second
+    padding: 50px 0 65px
+  .paint-second .paint-second-img
+    width: 80px
+    height: 80px
+    margin-left: 10px
+  .hide-block .paint-second-subname
+    margin-top: 0
+  .hide-block .frame-top-title
+    font-size: 26px
+  .paint-second-text
+    font-size: 12px
+    line-height: 16px
+    margin-bottom: 15px
+  .paint-second-info
+    margin-top: 20px
+  .paint-second-left
+    margin-top: 65px
+    width: 100%
+  .paint-third-title
+    line-height: 67px
+  .paint-third
+    padding: 170px 0 155px
+  .paint-third-date
+    margin-top: 10px
+  .paint-fourth
+    padding: 0 0 50px
+  .paint-fourth-title
+    margin-bottom: 30px

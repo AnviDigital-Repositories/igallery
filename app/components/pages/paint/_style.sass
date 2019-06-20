@@ -323,6 +323,7 @@
     &-right
       width: 630px
       display: flex
+      margin-left: 30px
     &-block
       width: 95px
       margin-left: 60px
@@ -416,6 +417,65 @@
       padding: 25px 0
       border-bottom: 1px solid #D4D4D4
       margin-bottom: 60px
+  &-check
+    padding: 140px 0 100px
+    &-list
+      display: flex
+      justify-content: center
+    &-item
+      width: 200px
+      margin: 0 75px
+      display: flex
+      flex-direction: column
+      align-items: center
+      &.active
+        .paint-check-circle:after
+          border: 1px solid #890707
+          width: 73px
+          height: 73px
+        .paint-check-check
+          opacity: 1
+          pointer-events: auto
+      .paint-check-circle
+        &:before
+          content: ''
+          width: 220px
+          height: 1px
+          position: absolute
+          background: #D6D6D6
+          top: 50%
+          left: 100px
+      &:last-child
+        .paint-check-circle:before
+          display: none
+    &-text
+      text-align: center
+      font-size: 24px
+      color: #000000
+      margin-top: 25px
+    &-circle
+      width: 73px
+      height: 73px
+      position: relative
+      &:after
+        width: 23px
+        height: 23px
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        border: 1px solid #D6D6D6
+        border-radius: 50%
+        transition: all .5s ease
+    &-check
+      position: absolute
+      left: 75%
+      top: 35%
+      transform: translate(-50%, -50%)
+      transition: opacity .5s ease
+      opacity: 0
+      pointer-events: none
   .nselect.nsOrange .nselect__head
     height: 45px
     line-height: 45px
@@ -446,9 +506,13 @@
 .label_sm .paint-form-labels
   width: calc(33.33% - 10px)
   margin-left: 15px
+  &:first-child
+    margin-left: 0
 .label_md .paint-form-labels
   width: calc(50% - 15px)
   margin-left: 30px
+  &:first-child
+    margin-left: 0
 .select_xl
   .nselect.nsOrange
     width: 100%
@@ -478,6 +542,12 @@
     border-radius: 50%
     margin-right: 5px
     cursor: pointer
+    &-block
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 100%
     &_question
       border: 1px solid #D6D6D6
       transition: all .5s ease
@@ -680,5 +750,153 @@
   overflow: hidden
   &.active
     height: auto
+    overflow: visible
+.gallery_frame
+  .favorit-item-main
+    margin-top: 0
+.frame
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  background: #FFffff
+  z-index: 4
+  opacity: 0
+  overflow: hidden
+  pointer-events: none
+  transition: opacity .5s ease
+  &-close
+    background: #EFEFEF
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    position: absolute
+    left: 27px
+    top: 27px
+    width: 22px
+    height: 22px
+  &.active
+    opacity: 1
+    pointer-events: all
+  &-flex
+    display: flex
+    align-items: center
+    height: 100%
+  &-left
+    width: 40%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    margin: 25px
+    &-content
+      width: 100%
+      max-width: 475px
+
+  &-right
+    width: 60%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    padding: 11vh 0 6vh
+    background: #F9F9F9
+    &-block
+      height: 55vh
+      position: relative
+      &:after
+        content: ''
+        left: 100%
+        top: 0
+        height: 100%
+        width: 20%
+        position: absolute
+        transform: matrix(-1, 0, 0, 1, 0, 0)
+        background: linear-gradient(270deg, #C4C4C4 0%, rgba(196, 196, 196, 0) 100%)
+        filter: blur(20px)
+    &-picture
+      height: 100%
+    &-name
+      font-weight: 300
+      font-size: 26px
+      color: #000000
+    &-bottom
+      margin-top: 8vh
+      width: 100%
+      max-width: 410px
+    &-list
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-end
+      margin-top: 10px
+    &-item
+      width: 50%
+      font-size: 14px
+      color: #000000
+      margin: 3px 0
+      &:nth-child(even)
+          text-align: right
+    &-value
+      color: #929292
+      padding-right: 10px
+  &-top
+    display: flex
+    &-left
+      width: 100%
+      padding-right: 35px
+      border-right: 1px solid #DBDBDB
+    &-text
+      font-size: 14px
+      line-height: 1.5
+      color: #000000
+      margin-top: 15px
+    &-title
+      font-weight: 300
+      font-size: 34px
+      color: #000000
+      direction: rtl
+    .paint-second-block
+      margin-left: 35px
+  &-bottom
+    &-price
+      font-weight: 300
+      color: #000000
+      margin-top: 70px
+    &-number
+      font-size: 52px
+    &-currency
+      font-size: 34px
+      padding-right: 5px
+    &-flex
+      display: flex
+      margin-top: 10px
+    &-btn
+      width: 240px
+      flex-shrink: 0
+      height: 65px
+      line-height: 65px
+      text-align: center
+      background: #C4AD75
+      cursor: pointer
+      outline: none
+      font-size: 24px
+      color: #FFFFFF
+      transition: background-color .5s ease
+      &:hover
+        background: rgba(196, 173, 117, 0.4)
+    &-left
+      display: flex
+      width: 100%
+      justify-content: space-between
+      align-items: center
+      margin-right: 20px
+    .infos-item
+      margin: 0
+.paint-second-blocks
+  .frame-top-title
+    display: none
+
 
 

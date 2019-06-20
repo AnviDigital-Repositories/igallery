@@ -187,11 +187,11 @@ $(document).ready(function () {
                 spaceBetween: 50,
             },
             767: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 15,
             },
             320: {
-                slidesPerView: 1,
+                slidesPerView: 3,
                 spaceBetween: 10,
             }
         }
@@ -422,19 +422,6 @@ $(document).ready(function () {
         $('.register_artist').find('.register-thank').addClass('active');
     });
 
-
-    //input hover
-    // $('.login-form-input').hover(function(){
-    //     if(!$(this).is(':focus')) {
-    //         $(this).parent().find('.login-form-title').addClass('active');
-    //     }
-    // },function(){
-    //     $(this).parent().find('.login-form-title').removeClass('active');
-    // });
-    // $('.login-form-input').click(function(){
-    //     $(this).parent().find('.login-form-title').removeClass('active');
-    // });
-
     //card mask
     $('.login-form-input_card').mask("9999 9999 9999 9999");
 
@@ -609,26 +596,6 @@ $(document).ready(function () {
         .setPin(".page-right-sticky") // the element we want to pin
         .addTo(controller2);
 
-    //sticky tabs
-    function stickyTabs() {
-        var controller3 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "0", offset: "0"}});
-        if ($('.account-right').length > 0) {
-            var heightDuration3 = $('.account-left-item.active').outerHeight() - $('.account-right-sticky').height();
-        }
-        if (heightDuration3 < 1) {
-            heightDuration3 = 1;
-        }
-
-        var scene3 = new ScrollMagic.Scene({
-            triggerElement: ".account-right-sticky", // point of execution
-            duration: heightDuration3, // pin element for the window height - 1
-            reverse: true // allows the effect to trigger when scrolled in the reverse direction
-        })
-            .setPin(".account-right-sticky") // the element we want to pin
-            .addTo(controller3);
-    }
-    // stickyTabs();
-
     //purchase forms
 
     $('.purchase-form_first').submit(function(e){
@@ -667,7 +634,6 @@ $(document).ready(function () {
         checkStickHeight();
         checkCalendarHeight();
         $(window).scrollTop(0);
-        // stickyTabs();
 
         if($('.account-fifth').hasClass('active')) {
             // hide new item after 3 second
@@ -841,10 +807,10 @@ $(document).ready(function () {
 
     //question drop
 
-    $('.infos-item_question').click(function(e){
+    $('.infos-item_question .infos-item-block').click(function(e){
         e.preventDefault();
-        $('.infos-item-drop').toggleClass('active');
-        $(this).toggleClass('active');
+        $(this).parent().find('.infos-item-drop').toggleClass('active');
+        $(this).parent().toggleClass('active');
     });
 
     //color drop
@@ -863,7 +829,6 @@ $(document).ready(function () {
         $(this).closest('.color-item').find('.color-active').css('background-color', hex);
         $(this).closest('.color-item').find('.color-input').val(hex);
         if ($(this).parent().hasClass('color-drop_bg')) {
-            console.log('ss')
             $('.paint-first-right').css('background-color', hex);
             $('.paint-first-right').css('background-image', 'none');
         }
@@ -874,7 +839,6 @@ $(document).ready(function () {
     $('.paint-first-circle').click(function(){
        $(this).addClass('active').siblings().removeClass('active');
        var imageUrl = 'img/paint-bg' + $(this).index() + '.jpg';
-       // console.log(url(img/"imgSrc"));
        $('.paint-first-right').css('background-image', 'url(' + imageUrl + ')');
     });
 
@@ -907,20 +871,17 @@ $(document).ready(function () {
         var g   = parseInt(rgb[1], 10);
         var b   = parseInt(rgb[2], 10);
         var hex = '#'+ r.toString(16) + g.toString(16) + b.toString(16);
-        // console.log(hex)
         if ($(this).hasClass('paint-line-btn_minus')) {
             var NewColor = LightenDarkenColor(hex, 20);
             $(this).parent().find('.color-active').css('background-color', NewColor);
             $('.paint-first-right').css('background-color', NewColor);
             $('.paint-first-right').css('background-image', 'none');
-            console.log(NewColor)
         }
         else {
             var NewColor = LightenDarkenColor(hex, -20);
             $(this).parent().find('.color-active').css('background-color', NewColor);
             $('.paint-first-right').css('background-color', NewColor);
             $('.paint-first-right').css('background-image', 'none');
-            console.log(NewColor)
         }
     });
 
@@ -932,6 +893,20 @@ $(document).ready(function () {
         $('.hide-block').css('height', 'auto');
         $('.paint-form-row-relative').addClass('active');
         $('html, body').animate({scrollTop:$('#scroll-block').position().top - $('.header').outerHeight()}, 500);
+    });
+
+    //frame popup
+
+    $('.gallery_frame .gallery-item-block').click(function(e){
+        e.preventDefault();
+        $('.frame').addClass('active');
+        var pictureSrc = $(this).find('.gallery-item-img').attr('src').split('.')[0] + '-big.' + $(this).find('.gallery-item-img').attr('src').split('.')[1];
+        $('.frame-right-picture').attr('src', pictureSrc)
+    });
+
+    $('.frame-close').click(function(e){
+        e.preventDefault();
+        $('.frame').removeClass('active');
     });
 
 });
